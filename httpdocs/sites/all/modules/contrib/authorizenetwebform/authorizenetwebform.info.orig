@@ -1,0 +1,11 @@
+name = Authorize.Net Payment Webform
+description = Extends the Webform module to allow Webforms to be paid for using Authorize.Net
+package = Integration
+dependencies[] = webform
+core = 6.x
+; Information added by drupal.org packaging script on 2012-12-29
+version = "6.x-2.1+1-dev"
+core = "6.x"
+project = "authorizenetwebform"
+datestamp = "1356784553"
+

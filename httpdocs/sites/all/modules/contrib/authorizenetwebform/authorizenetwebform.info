@@ -1,0 +1,6 @@
+name = Authorize.Net Payment Webform
+description = Extends the Webform module to allow Webforms to be paid for using Authorize.Net
+package = Integration
+dependencies[] = webform
+core = 7.x
+configure = admin/config/content/authorizenetwebform

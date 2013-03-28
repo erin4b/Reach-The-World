@@ -1,0 +1,14 @@
+name = Payment for Webform
+description = Allows Webform submissions to receive payments.
+configure = admin/config/services/payment/payment_webform
+core = 7.x
+dependencies[] = payment (>1.0)
+dependencies[] = paymentreference
+dependencies[] = webform
+package = Payment
+; Information added by drupal.org packaging script on 2013-03-24
+version = "7.x-1.3"
+core = "7.x"
+project = "payment_webform"
+datestamp = "1364127616"
+

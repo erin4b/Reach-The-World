@@ -1,0 +1,414 @@
+/* line 3, ../sass/style.scss */
+p {
+  margin-top: 5px;
+}
+
+/* line 7, ../sass/style.scss */
+ul {
+  margin: 2px;
+  padding: 6px;
+  padding-left: 15px;
+}
+/* line 11, ../sass/style.scss */
+ul li {
+  padding-left: 1px;
+  line-height: 150%;
+}
+
+/* line 17, ../sass/style.scss */
+#block-panels-mini-top-menu-bar-links {
+  height: 32px;
+  margin-top: -4px;
+  background: #0166FF;
+  border: 1px solid #0166FF;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+}
+/* line 25, ../sass/style.scss */
+#block-panels-mini-top-menu-bar-links ul.menu {
+  padding: 0px;
+  margin: 0px 0px 0px 15px;
+  overflow: hidden;
+}
+/* line 29, ../sass/style.scss */
+#block-panels-mini-top-menu-bar-links ul.menu li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+/* line 35, ../sass/style.scss */
+#block-panels-mini-top-menu-bar-links ul.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8em;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+/* line 46, ../sass/style.scss */
+.top-menu {
+  text-align: right;
+  margin-right: 15px;
+  font-size: 1.4em;
+}
+/* line 50, ../sass/style.scss */
+.top-menu a {
+  color: #FFF;
+  text-decoration: none;
+  line-height: 36px;
+  padding-left: 30px;
+}
+
+/* line 59, ../sass/style.scss */
+#get-involved h2.pane-title {
+  background: #CDA2CD;
+  border: 1px solid #CDA2CD;
+  border-radius: 10px;
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 2px 2px 2px #333;
+  line-height: 29px;
+  text-indent: 10px;
+  margin: 0px;
+}
+/* line 70, ../sass/style.scss */
+#get-involved .content {
+  font-size: 1.1em;
+}
+
+/* line 76, ../sass/style.scss */
+#in-the-news h2.pane-title {
+  background: #57AE50;
+  border: 1px solid #57AE50;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 2px #333;
+  line-height: 29px;
+  text-indent: 10px;
+  margin: 0px;
+}
+/* line 87, ../sass/style.scss */
+#in-the-news .content {
+  font-size: 1.1em;
+}
+
+/* line 93, ../sass/style.scss */
+#geogames p {
+  margin: 0px;
+}
+
+/* line 98, ../sass/style.scss */
+#ad {
+  background: #7FB3F0;
+  border: 0px solid #7FB3F0;
+  border-radius: 100px;
+  width: 919px;
+  height: 60px;
+  overflow: hidden;
+  margin: 10px auto;
+}
+/* line 106, ../sass/style.scss */
+#ad a {
+  width: 100%;
+  height: 100%;
+}
+/* line 109, ../sass/style.scss */
+#ad a img {
+  float: right;
+}
+
+/* line 115, ../sass/style.scss */
+.journey-menu {
+  background-color: #0066FF;
+  color: white;
+  border-radius: 15px;
+  padding: 0px 12px;
+  margin: 20px auto 10px;
+}
+/* line 121, ../sass/style.scss */
+.journey-menu ul.menu {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+/* line 125, ../sass/style.scss */
+.journey-menu ul.menu li {
+  float: left;
+  display: block;
+  margin-right: 20px;
+}
+/* line 129, ../sass/style.scss */
+.journey-menu ul.menu li a {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: left center;
+  overflow: hidden;
+  height: 32px;
+  text-indent: -99999px;
+}
+/* line 136, ../sass/style.scss */
+.journey-menu ul.menu li a.journey-home {
+  width: 88px;
+  background-image: url(../images/nav_Home_off.jpg);
+}
+/* line 139, ../sass/style.scss */
+.journey-menu ul.menu li a.journey-home.active, .journey-menu ul.menu li a.journey-home:hover {
+  background-image: url(../images/nav_Home.jpg);
+}
+/* line 143, ../sass/style.scss */
+.journey-menu ul.menu li a.journey-logbook {
+  width: 113px;
+  background-image: url(../images/nav_Logbook_off.jpg);
+}
+/* line 146, ../sass/style.scss */
+.journey-menu ul.menu li a.journey-logbook.active, .journey-menu ul.menu li a.journey-logbook:hover {
+  background-image: url(../images/nav_Logbook.jpg);
+}
+/* line 150, ../sass/style.scss */
+.journey-menu ul.menu li a.journey-notes {
+  width: 140px;
+  background-image: url(../images/nav_Field-Notes_off.jpg);
+}
+/* line 153, ../sass/style.scss */
+.journey-menu ul.menu li a.journey-notes.active, .journey-menu ul.menu li a.journey-notes:hover {
+  background-image: url(../images/nav_Field-Notes.jpg);
+}
+/* line 157, ../sass/style.scss */
+.journey-menu ul.menu li a.journey-journals {
+  width: 105px;
+  background-image: url(../images/nav_Journals_off.jpg);
+}
+/* line 160, ../sass/style.scss */
+.journey-menu ul.menu li a.journey-journals.active, .journey-menu ul.menu li a.journey-journals:hover {
+  background-image: url(../images/nav_Journals.jpg);
+}
+/* line 164, ../sass/style.scss */
+.journey-menu ul.menu li a.journey-albums {
+  width: 109px;
+  background-image: url(../images/nav_albums_off.jpg);
+}
+/* line 167, ../sass/style.scss */
+.journey-menu ul.menu li a.journey-albums.active, .journey-menu ul.menu li a.journey-albums:hover {
+  background-image: url(../images/nav_albums.jpg);
+}
+
+/* line 176, ../sass/style.scss */
+.pane-menu-menu-journey-travelers-menu {
+  background-color: #FFD66A;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* line 180, ../sass/style.scss */
+.pane-menu-menu-journey-travelers-menu ul.menu {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+/* line 184, ../sass/style.scss */
+.pane-menu-menu-journey-travelers-menu ul.menu li {
+  list-style: none;
+}
+/* line 186, ../sass/style.scss */
+.pane-menu-menu-journey-travelers-menu ul.menu li a {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #999;
+  text-decoration: none;
+}
+/* line 192, ../sass/style.scss */
+.pane-menu-menu-journey-travelers-menu ul.menu li a.travelers-bio {
+  letter-spacing: -1px;
+  background: url(../images/traveler_bios.jpg) no-repeat left center;
+  padding-left: 44px;
+  display: block;
+  height: 28px;
+}
+/* line 199, ../sass/style.scss */
+.pane-menu-menu-journey-travelers-menu ul.menu li a:hover {
+  color: #0066FF;
+}
+
+/* line 210, ../sass/style.scss */
+.node-type-journey #main .center-wrapper .panel-col-first {
+  width: 180px;
+  margin-right: 20px;
+}
+/* line 213, ../sass/style.scss */
+.node-type-journey #main .center-wrapper .panel-col-first > .inside {
+  margin: 1em 0px;
+}
+
+/* line 221, ../sass/style.scss */
+.center-front {
+  margin-top: 12px;
+  position: relative;
+  padding-bottom: 40px;
+}
+/* line 226, ../sass/style.scss */
+.center-front #frontbox {
+  position: relative;
+  height: 398px;
+  background: #FFBA2E;
+  border: 1px solid #FFBA2E;
+  border-radius: 10px;
+  margin: 0px auto;
+}
+/* line 233, ../sass/style.scss */
+.center-front #frontbox .panel-col-first {
+  width: 490px;
+  height: auto;
+  margin-left: 5px;
+  float: left;
+}
+/* line 239, ../sass/style.scss */
+.center-front #frontbox .panel-col-last {
+  float: right;
+  width: 418px;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  margin-right: 5px;
+}
+/* line 246, ../sass/style.scss */
+.center-front #frontbox .panel-col-last > .inside {
+  margin: 0px;
+}
+/* line 252, ../sass/style.scss */
+.center-front #frontbox > .pane-content .panel-col-first h2.pane-title {
+  color: #fff;
+  text-shadow: 2px 2px 2px #222;
+  font-size: 2.6em;
+  line-height: 22px;
+  margin: 10px 0px 4px;
+}
+/* line 260, ../sass/style.scss */
+.center-front #frontbox > .pane-content #journey-selector {
+  line-height: 35px;
+}
+/* line 263, ../sass/style.scss */
+.center-front #frontbox > .pane-content #featured-journey {
+  background: #fff;
+  height: 330px;
+  padding: 10px 20px;
+}
+/* line 267, ../sass/style.scss */
+.center-front #frontbox > .pane-content #featured-journey h2.pane-title {
+  color: #1D4AFC;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 0px;
+}
+/* line 276, ../sass/style.scss */
+.center-front #frontbox > .pane-content #featured-journey .views-field-title a {
+  color: #1D4AFC;
+  font-weight: bold;
+  font-size: 2.8em;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+/* line 289, ../sass/style.scss */
+#logo {
+  display: none;
+}
+
+/* line 294, ../sass/style.scss */
+.node-type-journey #logo {
+  display: block;
+}
+
+/* line 299, ../sass/style.scss */
+.pane-user-login {
+  position: relative;
+  float: right;
+  margin-top: 0px;
+}
+/* line 303, ../sass/style.scss */
+.pane-user-login .form-item {
+  display: inline;
+  float: left;
+}
+/* line 306, ../sass/style.scss */
+.pane-user-login .form-item label {
+  color: #fff;
+  font-size: 12px;
+}
+/* line 310, ../sass/style.scss */
+.pane-user-login .form-item label, .pane-user-login .form-item input {
+  display: inline;
+  margin-left: 10px;
+}
+/* line 315, ../sass/style.scss */
+.pane-user-login .form-item, .pane-user-login .form-actions {
+  margin: 0px;
+}
+/* line 318, ../sass/style.scss */
+.pane-user-login .form-actions {
+  float: left;
+  margin: 0px 10px;
+}
+/* line 322, ../sass/style.scss */
+.pane-user-login .form-submit {
+  border: none;
+  width: 50px;
+  color: #fff;
+  font-size: 12px;
+  background: none;
+}
+/* line 329, ../sass/style.scss */
+.pane-user-login .item-list {
+  display: none;
+}
+
+/* line 335, ../sass/style.scss */
+#mini-panel-top_menu_bar_links .panel-col-first {
+  width: 395px;
+}
+/* line 338, ../sass/style.scss */
+#mini-panel-top_menu_bar_links .panel-col-last {
+  width: 523px;
+}
+
+/* line 343, ../sass/style.scss */
+.logged-in #mini-panel-top_menu_bar_links .pane-user-login {
+  display: none;
+}
+
+/* line 347, ../sass/style.scss */
+.not-logged-in #mini-panel-top_menu_bar_links #welcome-pane {
+  display: none;
+}
+
+/* line 351, ../sass/style.scss */
+.panels-flexible-region-2-center {
+  width: 100%;
+}
+
+/* line 357, ../sass/style.scss */
+.panels-flexible-region-2-bottom_center_,
+.panels-flexible-region-2-bottom,
+.panels-flexible-region-2-bottom_center {
+  width: 33.333333333334%;
+}
+
+/* line 361, ../sass/style.scss */
+#main {
+  padding: 0px;
+}
+
+/* line 365, ../sass/style.scss */
+.panel-2col .panel-col-first .inside {
+  margin: 0px;
+}
+
+/* line 369, ../sass/style.scss */
+.panel-2col .panel-separator {
+  display: none;
+}
