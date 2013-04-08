@@ -4,6 +4,11 @@ p{
   margin-top: 5px;
 }
 
+.panel-col-last {
+  font-size: 14px;
+  line-height: 18px;
+}
+
 h4{
   margin: 0px;
 }
@@ -117,6 +122,10 @@ ul {
   }
 }
 
+.panel-col-bottom {
+  padding-top: 15px;
+}
+
 #ad{
   background: #7FB3F0;
   border: 0px solid #7FB3F0;
@@ -226,9 +235,19 @@ ul {
           padding-left: 44px;
           display: block;
           height: 28px;
+          line-height:24px;
         }
         &:hover{
           color: #0066FF;
+        }
+        &.itinerary {
+          letter-spacing: 0px;
+          background: url(../images/itinerary.jpg) no-repeat left center;
+          padding-left: 44px;
+          display: block;
+          height: 31px;
+          line-height: 29px;
+          margin-top: 3px;
         }
       }
     }
@@ -477,11 +496,27 @@ br{
       list-style: none;
       margin-bottom: 3px;
       a{
-        font-size: 1.8em;
+        font-size: 18px;
         color: #fff;
         font-weight: bold;
         text-shadow: 2px 2px 2px #999;
         text-decoration: none;
+        height: 30px;
+        line-height: 28px;
+        display: block;
+          &.travel-news {
+            padding-left: 44px;
+            background: url(../images/travelnews.jpg) no-repeat -4px top;
+          }
+          &.nature-news {
+            padding-left: 44px;
+            background: url(../images/naturenews.jpg) no-repeat -4px top;
+          }
+          &.our-news {
+            padding-left: 44px;
+            background: url(../images/ournews.jpg) no-repeat left top;
+          }
+          
         &:hover,&.active{
           color: #0066FF;
         }
@@ -853,8 +888,8 @@ br{
     margin: 0px 0px 5px;
   }
   .pane-content{
-    font-size: 1.4em;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
@@ -867,8 +902,8 @@ br{
     margin: 0px 0px 5px;
   }
   .pane-content{
-    font-size: 1.4em;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
@@ -881,8 +916,8 @@ br{
     margin: 0px 0px 5px;
   }
   .pane-content{
-    font-size: 1.4em;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
