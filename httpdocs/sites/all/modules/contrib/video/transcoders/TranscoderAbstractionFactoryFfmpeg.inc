@@ -56,9 +56,6 @@ class TranscoderAbstractionFactoryFfmpeg extends TranscoderAbstractionFactory im
 
     $this->multipass = TRUE;
     $this->outputextension = NULL;
-    $clipstart = NULL;
-    $cliplength = NULL;
-
     foreach ($options as $key => $value) {
       if (empty($value) || $value === 'none') {
         continue;
@@ -118,28 +115,6 @@ class TranscoderAbstractionFactoryFfmpeg extends TranscoderAbstractionFactory im
         case 'video_quality':
           $result = $this->transcoder->setConstantQuality($value * 20); // phpVideoToolkit expects 1 to 100 range.
           break;
-        case 'clip_start':
-          if (preg_match('#^(\d+)$#', $value)) {
-            $clipstart = intval($value);
-          }
-          else {
-            $clipstart = $this->transcoder->formatTimecode($value, '%hh:%mm:%ss.%ms', '%st');
-          }
-          break;
-        case 'clip_length':
-          if (preg_match('#^(\d+)$#', $value)) {
-            $cliplength = intval($value);
-          }
-          else {
-            $cliplength = $this->transcoder->formatTimecode($value, '%hh:%mm:%ss.%ms', '%st');
-          }
-          break;
-      }
-
-      if ($cliplength !== NULL && $clipstart !== NULL) {
-        $result = $this->transcoder->extractSegment($clipstart, $clipstart + $cliplength, '%st', FALSE, FALSE);
-        $cliplength = NULL;
-        $clipstart = NULL;
       }
 
       if ($result !== PHPVideoToolkit::RESULT_OK) {
@@ -361,37 +336,28 @@ class TranscoderAbstractionFactoryFfmpeg extends TranscoderAbstractionFactory im
 
   public function getCodecs() {
     $info = $this->getCachedFFmpegInfo();
-    $codecs = array(
-      'decode' => array('audio' => array(), 'video' => array()),
-      'encode' => array('audio' => array(), 'video' => array()),
-    );
-
-    if (!empty($info['codecs'])) {
-      foreach ($info['codecs'] as $key => $value) {
-        $codecs['encode'][$key] = array();
-        $codecs['decode'][$key] = array();
-        foreach ($value as $codec_key => $codec) {
-          if ($codec['encode']) {
-            $codecs['encode'][$key][$codec_key] = $codec['fullname'];
-          }
-          if ($codec['decode']) {
-            $codecs['decode'][$key][$codec_key] = $codec['fullname'];
-          }
+    $codecs = array('decode' => array(), 'encode' => array());
+    foreach ($info['codecs'] as $key => $value) {
+      $codecs['encode'][$key] = array();
+      $codecs['decode'][$key] = array();
+      foreach ($value as $codec_key => $codec) {
+        if ($codec['encode']) {
+          $codecs['encode'][$key][$codec_key] = $codec['fullname'];
         }
-        uasort($codecs['encode'][$key], 'strnatcasecmp');
-        uasort($codecs['encode'][$key], 'strnatcasecmp');
+        if ($codec['decode']) {
+          $codecs['decode'][$key][$codec_key] = $codec['fullname'];
+        }
       }
     }
+
+    uasort($codecs['encode']['video'], 'strnatcasecmp');
+    uasort($codecs['encode']['audio'], 'strnatcasecmp');
 
     return $codecs;
   }
 
   public function getAvailableFormats($type = FALSE) {
     $info = $this->getCachedFFmpegInfo();
-    if (empty($info['formats'])) {
-      return array();
-    }
-
     $formats = array();
     switch ($type) {
       case FALSE:
@@ -430,9 +396,6 @@ class TranscoderAbstractionFactoryFfmpeg extends TranscoderAbstractionFactory im
 
   public function getPixelFormats() {
     $info = $this->getCachedFFmpegInfo();
-    if (empty($info['pixelformats'])) {
-      return array();
-    }
     return array_keys($info['pixelformats']);
   }
 

@@ -436,9 +436,6 @@ function video_video_html5_players() {
   if (module_exists('videojs')) {
     $options['videojs'] = t('Video.js');
   }
-  if (module_exists('mediaelement')) {
-    $options['mediaelement'] = t('MediaElement');
-  }
   return $options;
 }
 

@@ -1,243 +1,117 @@
 <?php
 
 /**
- * Implementation of hook_node_info().
- */
-function reachtheworld_node_info() {
-  $items = array(
-    'adobe_connect_link' => array(
-      'name' => t('Adobe Connect Link'),
-      'base' => 'reachtheworld',
-      'description' => '',
-      'title_label' => t('Title'),
-      'locked' => TRUE,
-    ),
-    'event' => array(
-      'name' => t('Event'),
-      'base' => 'reachtheworld',
-      'description' => t('Events are shared on the group calendar between all members of the group. Create an event to inform your group members about shared activities!'),
-      'title_label' => t('Event'),
-      'body_label' => t('Description'),
-      'locked' => TRUE,
-    ),
-    'fn_daily_life' => array(
-      'name' => t('Field Note - Daily Life'),
-      'base' => 'reachtheworld',
-      'description' => t('The Daily Life Field Note is intended to give students a first-person view of life in the places you visit. Your job as a correspondent is to identify a person to interview, conduct the interview and transform your notes into an engaging Field Note! You can profile your own daily life abroad with in this category too.'),
-      'title_label' => t('Title'),
-      'min_word_count' => '0',
-      'locked' => TRUE,
-    ),
-    'fn_food' => array(
-      'name' => t('Field Note - Food'),
-      'base' => 'reachtheworld',
-      'description' => t('The foods that people eat in countries around the world are not only delicious and interesting, but also are deeply connected to the local environment, culture or both! For this Field Note, you should choose foods that bring aspects of your local environment or culture to life.'),
-      'title_label' => t('Title'),
-      'locked' => TRUE,
-    ),
-    'fn_kids_lives' => array(
-      'name' => t('Field Note - Kids Lives'),
-      'base' => 'reachtheworld',
-      'description' => t('The Kids\' Lives Field Note gives Reach the World\'s students a window into the world of what it is like to be a kid in a foreign country. The questions that make up this article come directly from the questions that our students consistently ask over the years. The best way to get information for this Field Note is to visit a local school. Whenever you make new friends overseas, find out if their children\'s schools would welcome you as a Reach the World presenter! You can also write about other kid-focused topics in this Field Note by posting all of your text into the Introduction field and leaving the other fields blank.'),
-      'title_label' => t('Title'),
-      'locked' => TRUE,
-    ),
-    'fn_nations' => array(
-      'name' => t('Field Note - Nations'),
-      'base' => 'reachtheworld',
-      'description' => t('This Field Note theme gives you an opportunity to write about the social services that support community life. Good topics to focus on include provision of basic services such as trash collection, electricity, running water, and other similar services. You can also write about charities or other organizations that work to serve the public good. You can also write about the special and unique characteristics that define the community surrounding you.'),
-      'title_label' => t('Title'),
-      'locked' => TRUE,
-    ),
-    'fn_nature' => array(
-      'name' => t('Field Note - Nature'),
-      'base' => 'reachtheworld',
-      'description' => t('The Nature Field Notes are almost always the most popular with Reach the World\'s students, especially if they are about the creatures you discover overseas! Your goal is to show students as vividly as possible the sights, sounds, smells and textures of the natural world around you.'),
-      'title_label' => t('Title'),
-      'locked' => TRUE,
-    ),
-    'fn_traditions' => array(
-      'name' => t('Field Note - Traditions'),
-      'base' => 'reachtheworld',
-      'description' => t('The Traditions Field Note gives Reach the World\'s students information about the traditions that other communities have, why they have them, and how those traditions reflect the local environment. Kid-friendly traditions such as birthday and holiday celebrations are always popular topics!'),
-      'title_label' => t('Title'),
-      'locked' => TRUE,
-    ),
-    'fn_transportation' => array(
-      'name' => t('Field Note - Transportation'),
-      'base' => 'reachtheworld',
-      'description' => t('The Transportation Field Note is intended to teach Reach the World\'s students about the many interesting modes of transportation that people use around the world. Kids are always very interested in comparing and contrasting their own methods of transportation with yours. Make sure to be as descriptive as possible!'),
-      'title_label' => t('Title'),
-      'locked' => TRUE,
-    ),
-    'fn_world_connections' => array(
-      'name' => t('Field Note - World Connections'),
-      'base' => 'reachtheworld',
-      'description' => t('This Field Note theme is the most advanced of all the Field Notes. It provides you with opportunities to teach your students about the interconnectedness of humans and their environments in the places you visit. We advise you to focus on the natural world, and how human communities have adapted to it.'),
-      'title_label' => t('Title'),
-      'locked' => TRUE,
-    ),
-    'gallery' => array(
-      'name' => t('Gallery'),
-      'base' => 'reachtheworld',
-      'description' => '',
-      'title_label' => t('Title'),
-      'body_label' => t('Description'),
-      'locked' => TRUE,
-    ),
-    'get_involved_article' => array(
-      'name' => t('Get Involved Article'),
-      'base' => 'reachtheworld',
-      'description' => t('Article that will display on the front page and in the Get Involved section.'),
-      'title_label' => t('Title'),
-      'body_label' => t('Body'),
-      'locked' => TRUE,
-    ),
-    'itinerary_location' => array(
-      'name' => t('Itinerary Location'),
-      'base' => 'reachtheworld',
-      'description' => '',
-      'title_label' => t('Location'),
-      'locked' => TRUE,
-    ),
-    'journal' => array(
-      'name' => t('Journal'),
-      'base' => 'reachtheworld',
-      'description' => t('Journals are first-person narratives about your experiences abroad. Reach the World\'s students want to identify with you as a friend and mentor. Journals are your opportunity to share your feelings and reflections about your journey in a more personal and less structured format.'),
-      'title_label' => t('Title'),
-      'body_label' => t('Body'),
-      'locked' => TRUE,
-    ),
-    'journey' => array(
-      'name' => t('Journey'),
-      'base' => 'reachtheworld',
-      'description' => t('Journey is the group node to hold all journeys.'),
-      'title_label' => t('Title'),
-      'locked' => TRUE,
-    ),
-    'journey_info' => array(
-      'name' => t('Journey Information'),
-      'base' => 'reachtheworld',
-      'description' => t('Contains the information for the journey'),
-      'title_label' => t('Title'),
-      'locked' => TRUE,
-    ),
-    'log_book' => array(
-      'name' => t('Logbook'),
-      'base' => 'reachtheworld',
-      'description' => t('The Logbook is your weekly log of what happened on your journey.  There are three sections linked by date: Travel News, Nature News and Our News.  The Logbook must be completed every week!'),
-      'title_label' => t('Title'),
-      'locked' => TRUE,
-    ),
-    'news_article' => array(
-      'name' => t('News Article'),
-      'base' => 'reachtheworld',
-      'description' => t('A news article about Reach the World.'),
-      'title_label' => t('Title'),
-      'body_label' => t('Body'),
-      'locked' => TRUE,
-    ),
-    'photo_album' => array(
-      'name' => t('Photo Album'),
-      'base' => 'reachtheworld',
-      'description' => t('Teachers may request photographs or videos focused on certain topics, and albums are your tool for answering! You can create an album using media from your gallery, title it, and send it to the editorial queue like any other article. After review, it will be live for your students to see and share!'),
-      'title_label' => t('Title'),
-      'locked' => TRUE,
-    ),
-    'profile' => array(
-      'name' => t('Profile'),
-      'base' => 'reachtheworld',
-      'description' => t('User Information'),
-      'title_label' => t('Title'),
-      'body_label' => t('Please submit your Autobiography  text'),
-      'locked' => TRUE,
-    ),
-    'video' => array(
-      'name' => t('Video'),
-      'base' => 'reachtheworld',
-      'description' => t('As far as Reach the World\'s students are concerned, the more video the better! Please keep your videos short and make them instructive. Try to limit camera shake and focus clearly and closely on your subject matter. Use your own voice to narrate, or interview your subjects.'),
-      'title_label' => t('Title'),
-      'body_label' => t('Body'),
-      'locked' => TRUE,
-    ),
-    'video_conference' => array(
-      'name' => t('Video Conference'),
-      'base' => 'reachtheworld',
-      'description' => t('Video conferencing is an integral part of the Reach the World program. Reach the World uses Adobe Connect to link travelers and classrooms. Skype is an option if Adobe Connect is unavailable in your location.'),
-      'title_label' => t('Title'),
-      'locked' => TRUE,
-    ),
-    'video_gallery' => array(
-      'name' => t('Video Gallery'),
-      'base' => 'reachtheworld',
-      'description' => t('A gallery of all the journey\'s videos.'),
-      'title_label' => t('Title'),
-      'locked' => TRUE,
-    ),
-    'welcome_message' => array(
-      'name' => t('Welcome Message'),
-      'base' => 'reachtheworld',
-      'description' => t('Displays in the the welcome block on users dashboards'),
-      'title_label' => t('Title'),
-      'body_label' => t('Body'),
-      'locked' => TRUE,
-    ),
+ * Implements hook_admin_paths_alter()
+ **/
+function reachtheworld_admin_paths_alter(&$path){
+  $path['user'] = FALSE;
+  $path['user/*'] = FALSE;
+}
+
+/**
+ * Implements hook_menu().
+ **/
+function reachtheworld_menu(){
+  // general view, edit, delete for files
+  $items['user/%user/file/add'] = array(
+    'title' => 'Add file',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('reachthe_file_entity_add_upload', array()),
+    'access callback' => 'file_entity_access',
+    'access arguments' => array('create'),
   );
+  if (module_exists('plupload') && module_exists('multiform')) {
+    $items['user/%user/file/add']['page arguments'] = array('file_entity_add_upload_multiple');
+  }
   return $items;
 }
 
-
 /**
- * Implements hook_node_type_insert()
- */
-function reachtheworld_node_type_insert($content_type){
-  $node_types = reachtheworld_node_info();
-  
-  if(isset($node_types[$content_type->type]['body_label'])){
-    $body_instance = node_add_body_field($content_type, $node_types[$content_type->type]['body_label']);
-    $body_instance['display'][$content_type->type] = array(
-      'label' => 'hidden',
-      'type' => 'text_summary_or_trimmed',
-    );
-    field_update_instance($body_instance);
-  }
-
-  // Create all the fields we are adding to our content type.
-  foreach (_reachtheworld_installed_fields($content_type->type) as $field) {
-    field_create_field($field);
-  }
-
-  // Create all the instances for our fields.
-  foreach (_reachtheworld_installed_instances($content_type->type) as $instance) {
-    $instance['entity_type'] = 'node';
-    $instance['bundle'] = $content_type->type;
-    field_create_instance($instance);
-  }
-}
-
-
-function _reachtheworld_installed_fields($content_type){
-  $fields = array();
-  return $fields;
-}
-
-function _reachtheworld_installed_instances($content_type){
-  $fields = array();
-  switch($content_type){
-    
-  }
-  return $fields;
-}
-
-
-/**
- * Implements hook_uninstall()
+ * Implements hook_menu_alter()
  **/
-function reachtheworld_uninstall(){
-  $node_types = reachtheworld_node_info();
-  foreach($node_types AS $type=>$info){
-    node_type_delete((object)array('type'=>$type));
+function reachtheworld_menu_alter(&$items){
+  //unset($items['user/%user/messages']);
+  /*
+  $new_message = $items['messages/new'];
+  unset($items['messages/new']);
+  $new_message['page arguments'] = array('privatemsg_new',4,5,NULL);
+  $items['user/%user/messages/new'] = $new_message;
+  */
+}
+
+/**
+ * Implements hook_views_query_alter()
+ **/
+function reachtheworld_views_query_alter(&$view,&$query){
+  switch($view->name){
+    case 'journey_content':
+      switch($view->display_handler->display->id){
+        case 'field_notes':
+          switch(arg(3)){
+            case 'daily-life':
+              $title = 'Daily Live';
+              $value = array('fn_daily_life'=>'fn_daily_life');
+            break;
+            case 'food':
+              $title = 'Food';
+              $value = array('fn_food'=>'fn_food');
+            break;
+            case 'kids':
+              $title = 'Kid Lives';
+              $value = array('fn_kids_lives'=>'fn_kids_lives');
+            break;
+            case 'transportation':
+              $title = 'Transportation';
+              $value = array('fn_transportation'=>'fn_transportation');
+            break;
+            case 'nature':
+              $title = 'Nature';
+              $value = array('fn_nature'=>'fn_nature');
+            break;
+            case 'traditions':
+              $title = 'Traditions';
+              $value = array('fn_traditions'=>'fn_traditions');
+            break;
+            case 'environment':
+              $title = 'Environment';
+              $value = array('fn_nations'=>'fn_nations');
+            break;
+            case 'communities':
+              $title = 'World Connections';
+              $value = array('fn_world_connections'=>'fn_world_connections');
+            break;
+            default:
+              $title = '';
+              $value = $query->where[1]['conditions'][1]['value'];
+          }
+          $view->display_handler->display->display_title .= " ".$title;
+          $query->where[1]['conditions'][1]['value'] = array_values($value);
+        break;
+      }
+    break;
   }
+}
+
+function reactheworld_file_entity_add_upload($form, &$form_state, array $options = array()) {
+  $form['upload'] = array(
+    '#type' => 'managed_file',
+    '#title' => t('Upload a new file'),
+    '#upload_location' => file_entity_upload_destination_uri($options),
+    '#upload_validators' => file_entity_get_upload_validators($options),
+    '#progress_indicator' => 'bar',
+    '#required' => TRUE,
+    '#pre_render' => array('file_managed_file_pre_render', 'file_entity_upload_validators_pre_render'),
+  );
+
+  $form['actions'] = array('#type' => 'actions');
+  $form['actions']['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Submit'),
+  );
+
+  form_load_include($form_state, 'inc', 'file_entity', 'file_entity.pages');
+
+  return $form;
 }
 
 ?>

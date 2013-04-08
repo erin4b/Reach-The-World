@@ -224,3 +224,35 @@ function rtw_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+
+
+/**
+ * Display a coordinate.
+ */
+function rtw_location_latitude_dms($variables) {
+  $latitude = $variables['latitude'];
+  $output = '';
+  list($degrees, $minutes, $seconds, $negative) = location_dd_to_dms($latitude);
+  $output .= "${degrees}° ${minutes}' ${seconds}\" ";
+  if (!$negative) {
+    $output .= 'North';
+  }
+  else {
+    $output .= 'South';
+  }
+  return $output;
+}
+
+function rtw_location_longitude_dms($variables) {
+  $longitude = $variables['longitude'];
+  $output = '';
+  list($degrees, $minutes, $seconds, $negative) = location_dd_to_dms($longitude);
+  $output .= "${degrees}° ${minutes}' ${seconds}\" ";
+  if (!$negative) {
+    $output .= 'East';
+  }
+  else {
+    $output .= 'West';
+  }
+  return $output;
+}

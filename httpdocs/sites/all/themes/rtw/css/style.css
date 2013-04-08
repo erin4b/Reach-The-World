@@ -4,19 +4,41 @@ p {
 }
 
 /* line 7, ../sass/style.scss */
+h4 {
+  margin: 0px;
+}
+
+/* line 11, ../sass/style.scss */
 ul {
   margin: 2px;
   padding: 6px;
   padding-left: 15px;
 }
-/* line 11, ../sass/style.scss */
+/* line 15, ../sass/style.scss */
 ul li {
   padding-left: 1px;
   line-height: 150%;
 }
 
-/* line 17, ../sass/style.scss */
-#block-panels-mini-top-menu-bar-links {
+/* line 21, ../sass/style.scss */
+.front .panels-flexible-region-2-top {
+  width: 100%;
+}
+
+/* line 26, ../sass/style.scss */
+#block-panels-mini-top-menu-bar-links p, .pane-top-menu-bar-links p {
+  margin: 0px;
+}
+/* line 29, ../sass/style.scss */
+#block-panels-mini-top-menu-bar-links .panel-col-top, .pane-top-menu-bar-links .panel-col-top {
+  width: 100%;
+}
+/* line 31, ../sass/style.scss */
+#block-panels-mini-top-menu-bar-links .panel-col-top .inside, .pane-top-menu-bar-links .panel-col-top .inside {
+  margin: 0px;
+}
+/* line 35, ../sass/style.scss */
+#block-panels-mini-top-menu-bar-links .center-wrapper, .pane-top-menu-bar-links .center-wrapper {
   height: 32px;
   margin-top: -4px;
   background: #0166FF;
@@ -25,22 +47,26 @@ ul li {
   border-bottom-right-radius: 10px;
   color: white;
 }
-/* line 25, ../sass/style.scss */
-#block-panels-mini-top-menu-bar-links ul.menu {
+/* line 43, ../sass/style.scss */
+#block-panels-mini-top-menu-bar-links .center-wrapper .inside, .pane-top-menu-bar-links .center-wrapper .inside {
+  margin: 0px;
+}
+/* line 46, ../sass/style.scss */
+#block-panels-mini-top-menu-bar-links .center-wrapper ul.menu, .pane-top-menu-bar-links .center-wrapper ul.menu {
   padding: 0px;
   margin: 0px 0px 0px 15px;
   overflow: hidden;
 }
-/* line 29, ../sass/style.scss */
-#block-panels-mini-top-menu-bar-links ul.menu li {
+/* line 50, ../sass/style.scss */
+#block-panels-mini-top-menu-bar-links .center-wrapper ul.menu li, .pane-top-menu-bar-links .center-wrapper ul.menu li {
   display: block;
   float: left;
   list-style: none;
   margin-right: 15px;
   margin-left: 5px;
 }
-/* line 35, ../sass/style.scss */
-#block-panels-mini-top-menu-bar-links ul.menu li a {
+/* line 56, ../sass/style.scss */
+#block-panels-mini-top-menu-bar-links .center-wrapper ul.menu li a, .pane-top-menu-bar-links .center-wrapper ul.menu li a {
   color: #fff;
   text-decoration: none;
   font-size: 1.8em;
@@ -48,13 +74,13 @@ ul li {
   font-weight: bold;
 }
 
-/* line 46, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 .top-menu {
   text-align: right;
   margin-right: 15px;
   font-size: 1.4em;
 }
-/* line 50, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 .top-menu a {
   color: #FFF;
   text-decoration: none;
@@ -62,7 +88,7 @@ ul li {
   padding-left: 30px;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 #get-involved h2.pane-title {
   background: #CDA2CD;
   border: 1px solid #CDA2CD;
@@ -74,12 +100,12 @@ ul li {
   text-indent: 10px;
   margin: 0px;
 }
-/* line 70, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 #get-involved .content {
   font-size: 1.1em;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 #in-the-news h2.pane-title {
   background: #57AE50;
   border: 1px solid #57AE50;
@@ -91,17 +117,17 @@ ul li {
   text-indent: 10px;
   margin: 0px;
 }
-/* line 87, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 #in-the-news .content {
   font-size: 1.1em;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 #geogames p {
   margin: 0px;
 }
 
-/* line 98, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 #ad {
   background: #7FB3F0;
   border: 0px solid #7FB3F0;
@@ -111,17 +137,18 @@ ul li {
   overflow: hidden;
   margin: 10px auto;
 }
-/* line 106, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 #ad a {
   width: 100%;
   height: 100%;
 }
-/* line 109, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 #ad a img {
   float: right;
 }
 
-/* line 115, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
+.pane-menu-menu-journey-content-menu,
 .journey-menu {
   background-color: #0066FF;
   color: white;
@@ -129,19 +156,31 @@ ul li {
   padding: 0px 12px;
   margin: 20px auto 10px;
 }
-/* line 121, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
+.pane-menu-menu-journey-content-menu:after,
+.journey-menu:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 151, ../sass/style.scss */
+.pane-menu-menu-journey-content-menu ul.menu,
 .journey-menu ul.menu {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
 }
-/* line 125, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
+.pane-menu-menu-journey-content-menu ul.menu li,
 .journey-menu ul.menu li {
   float: left;
   display: block;
   margin-right: 20px;
 }
-/* line 129, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
+.pane-menu-menu-journey-content-menu ul.menu li a,
 .journey-menu ul.menu li a {
   display: block;
   background-repeat: no-repeat;
@@ -150,106 +189,131 @@ ul li {
   height: 32px;
   text-indent: -99999px;
 }
-/* line 136, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
+.pane-menu-menu-journey-content-menu ul.menu li a.journey-home,
 .journey-menu ul.menu li a.journey-home {
   width: 88px;
   background-image: url(../images/nav_Home_off.jpg);
 }
-/* line 139, ../sass/style.scss */
-.journey-menu ul.menu li a.journey-home.active, .journey-menu ul.menu li a.journey-home:hover {
+/* line 169, ../sass/style.scss */
+.pane-menu-menu-journey-content-menu ul.menu li a.journey-home.active, .pane-menu-menu-journey-content-menu ul.menu li a.journey-home:hover,
+.journey-menu ul.menu li a.journey-home.active,
+.journey-menu ul.menu li a.journey-home:hover {
   background-image: url(../images/nav_Home.jpg);
 }
-/* line 143, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
+.pane-menu-menu-journey-content-menu ul.menu li a.journey-logbook,
 .journey-menu ul.menu li a.journey-logbook {
   width: 113px;
   background-image: url(../images/nav_Logbook_off.jpg);
 }
-/* line 146, ../sass/style.scss */
-.journey-menu ul.menu li a.journey-logbook.active, .journey-menu ul.menu li a.journey-logbook:hover {
+/* line 176, ../sass/style.scss */
+.pane-menu-menu-journey-content-menu ul.menu li a.journey-logbook.active, .pane-menu-menu-journey-content-menu ul.menu li a.journey-logbook:hover,
+.journey-menu ul.menu li a.journey-logbook.active,
+.journey-menu ul.menu li a.journey-logbook:hover {
   background-image: url(../images/nav_Logbook.jpg);
 }
-/* line 150, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
+.pane-menu-menu-journey-content-menu ul.menu li a.journey-notes,
 .journey-menu ul.menu li a.journey-notes {
   width: 140px;
   background-image: url(../images/nav_Field-Notes_off.jpg);
 }
-/* line 153, ../sass/style.scss */
-.journey-menu ul.menu li a.journey-notes.active, .journey-menu ul.menu li a.journey-notes:hover {
+/* line 183, ../sass/style.scss */
+.pane-menu-menu-journey-content-menu ul.menu li a.journey-notes.active, .pane-menu-menu-journey-content-menu ul.menu li a.journey-notes:hover,
+.journey-menu ul.menu li a.journey-notes.active,
+.journey-menu ul.menu li a.journey-notes:hover {
   background-image: url(../images/nav_Field-Notes.jpg);
 }
-/* line 157, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
+.pane-menu-menu-journey-content-menu ul.menu li a.journey-journals,
 .journey-menu ul.menu li a.journey-journals {
   width: 105px;
   background-image: url(../images/nav_Journals_off.jpg);
 }
-/* line 160, ../sass/style.scss */
-.journey-menu ul.menu li a.journey-journals.active, .journey-menu ul.menu li a.journey-journals:hover {
+/* line 190, ../sass/style.scss */
+.pane-menu-menu-journey-content-menu ul.menu li a.journey-journals.active, .pane-menu-menu-journey-content-menu ul.menu li a.journey-journals:hover,
+.journey-menu ul.menu li a.journey-journals.active,
+.journey-menu ul.menu li a.journey-journals:hover {
   background-image: url(../images/nav_Journals.jpg);
 }
-/* line 164, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
+.pane-menu-menu-journey-content-menu ul.menu li a.journey-albums,
 .journey-menu ul.menu li a.journey-albums {
   width: 109px;
   background-image: url(../images/nav_albums_off.jpg);
 }
-/* line 167, ../sass/style.scss */
-.journey-menu ul.menu li a.journey-albums.active, .journey-menu ul.menu li a.journey-albums:hover {
+/* line 197, ../sass/style.scss */
+.pane-menu-menu-journey-content-menu ul.menu li a.journey-albums.active, .pane-menu-menu-journey-content-menu ul.menu li a.journey-albums:hover,
+.journey-menu ul.menu li a.journey-albums.active,
+.journey-menu ul.menu li a.journey-albums:hover {
   background-image: url(../images/nav_albums.jpg);
 }
 
-/* line 176, ../sass/style.scss */
-.pane-menu-menu-journey-travelers-menu {
+/* line 207, ../sass/style.scss */
+.pane-menu-menu-journey-travelers-menu,
+.pane-menu-menu-journey-travelers-menu-co {
   background-color: #FFD66A;
   border-radius: 10px;
   padding: 10px;
 }
-/* line 180, ../sass/style.scss */
-.pane-menu-menu-journey-travelers-menu ul.menu {
+/* line 211, ../sass/style.scss */
+.pane-menu-menu-journey-travelers-menu ul.menu,
+.pane-menu-menu-journey-travelers-menu-co ul.menu {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
-/* line 184, ../sass/style.scss */
-.pane-menu-menu-journey-travelers-menu ul.menu li {
+/* line 215, ../sass/style.scss */
+.pane-menu-menu-journey-travelers-menu ul.menu li,
+.pane-menu-menu-journey-travelers-menu-co ul.menu li {
   list-style: none;
 }
-/* line 186, ../sass/style.scss */
-.pane-menu-menu-journey-travelers-menu ul.menu li a {
+/* line 217, ../sass/style.scss */
+.pane-menu-menu-journey-travelers-menu ul.menu li a,
+.pane-menu-menu-journey-travelers-menu-co ul.menu li a {
   font-size: 18px;
   color: #fff;
   font-weight: bold;
   text-shadow: 2px 2px 2px #999;
   text-decoration: none;
 }
-/* line 192, ../sass/style.scss */
-.pane-menu-menu-journey-travelers-menu ul.menu li a.travelers-bio {
+/* line 223, ../sass/style.scss */
+.pane-menu-menu-journey-travelers-menu ul.menu li a.travelers-bio,
+.pane-menu-menu-journey-travelers-menu-co ul.menu li a.travelers-bio {
   letter-spacing: -1px;
   background: url(../images/traveler_bios.jpg) no-repeat left center;
   padding-left: 44px;
   display: block;
   height: 28px;
 }
-/* line 199, ../sass/style.scss */
-.pane-menu-menu-journey-travelers-menu ul.menu li a:hover {
+/* line 230, ../sass/style.scss */
+.pane-menu-menu-journey-travelers-menu ul.menu li a:hover,
+.pane-menu-menu-journey-travelers-menu-co ul.menu li a:hover {
   color: #0066FF;
 }
 
-/* line 210, ../sass/style.scss */
-.node-type-journey #main .center-wrapper .panel-col-first {
+/* line 241, ../sass/style.scss */
+.node-type-journey #main .center-wrapper .panel-col-first, .node-type-log-book #main .center-wrapper .panel-col-first {
   width: 180px;
   margin-right: 20px;
 }
-/* line 213, ../sass/style.scss */
-.node-type-journey #main .center-wrapper .panel-col-first > .inside {
-  margin: 1em 0px;
+/* line 244, ../sass/style.scss */
+.node-type-journey #main .center-wrapper .panel-col-first > .inside, .node-type-log-book #main .center-wrapper .panel-col-first > .inside {
+  margin: 0px 0px 1em;
+}
+/* line 248, ../sass/style.scss */
+.node-type-journey #main .center-wrapper .panel-col-last, .node-type-log-book #main .center-wrapper .panel-col-last {
+  width: 720px;
 }
 
-/* line 221, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 .center-front {
   margin-top: 12px;
   position: relative;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
-/* line 226, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 .center-front #frontbox {
   position: relative;
   height: 398px;
@@ -258,27 +322,27 @@ ul li {
   border-radius: 10px;
   margin: 0px auto;
 }
-/* line 233, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 .center-front #frontbox .panel-col-first {
-  width: 490px;
+  width: 528px;
   height: auto;
   margin-left: 5px;
   float: left;
 }
-/* line 239, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 .center-front #frontbox .panel-col-last {
   float: right;
-  width: 418px;
+  width: 400px;
   height: auto;
   padding: 0px;
   margin: 0px;
   margin-right: 5px;
 }
-/* line 246, ../sass/style.scss */
+/* line 280, ../sass/style.scss */
 .center-front #frontbox .panel-col-last > .inside {
   margin: 0px;
 }
-/* line 252, ../sass/style.scss */
+/* line 286, ../sass/style.scss */
 .center-front #frontbox > .pane-content .panel-col-first h2.pane-title {
   color: #fff;
   text-shadow: 2px 2px 2px #222;
@@ -286,17 +350,17 @@ ul li {
   line-height: 22px;
   margin: 10px 0px 4px;
 }
-/* line 260, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 .center-front #frontbox > .pane-content #journey-selector {
   line-height: 35px;
 }
-/* line 263, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 .center-front #frontbox > .pane-content #featured-journey {
   background: #fff;
   height: 330px;
   padding: 10px 20px;
 }
-/* line 267, ../sass/style.scss */
+/* line 301, ../sass/style.scss */
 .center-front #frontbox > .pane-content #featured-journey h2.pane-title {
   color: #1D4AFC;
   font-size: 1.4em;
@@ -304,8 +368,11 @@ ul li {
   font-weight: bold;
   line-height: 20px;
   margin: 0px;
+  background-image: url(../images/blt_globepin.jpg);
+  background-repeat: no-repeat;
+  padding-left: 20px;
 }
-/* line 276, ../sass/style.scss */
+/* line 313, ../sass/style.scss */
 .center-front #frontbox > .pane-content #featured-journey .views-field-title a {
   color: #1D4AFC;
   font-weight: bold;
@@ -314,47 +381,47 @@ ul li {
   line-height: 30px;
 }
 
-/* line 289, ../sass/style.scss */
-#logo {
+/* line 326, ../sass/style.scss */
+.front #logo {
   display: none;
 }
 
-/* line 294, ../sass/style.scss */
+/* line 331, ../sass/style.scss */
 .node-type-journey #logo {
   display: block;
 }
 
-/* line 299, ../sass/style.scss */
+/* line 336, ../sass/style.scss */
 .pane-user-login {
   position: relative;
   float: right;
   margin-top: 0px;
 }
-/* line 303, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .pane-user-login .form-item {
   display: inline;
   float: left;
 }
-/* line 306, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .pane-user-login .form-item label {
   color: #fff;
   font-size: 12px;
 }
-/* line 310, ../sass/style.scss */
+/* line 347, ../sass/style.scss */
 .pane-user-login .form-item label, .pane-user-login .form-item input {
   display: inline;
   margin-left: 10px;
 }
-/* line 315, ../sass/style.scss */
+/* line 352, ../sass/style.scss */
 .pane-user-login .form-item, .pane-user-login .form-actions {
   margin: 0px;
 }
-/* line 318, ../sass/style.scss */
+/* line 355, ../sass/style.scss */
 .pane-user-login .form-actions {
   float: left;
   margin: 0px 10px;
 }
-/* line 322, ../sass/style.scss */
+/* line 359, ../sass/style.scss */
 .pane-user-login .form-submit {
   border: none;
   width: 50px;
@@ -362,53 +429,598 @@ ul li {
   font-size: 12px;
   background: none;
 }
-/* line 329, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 .pane-user-login .item-list {
   display: none;
 }
 
-/* line 335, ../sass/style.scss */
+/* line 372, ../sass/style.scss */
 #mini-panel-top_menu_bar_links .panel-col-first {
   width: 395px;
+  height: 33px;
 }
-/* line 338, ../sass/style.scss */
+/* line 376, ../sass/style.scss */
 #mini-panel-top_menu_bar_links .panel-col-last {
   width: 523px;
+  height: 33px;
 }
 
-/* line 343, ../sass/style.scss */
+/* line 382, ../sass/style.scss */
 .logged-in #mini-panel-top_menu_bar_links .pane-user-login {
   display: none;
 }
 
-/* line 347, ../sass/style.scss */
+/* line 386, ../sass/style.scss */
 .not-logged-in #mini-panel-top_menu_bar_links #welcome-pane {
   display: none;
 }
 
-/* line 351, ../sass/style.scss */
+/* line 390, ../sass/style.scss */
 .panels-flexible-region-2-center {
   width: 100%;
 }
 
-/* line 357, ../sass/style.scss */
+/* line 396, ../sass/style.scss */
 .panels-flexible-region-2-bottom_center_,
 .panels-flexible-region-2-bottom,
 .panels-flexible-region-2-bottom_center {
   width: 33.333333333334%;
 }
 
-/* line 361, ../sass/style.scss */
+/* line 400, ../sass/style.scss */
 #main {
   padding: 0px;
 }
 
-/* line 365, ../sass/style.scss */
+/* line 404, ../sass/style.scss */
 .panel-2col .panel-col-first .inside {
   margin: 0px;
 }
 
-/* line 369, ../sass/style.scss */
+/* line 408, ../sass/style.scss */
 .panel-2col .panel-separator {
   display: none;
+}
+
+/* line 412, ../sass/style.scss */
+.tips {
+  display: none;
+}
+
+/* line 416, ../sass/style.scss */
+.bubble {
+  width: 325px;
+  height: 148px;
+}
+/* line 419, ../sass/style.scss */
+.bubble .journal-info {
+  border-bottom: 1px solid black;
+  display: block;
+}
+/* line 422, ../sass/style.scss */
+.bubble .journal-info .journal-title {
+  font-weight: bold;
+}
+/* line 428, ../sass/style.scss */
+.bubble .journal-body-contents {
+  display: block;
+  margin: 5px 0px;
+}
+/* line 431, ../sass/style.scss */
+.bubble .journal-body-contents .journal-image {
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+/* line 436, ../sass/style.scss */
+.bubble .journal-body-contents .journal-body {
+  display: block;
+  clear: right;
+}
+/* line 441, ../sass/style.scss */
+.bubble .journal-journey-link {
+  display: block;
+  border-top: 1px solid black;
+}
+
+/* line 449, ../sass/style.scss */
+br {
+  line-height: 2;
+}
+
+/* line 453, ../sass/style.scss */
+#cboxClose {
+  border: 0px solid;
+}
+
+/* line 458, ../sass/style.scss */
+.pane-menu-menu-journey-logbook-menu, .pane-menu-menu-journey-field-notes-menu, .pane-menu-menu-journey-album-menu,
+.pane-menu-menu-journey-logbook-menu-cont {
+  background: #CDA2CD;
+  border: 1px solid #CDA2CD;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+/* line 464, ../sass/style.scss */
+.pane-menu-menu-journey-logbook-menu h2.pane-title, .pane-menu-menu-journey-field-notes-menu h2.pane-title, .pane-menu-menu-journey-album-menu h2.pane-title,
+.pane-menu-menu-journey-logbook-menu-cont h2.pane-title {
+  margin: 0px;
+  color: #FFF;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #999;
+  font-size: 2.4em;
+}
+/* line 473, ../sass/style.scss */
+.pane-menu-menu-journey-logbook-menu ul.menu, .pane-menu-menu-journey-field-notes-menu ul.menu, .pane-menu-menu-journey-album-menu ul.menu,
+.pane-menu-menu-journey-logbook-menu-cont ul.menu {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+/* line 476, ../sass/style.scss */
+.pane-menu-menu-journey-logbook-menu ul.menu li, .pane-menu-menu-journey-field-notes-menu ul.menu li, .pane-menu-menu-journey-album-menu ul.menu li,
+.pane-menu-menu-journey-logbook-menu-cont ul.menu li {
+  list-style: none;
+  margin-bottom: 3px;
+}
+/* line 479, ../sass/style.scss */
+.pane-menu-menu-journey-logbook-menu ul.menu li a, .pane-menu-menu-journey-field-notes-menu ul.menu li a, .pane-menu-menu-journey-album-menu ul.menu li a,
+.pane-menu-menu-journey-logbook-menu-cont ul.menu li a {
+  font-size: 1.8em;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #999;
+  text-decoration: none;
+}
+/* line 485, ../sass/style.scss */
+.pane-menu-menu-journey-logbook-menu ul.menu li a:hover, .pane-menu-menu-journey-logbook-menu ul.menu li a.active, .pane-menu-menu-journey-field-notes-menu ul.menu li a:hover, .pane-menu-menu-journey-field-notes-menu ul.menu li a.active, .pane-menu-menu-journey-album-menu ul.menu li a:hover, .pane-menu-menu-journey-album-menu ul.menu li a.active,
+.pane-menu-menu-journey-logbook-menu-cont ul.menu li a:hover,
+.pane-menu-menu-journey-logbook-menu-cont ul.menu li a.active {
+  color: #0066FF;
+}
+
+/* line 495, ../sass/style.scss */
+.view-journey-content.view-id-journey_content.view-display-id-recent_journey_location {
+  background: #CDA2CD;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 1.4em;
+  line-height: 1.5;
+}
+/* line 502, ../sass/style.scss */
+.view-journey-content.view-id-journey_content.view-display-id-recent_journey_location .field-content > span {
+  background-image: url(../images/crn_top_lft.jpg);
+  background-repeat: no-repeat;
+  display: block;
+  padding-left: 30px;
+}
+/* line 507, ../sass/style.scss */
+.view-journey-content.view-id-journey_content.view-display-id-recent_journey_location .field-content > span .current-location-label {
+  text-transform: uppercase;
+}
+/* line 511, ../sass/style.scss */
+.view-journey-content.view-id-journey_content.view-display-id-recent_journey_location .views-field-nothing {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+/* line 517, ../sass/style.scss */
+.view-journey-content.view-id-journey_content.view-display-id-albums table {
+  margin: 0px;
+  width: 100%;
+}
+/* line 521, ../sass/style.scss */
+.view-journey-content.view-id-journey_content.view-display-id-albums table tr td {
+  width: 178.75px;
+  text-align: center;
+  vertical-align: top;
+}
+/* line 525, ../sass/style.scss */
+.view-journey-content.view-id-journey_content.view-display-id-albums table tr td img {
+  border: 1px solid #000;
+}
+/* line 528, ../sass/style.scss */
+.view-journey-content.view-id-journey_content.view-display-id-albums table tr td a {
+  text-decoration: none;
+  color: #0066FF;
+}
+/* line 536, ../sass/style.scss */
+.view-journey-content.view-id-journey_content.view-display-id-recent_logbook {
+  display: block;
+  width: 480px;
+  height: 215px;
+  background: transparent url(../images/postcard.jpg) no-repeat left top;
+  padding: 125px 30px 30px 30px;
+}
+/* line 543, ../sass/style.scss */
+.view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue {
+  transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  /* IE 9 */
+  -webkit-transform: rotate(1deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(1deg);
+  /* Opera */
+  -moz-transform: rotate(1deg);
+  /* Firefox */
+}
+/* line 549, ../sass/style.scss */
+.view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue .clue-location {
+  float: left;
+  width: 130px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  color: #333333;
+  line-height: 1.5;
+}
+/* line 556, ../sass/style.scss */
+.view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue .clue-location .title {
+  font-weight: bold;
+  display: block;
+}
+/* line 560, ../sass/style.scss */
+.view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue .clue-location .latitude {
+  display: block;
+}
+/* line 563, ../sass/style.scss */
+.view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue .clue-location .longitude {
+  display: block;
+}
+/* line 566, ../sass/style.scss */
+.view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue .clue-location .by-x {
+  display: block;
+}
+/* line 570, ../sass/style.scss */
+.view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue .clue-images {
+  float: right;
+  width: 300px;
+}
+
+/* line 580, ../sass/style.scss */
+.view-journey-travelers.view-id-journey_travelers {
+  margin-bottom: 5px;
+}
+/* line 582, ../sass/style.scss */
+.view-journey-travelers.view-id-journey_travelers .views-field-name {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+/* line 586, ../sass/style.scss */
+.view-journey-travelers.view-id-journey_travelers table {
+  width: 100%;
+  margin: 0px;
+}
+/* line 593, ../sass/style.scss */
+.view-journey-travelers.view-id-journey_travelers.view-display-id-default table tr td {
+  text-align: center;
+}
+
+/* line 602, ../sass/style.scss */
+.pane-welcome-messages {
+  background: #6995EC;
+  border: 1px solid #6995EC;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.4em;
+  box-shadow: 2px 2px 2px #888;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 10px;
+}
+/* line 612, ../sass/style.scss */
+.pane-welcome-messages h2 {
+  margin: 0px 0px 5px;
+}
+/* line 616, ../sass/style.scss */
+.pane-welcome-messages .view-content a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 625, ../sass/style.scss */
+.page-user .center-wrapper .panel-col-first {
+  width: 180px;
+  margin-right: 20px;
+}
+/* line 628, ../sass/style.scss */
+.page-user .center-wrapper .panel-col-first .inside {
+  margin: 0px;
+}
+
+/* line 635, ../sass/style.scss */
+#panels-ipe-paneid-98 {
+  margin-bottom: 10px;
+}
+/* line 637, ../sass/style.scss */
+#panels-ipe-paneid-98 h2.pane-title {
+  margin: 0px;
+  background-image: url(../images/hdr_logbook.jpg);
+  background-repeat: no-repeat;
+  height: 43px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+/* line 645, ../sass/style.scss */
+#panels-ipe-paneid-98 p {
+  margin: 0px;
+}
+
+/* line 650, ../sass/style.scss */
+#panels-ipe-paneid-99 {
+  margin-bottom: 10px;
+}
+/* line 652, ../sass/style.scss */
+#panels-ipe-paneid-99 h2.pane-title {
+  margin: 0px;
+  background-image: url(../images/hdr_field-notes.jpg);
+  background-repeat: no-repeat;
+  height: 43px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+/* line 660, ../sass/style.scss */
+#panels-ipe-paneid-99 p {
+  margin: 0px;
+}
+
+/* line 665, ../sass/style.scss */
+#panels-ipe-paneid-100 {
+  margin-bottom: 10px;
+}
+/* line 667, ../sass/style.scss */
+#panels-ipe-paneid-100 h2.pane-title {
+  margin: 0px;
+  background-image: url(../images/hdr_journals.jpg);
+  background-repeat: no-repeat;
+  height: 43px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+/* line 675, ../sass/style.scss */
+#panels-ipe-paneid-100 p {
+  margin: 0px;
+}
+
+/* line 681, ../sass/style.scss */
+#dashboard .panels-flexible-region {
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 185px;
+  background-position: top center;
+}
+/* line 686, ../sass/style.scss */
+#dashboard .panels-flexible-region .inside {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 185px;
+  position: relative;
+}
+/* line 692, ../sass/style.scss */
+#dashboard .panels-flexible-region.mail {
+  background-image: url(../images/mail_head.jpg);
+  margin-right: 20px;
+}
+/* line 695, ../sass/style.scss */
+#dashboard .panels-flexible-region.mail .inside {
+  background-image: url(../images/mail_bottom.jpg);
+}
+/* line 697, ../sass/style.scss */
+#dashboard .panels-flexible-region.mail .inside .pane-user-messages {
+  position: absolute;
+  left: 0px;
+  top: 45px;
+}
+/* line 704, ../sass/style.scss */
+#dashboard .panels-flexible-region.articles {
+  background-image: url(../images/hm_hdr_articles.jpg);
+}
+/* line 706, ../sass/style.scss */
+#dashboard .panels-flexible-region.articles .inside {
+  background-image: url(../images/hm_hdr_articles2.jpg);
+}
+/* line 710, ../sass/style.scss */
+#dashboard .panels-flexible-region.whats-new {
+  background-image: url(../images/hm_hdr_whatsnew.jpg);
+}
+/* line 712, ../sass/style.scss */
+#dashboard .panels-flexible-region.whats-new .inside {
+  background-image: url(../images/hm_hdr_whatsnew2.jpg);
+}
+/* line 716, ../sass/style.scss */
+#dashboard .panels-flexible-region.calendar {
+  background-image: url(../images/hm_hdr_calendar.jpg);
+  margin-right: 20px;
+}
+/* line 719, ../sass/style.scss */
+#dashboard .panels-flexible-region.calendar .inside {
+  background-image: url(../images/hm_hdr_calendar2.jpg);
+}
+/* line 723, ../sass/style.scss */
+#dashboard .panels-flexible-region.media {
+  background-image: url(../images/hm_hdr_media.jpg);
+}
+/* line 725, ../sass/style.scss */
+#dashboard .panels-flexible-region.media .inside {
+  background-image: url(../images/hm_hdr_media2.jpg);
+}
+
+/* line 733, ../sass/style.scss */
+.page-user .panel-2col-stacked .panel-col-last {
+  width: 740px;
+}
+
+/* line 741, ../sass/style.scss */
+#block-menu-menu-user-media-menu {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: #006699;
+  width: 100%;
+  height: 28px;
+}
+/* line 748, ../sass/style.scss */
+#block-menu-menu-user-media-menu ul.menu {
+  padding: 0px;
+  margin: 0px;
+}
+/* line 751, ../sass/style.scss */
+#block-menu-menu-user-media-menu ul.menu li {
+  list-style: none;
+  float: left;
+  width: 24%;
+}
+/* line 755, ../sass/style.scss */
+#block-menu-menu-user-media-menu ul.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  display: block;
+  text-align: center;
+  padding: 6px 10px;
+  background-repeat: no-repeat;
+  background-position: 25% center;
+}
+/* line 764, ../sass/style.scss */
+#block-menu-menu-user-media-menu ul.menu li a.user-mail {
+  background-image: url(../images/navicon1.gif);
+}
+/* line 767, ../sass/style.scss */
+#block-menu-menu-user-media-menu ul.menu li a.user-articles {
+  background-image: url(../images/navicon2.gif);
+}
+/* line 770, ../sass/style.scss */
+#block-menu-menu-user-media-menu ul.menu li a.user-media {
+  background-image: url(../images/navicon3.gif);
+}
+/* line 773, ../sass/style.scss */
+#block-menu-menu-user-media-menu ul.menu li a.user-calendar {
+  background-image: url(../images/navicon4.gif);
+}
+/* line 776, ../sass/style.scss */
+#block-menu-menu-user-media-menu ul.menu li a.user-whats-new {
+  background-image: url(../images/navicon_whatsnew.gif);
+}
+
+/* line 784, ../sass/style.scss */
+#user-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  color: #1D4AFC;
+  font-weight: bold;
+  line-height: 1;
+}
+/* line 790, ../sass/style.scss */
+#user-name p {
+  margin: 0px;
+}
+
+/* line 797, ../sass/style.scss */
+.page-user #page #page-inner {
+  padding: 118px 20px 0px;
+}
+/* line 800, ../sass/style.scss */
+.page-user #page #page-inner header a#logo {
+  background-image: url(../images/hd_theme_landing.jpg);
+  display: block;
+  width: 980px;
+  height: 90px;
+  position: absolute;
+  left: 0px;
+  top: 28px;
+}
+/* line 808, ../sass/style.scss */
+.page-user #page #page-inner header a#logo img {
+  display: none;
+}
+/* line 816, ../sass/style.scss */
+.page-user.page-user-mail #page #page-inner header a#logo {
+  background-image: url(../images/hm_hdr_mail3.jpg);
+}
+/* line 821, ../sass/style.scss */
+.page-user.page-user-articles #page #page-inner header a#logo {
+  background-image: url(../images/hd_theme_articles3.jpg);
+}
+/* line 826, ../sass/style.scss */
+.page-user.page-user-calendar #page #page-inner header a#logo {
+  background-image: url(../images/hd_theme_calendar.jpg);
+}
+/* line 831, ../sass/style.scss */
+.page-user.page-user-media #page #page-inner header a#logo {
+  background-image: url(../images/hd_theme_media.jpg);
+}
+/* line 836, ../sass/style.scss */
+.page-user.page-user-whats-new #page #page-inner header a#logo {
+  background-image: url(../images/hd_theme_whatsnew.jpg);
+}
+
+/* line 848, ../sass/style.scss */
+#recent-logbook h2.pane-title {
+  background-image: url(../images/hdr_logbook.jpg);
+  background-repeat: no-repeat;
+  height: 43px;
+  text-indent: -9999px;
+  margin: 0px 0px 5px;
+}
+/* line 855, ../sass/style.scss */
+#recent-logbook .pane-content {
+  font-size: 1.4em;
+  line-height: 1.5;
+}
+
+/* line 862, ../sass/style.scss */
+#recent-field-notes h2.pane-title {
+  background-image: url(../images/hdr_field-notes.jpg);
+  background-repeat: no-repeat;
+  height: 43px;
+  text-indent: -9999px;
+  margin: 0px 0px 5px;
+}
+/* line 869, ../sass/style.scss */
+#recent-field-notes .pane-content {
+  font-size: 1.4em;
+  line-height: 1.5;
+}
+
+/* line 876, ../sass/style.scss */
+#recent-journals h2.pane-title {
+  background-image: url(../images/hdr_journals.jpg);
+  background-repeat: no-repeat;
+  height: 43px;
+  text-indent: -9999px;
+  margin: 0px 0px 5px;
+}
+/* line 883, ../sass/style.scss */
+#recent-journals .pane-content {
+  font-size: 1.4em;
+  line-height: 1.5;
+}
+
+/* line 890, ../sass/style.scss */
+.pane-node h2.pane-title {
+  margin-top: 0px;
+}
+
+/* line 895, ../sass/style.scss */
+.panel-2col-stacked .panel-col-last .inside {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 900, ../sass/style.scss */
+#content {
+  padding: 0px;
+}
+
+/* line 904, ../sass/style.scss */
+.page-user #main > #content > .tabs {
+  display: none;
+}
+
+/* line 908, ../sass/style.scss */
+.page-user #main > #content > #page-title {
+  font-size: 1.4em;
+  margin: 10px 0px;
+  color: #1D4AFC;
 }

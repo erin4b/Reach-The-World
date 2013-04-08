@@ -1,0 +1,147 @@
+<?php
+
+/**
+ * @file
+ * Adds new gallery field to specify a file directory per gallery with tokens
+ * support.
+ */
+
+define('MEDIA_GALLERY_DIRECTORY_DEFAULT_PATTERN', '[node:title]');
+
+/**
+ * Do nothing.
+ */
+define('MEDIA_GALLERY_DIRECTORY_UPDATE_ACTION_KEEP', 0);
+
+/**
+ * Create a new directory and leave the existing intact.
+ */
+define('MEDIA_GALLERY_DIRECTORY_UPDATE_ACTION_LEAVE', 1);
+
+/**
+ * @todo
+ */
+define('MEDIA_GALLERY_DIRECTORY_UPDATE_ACTION_MOVE', 2);
+
+/**
+ * Implements hook_menu().
+ */
+function media_gallery_directory_menu() {
+  $items = array();
+  $items['admin/config/media/gallery/directory'] = array(
+    'title' => 'Directory pattern',
+    'description' => 'Configure file directory per gallery',
+    'access arguments' => array('administer media galleries'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('media_gallery_directory_admin_settings'),
+    'file' => 'media_gallery_directory.admin.inc',
+    'type' => MENU_LOCAL_TASK,
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * @see media_gallery_directory_field_attach_submit().
+ */
+function media_gallery_directory_form_media_gallery_node_form_alter(&$form, &$form_state) {
+  // Modules should access the node using $form_state['node'].
+  $node = $form_state['node'];
+
+  // Add a vertical tab menu for directory settings
+  $form['directory'] = array(
+    '#type' => 'fieldset',
+    '#title' => 'Directory settings',
+    '#access' => user_access('administer media galleries'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+    '#group' => 'additional_settings',
+    '#weight' => -100,
+  );
+
+  // Attach js and add a class to the fieldset to target it in the js
+  $form['directory']['#attached']['js'][] = drupal_get_path('module', 'media_gallery_directory') . '/media_gallery_directory.form.js';
+  $form['directory']['#attributes']['class'] = array('directory-form');
+
+  $gallery_node = new FieldsRSIPreventor($node);
+  $directory = $gallery_node->getValue('media_gallery_directory');
+  $directory_auto = media_gallery_directory_replace($node);
+
+  $form['directory']['media_gallery_directory_auto'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Generate automatic gallery directory path'),
+    '#description' => t('You can configure pattern for automatic gallery directory paths on the <a href="@url">media gallery configuration page</a> or you can uncheck this to specify a custom directory path below.', array('@url' => url('admin/config/media/gallery/directory'))),
+    '#default_value' => (empty($node->nid) || $directory == $directory_auto),
+    '#attributes' => array('class' => array('directory-form')),
+  );
+
+  $element = &$form['media_gallery_directory'][LANGUAGE_NONE][0]['value'];
+  // @see http://drupal.org/node/970426
+  $element['#attributes']['style'] = 'width: auto';
+  $element['#states'] = array(
+    'disabled' => array(
+      'input[name="media_gallery_directory_auto"]' => array('checked' => TRUE),
+    ),
+  );
+
+  // @todo add validate handler directory path
+
+  // Move the media_gallery_directory to the vertical tab
+  $form['directory']['media_gallery_directory'] = $form['media_gallery_directory'];
+  $form['media_gallery_directory'] = array('#language' => $form['media_gallery_directory']['#language']);
+}
+
+/**
+ * Implements hook_field_attach_submit().
+ *
+ * @see media_gallery_directory_form_media_gallery_node_form_alter().
+ */
+function media_gallery_directory_field_attach_submit($entity_type, $entity, $form, &$form_state) {
+  if ($entity_type == 'node' && $entity->type == 'media_gallery') {
+    $values = drupal_array_get_nested_value($form_state['values'], $form['#parents']);
+    $update_action = variable_get('media_gallery_directory_pattern_update_action', MEDIA_GALLERY_DIRECTORY_UPDATE_ACTION_KEEP);
+    if ($update_action != MEDIA_GALLERY_DIRECTORY_UPDATE_ACTION_KEEP || empty($entity->nid)) {
+      if (!empty($values['media_gallery_directory_auto'])) {
+        $directory_auto = media_gallery_directory_replace($entity);
+        $entity->media_gallery_directory[LANGUAGE_NONE][0]['value'] = $directory_auto;
+      }
+    }
+  }
+}
+
+/**
+ *
+ */
+function media_gallery_directory_replace($node) {
+  $directory_pattern = variable_get('media_gallery_directory_pattern', MEDIA_GALLERY_DIRECTORY_DEFAULT_PATTERN);
+  if (empty($directory_pattern)) {
+    // No directory pattern
+    return NULL;
+  }
+  $directory = token_replace($directory_pattern, array('node' => $node));
+
+  // Replace whitespace with the separator.
+  $directory = preg_replace('/\s+/', variable_get('media_gallery_directory_separator', '_'), $directory);
+
+  // Convert to lower case.
+  if (variable_get('media_gallery_directory_lowercase', TRUE)) {
+    $directory = drupal_strtolower($directory);
+  }
+
+  // Clean directory name
+  if (variable_get('media_gallery_directory_transliterate', FALSE) && function_exists('transliteration_clean_filename')) {
+    $directory = transliteration_clean_filename($directory, language_default('language'));
+  }
+
+  return trim($directory, '\\/');
+}
+
+/**
+ * Implements hook_media_gallery_extra_media_destination_alter().
+ */
+function media_gallery_directory_media_gallery_extra_media_destination_alter(&$destination, $node) {
+  if (!empty($node->media_gallery_directory[LANGUAGE_NONE][0]['value'])) {
+    $destination .= '/' . $node->media_gallery_directory[LANGUAGE_NONE][0]['value'];
+  }
+}

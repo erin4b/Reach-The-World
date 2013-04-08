@@ -74,10 +74,19 @@ li a.active {
   list-style-image: none;
 }
 
+/* line 74, ../sass/navigation.scss */
+.region-navigation {
+  float: right;
+}
+/* line 76, ../sass/navigation.scss */
+.region-navigation #block-system-user-menu {
+  margin-top: 5px;
+}
+
 /*
  * Main menu and Secondary menu links
  */
-/* line 84, ../sass/navigation.scss */
+/* line 88, ../sass/navigation.scss */
 #secondary-menu {
   float: right;
   /* LTR */

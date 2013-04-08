@@ -183,19 +183,12 @@ function menu_token_menu_link_alter(&$item) {
 function _menu_token_is_called_from_features() {
   $called = &drupal_static(__FUNCTION__);
   if (!isset($called)) {
-    if (module_exists('features')) {
-      // Save memory in the debug_backtrace() function when possible
-      $options = (version_compare(PHP_VERSION, '5.3.6', '>=') ? DEBUG_BACKTRACE_IGNORE_ARGS : NULL);
-      $callstack = debug_backtrace($options);
-      foreach($callstack as $function) {
-        $called = ($function['function'] == 'menu_links_features_export_render');
-        if ($called) {
-          break;
-        }
+    $callstack = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS);
+    foreach($callstack as $function) {
+      $called = ($function['function'] == 'menu_links_features_export_render');
+      if ($called) {
+        break;
       }
-    }
-    else {
-      $called = FALSE;
     }
   }
   return !$called;
@@ -434,13 +427,7 @@ function menu_token_form_menu_edit_item_validate($form, &$form_state) {
     // Substitute link_path with our own unique menu path. This will make sure features will export our menu items.
     form_set_value(array('#parents' => array('options', 'menu_token_link_path')), $values['link_path'], $form_state);
     form_set_value(array('#parents' => array('link_path')), '<front>', $form_state);
-    if (!empty($values['menu_token_uuid'])) {
-      // If a uuid already exists, dont change it
-      form_set_value(array('#parents' => array('link_path')), $values['menu_token_uuid'], $form_state);
-    }
-    else {
-      form_set_value(array('#parents' => array('link_path')), 'menutoken/' . uniqid(), $form_state);
-    }
+    form_set_value(array('#parents' => array('link_path')), 'menutoken/' . uniqid(), $form_state);
     foreach (array_keys(menu_token_get_plugin_types()) as $type) {
       if (!empty($values['menu_token_type_' . $type]) && $values['menu_token_type_' . $type] != '_none') {
         $plugin = $values['menu_token_type_' . $type];

@@ -1,0 +1,128 @@
+<?php
+
+/**
+ * @file
+ * Provides additional features and improvements for the media gallery module.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function media_gallery_extra_menu() {
+  $items = array();
+  $items['admin/config/media/gallery'] = array(
+    'title' => 'Media gallery',
+    'description' => 'Configure settings for the media gallery module.',
+    'access arguments' => array('administer media galleries'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('media_gallery_extra_admin_form'),
+    'file' => 'media_gallery_extra.admin.inc',
+    'file path' => drupal_get_path('module', 'media_gallery_extra'),
+  );
+  $items['admin/config/media/gallery/settings'] = array(
+    'title' => 'Settings',
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+    'weight' => -10,
+  );
+  $items['admin/config/media/gallery/galleries'] = array(
+    'title' => 'All galleries',
+    'description' => 'Configure settings for the "All galleries" page.',
+    'access arguments' => array('administer media galleries'),
+    'page callback' => 'media_gallery_extra_admin_default_gallery_collection_settings',
+    'file' => 'media_gallery_extra.admin.inc',
+    'type' => MENU_LOCAL_TASK,
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_menu_alter().
+ */
+function media_gallery_extra_menu_alter(&$items) {
+  unset($items['admin/config/media/galleries']);
+}
+
+/**
+ * Implements hook_theme().
+ */
+function media_gallery_extra_theme() {
+  return array();
+}
+
+/**
+ * Implements hook_theme_registry_alter().
+ */
+function media_gallery_extra_theme_registry_alter(&$theme_registry) {
+  if (isset($theme_registry['media_gallery_license'])) {
+    $theme_registry['media_gallery_license']['function'] = 'theme_media_gallery_extra_license';
+  }
+}
+
+/**
+ * Implements hook_hook_info_alter().
+ */
+function media_gallery_extra_hook_info_alter(&$hooks) {
+  // Load all hook_form_FORM_ID_alter() implementations from .inc file.
+  $hooks['form_alter']['group'] = 'form';
+}
+
+/**
+ * Implements hook_module_implements_alter().
+ */
+function media_gallery_extra_module_implements_alter(&$implementations, $hook) {
+  switch ($hook) {
+    case 'form_alter':
+      // Ensure that form alter run before the media_gallery hooks.
+      // @see media_gallery_module_implements_alter()
+      foreach (media_gallery_extra_features_list(TRUE) as $module) {
+        if (isset($implementations[$module])){
+          $group = $implementations[$module];
+          unset($implementations[$module]);
+          $implementations[$module] = $group;
+        }
+      }
+      break;
+  }
+}
+
+/**
+ * Implements hook_node_view().
+ */
+function media_gallery_extra_node_view($node, $view_mode, $langcode) {
+  if ($node->type == 'media_gallery') {
+    if (isset($node->content['add_media_link'])) {
+      $destination = media_gallery_extra_media_destination($node);
+      $args = array('query' => array('render' => 'media-popup', 'gallery_nid' => $node->nid, 'file_directory' => $destination));
+      $node->content['add_media_link']['#attached']['js'][0]['data']['media']['browserUrl'] = url('media/browser', $args);
+    }
+  }
+}
+
+/**
+ * Determines the file directory destination relative to file system path.
+ */
+function media_gallery_extra_media_destination($node) {
+  $destination = variable_get('media_gallery_extra_root_directory', '');
+  drupal_alter('media_gallery_extra_media_destination', $destination, $node);
+  return trim($destination, '\\/');
+}
+
+/**
+ * Helper function to list extra features.
+ */
+function media_gallery_extra_features_list($include_extra = FALSE) {
+  $list = array('media_gallery_directory', 'media_gallery_statistics');
+  if ($include_extra) {
+    array_unshift($list, 'media_gallery_extra');
+  }
+  return $list;
+}
+
+/**
+ * Wrapper for enable/disable theme_media_gallery_license() output.
+ */
+function theme_media_gallery_extra_license($variables) {
+  if (variable_get('media_gallery_extra_license_enable', 1)) {
+    return theme_media_gallery_license($variables);
+  }
+}

@@ -69,7 +69,7 @@ function theme_node_gallery_api_manage_items_form($variables) {
     if ($enable_rotation && !empty($file) && $file['type'] == 'image') {
       $row[] = drupal_render($element['rotate']);
     }
-    elseif ($enable_rotation) {
+    else {
       drupal_render($element['rotate']);
       $row[] = '';
     }

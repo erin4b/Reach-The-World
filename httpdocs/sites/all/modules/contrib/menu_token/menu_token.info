@@ -7,9 +7,9 @@ dependencies[] = token
 dependencies[] = ctools
 files[] = menu_token.test
 configure = admin/config/menu_token
-; Information added by drupal.org packaging script on 2013-02-08
-version = "7.x-1.0-beta4+1-dev"
+; Information added by drupal.org packaging script on 2013-01-25
+version = "7.x-1.0-beta4"
 core = "7.x"
 project = "menu_token"
-datestamp = "1360329642"
+datestamp = "1359157010"
 

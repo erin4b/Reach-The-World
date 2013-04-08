@@ -4,6 +4,10 @@ p{
   margin-top: 5px;
 }
 
+h4{
+  margin: 0px;
+}
+
 ul {
   margin: 2px;
   padding: 6px;
@@ -14,30 +18,48 @@ ul {
   }
 }
 
-#block-panels-mini-top-menu-bar-links{
-  height: 32px;
-  margin-top: -4px;
-  background: #0166FF;
-  border: 1px solid #0166FF;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  color: white;
-  ul.menu{
-    padding: 0px;
-    margin: 0px 0px 0px 15px;
-    @include clearfix;
-    li{
-      display: block;
-      float: left;
-      list-style: none;
-      margin-right: 15px;
-      margin-left: 5px;
-      a{
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.8em;
-        line-height: 32px;
-        font-weight: bold;
+.front .panels-flexible-region-2-top{
+  width: 100%;
+}
+
+#block-panels-mini-top-menu-bar-links, .pane-top-menu-bar-links{
+  p{
+    margin: 0px;
+  }
+  .panel-col-top{
+    width: 100%;
+    .inside{
+      margin: 0px;
+    }
+  }
+  .center-wrapper{
+    height: 32px;
+    margin-top: -4px;
+    background: #0166FF;
+    border: 1px solid #0166FF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    .inside{
+      margin: 0px;
+    }
+    ul.menu{
+      padding: 0px;
+      margin: 0px 0px 0px 15px;
+      @include clearfix;
+      li{
+        display: block;
+        float: left;
+        list-style: none;
+        margin-right: 15px;
+        margin-left: 5px;
+        a{
+          color: #fff;
+          text-decoration: none;
+          font-size: 1.8em;
+          line-height: 32px;
+          font-weight: bold;
+        }
       }
     }
   }
@@ -112,12 +134,20 @@ ul {
   }
 }
 
+.pane-menu-menu-journey-content-menu,
 .journey-menu {
   background-color: #0066FF;
   color: white;
   border-radius: 15px;
   padding: 0px 12px;
   margin: 20px auto 10px;
+  &:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
   ul.menu {
     margin: 0px;
     padding: 0px;
@@ -173,7 +203,8 @@ ul {
   }
 }
 
-.pane-menu-menu-journey-travelers-menu{
+.pane-menu-menu-journey-travelers-menu,
+.pane-menu-menu-journey-travelers-menu-co{
   background-color: #FFD66A;
   border-radius: 10px;
   padding: 10px;
@@ -204,15 +235,18 @@ ul {
   }
 }
 
-.node-type-journey{
+.node-type-journey, .node-type-log-book{
   #main{
     .center-wrapper{
       .panel-col-first{
         width: 180px;
         margin-right: 20px;
         >.inside{
-          margin: 1em 0px;
+          margin: 0px 0px 1em;
         }
+      }
+      .panel-col-last{
+        width: 720px;
       }
     }
   }
@@ -221,7 +255,7 @@ ul {
 .center-front{
   margin-top: 12px;
   position: relative;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 
   #frontbox {
     position: relative;
@@ -231,14 +265,14 @@ ul {
     border-radius: 10px;
     margin: 0px auto;
     .panel-col-first{
-      width: 490px;
+      width: 528px;
       height: auto;
       margin-left: 5px;
       float: left;
     }
     .panel-col-last{
       float: right;
-      width: 418px;
+      width: 400px;
       height: auto;
       padding: 0px;
       margin: 0px;
@@ -271,6 +305,9 @@ ul {
           font-weight: bold;
           line-height: 20px;
           margin: 0px;
+          background-image: url(../images/blt_globepin.jpg);
+          background-repeat: no-repeat;
+          padding-left: 20px;
         }
         .views-field-title{
           a{
@@ -286,7 +323,7 @@ ul {
   }
 }
 
-#logo{
+.front #logo{
   display: none;
 }
 
@@ -334,9 +371,11 @@ ul {
 #mini-panel-top_menu_bar_links{
   .panel-col-first{
     width: 395px;
+    height: 33px;
   }
   .panel-col-last{
     width: 523px;
+    height: 33px;
   }
 }
 
@@ -368,4 +407,506 @@ ul {
 
 .panel-2col .panel-separator{
   display: none;
+}
+
+.tips{
+  display: none;
+}
+
+.bubble{
+  width: 325px;
+  height: 148px;
+  .journal-info{
+    border-bottom: 1px solid black;
+    display: block;
+    .journal-title{
+      font-weight: bold;
+    }
+    .journal-author{
+    }
+  }
+  .journal-body-contents{
+    display: block;
+    margin: 5px 0px;
+    .journal-image{
+      display: block;
+      float: left;
+      margin-right: 10px;
+    }
+    .journal-body{
+      display: block;
+      clear: right;
+    }
+  }
+  .journal-journey-link{
+    display: block;
+    border-top: 1px solid black;
+    .journey-link{
+    }
+  }
+}
+
+br{
+  line-height: 2;
+}
+
+#cboxClose{
+  border: 0px solid;
+}
+
+.pane-menu-menu-journey-logbook-menu, .pane-menu-menu-journey-field-notes-menu, .pane-menu-menu-journey-album-menu,
+.pane-menu-menu-journey-logbook-menu-cont{
+  background: #CDA2CD;
+  border: 1px solid #CDA2CD;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  h2.pane-title{
+    margin: 0px;
+    color: #FFF;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #999;
+    font-size: 2.4em;
+  }
+  ul.menu{
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    li{
+      list-style: none;
+      margin-bottom: 3px;
+      a{
+        font-size: 1.8em;
+        color: #fff;
+        font-weight: bold;
+        text-shadow: 2px 2px 2px #999;
+        text-decoration: none;
+        &:hover,&.active{
+          color: #0066FF;
+        }
+      }
+    }
+  }
+}
+
+.view-journey-content{
+  &.view-id-journey_content{
+    &.view-display-id-recent_journey_location{
+      background: #CDA2CD;
+      border-radius: 10px;
+      padding: 10px;
+      color: white;
+      font-size: 1.4em;
+      line-height: 1.5;
+      .field-content > span{
+        background-image: url(../images/crn_top_lft.jpg);
+        background-repeat: no-repeat;
+        display: block;
+        padding-left: 30px;
+        .current-location-label{
+          text-transform: uppercase;
+        }
+      }
+      .views-field-nothing{
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    }
+    &.view-display-id-albums{
+      table{
+        margin: 0px;
+        width: 100%;
+        tr{
+          td{
+            width: 178.75px;
+            text-align: center;
+            vertical-align: top;
+            img{
+              border: 1px solid #000;
+            }
+            a{
+              text-decoration: none;
+              color: #0066FF;
+            }
+          }
+        }
+      }
+    }
+    &.view-display-id-recent_logbook{
+      display: block;
+      width: 480px;
+      height: 215px;
+      background: transparent url(../images/postcard.jpg) no-repeat left top;
+      padding: 125px 30px 30px 30px;
+
+      .clue{
+        transform: rotate(1deg);
+        -ms-transform: rotate(1deg); /* IE 9 */
+        -webkit-transform: rotate(1deg); /* Safari and Chrome */
+        -o-transform: rotate(1deg); /* Opera */
+        -moz-transform: rotate(1deg); /* Firefox */
+        .clue-location{
+          float: left;
+          width: 130px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 1.4em;
+          color: #333333;
+          line-height: 1.5;
+          .title{
+            font-weight: bold;
+            display: block;
+          }
+          .latitude{
+            display: block;
+          }
+          .longitude{
+            display: block;
+          }
+          .by-x{
+            display: block;
+          }
+        }
+        .clue-images{
+          float: right;
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+.view-journey-travelers{
+  &.view-id-journey_travelers{
+    margin-bottom: 5px;
+    .views-field-name{
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+    table{
+      width: 100%;
+      margin: 0px;
+    }
+    &.view-display-id-default{
+      table{
+        tr{
+          td{
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pane-welcome-messages{
+  background: #6995EC;
+  border: 1px solid #6995EC;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.4em;
+  box-shadow: 2px 2px 2px #888;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 10px;
+  h2{
+    margin: 0px 0px 5px;
+  }
+  .view-content{
+    a{
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.page-user{
+  .center-wrapper{
+    .panel-col-first{
+      width: 180px;
+      margin-right: 20px;
+      .inside{
+        margin: 0px;
+      }
+    }
+  }
+}
+
+#panels-ipe-paneid-98{
+  margin-bottom: 10px;
+  h2.pane-title{
+    margin: 0px;
+    background-image: url(../images/hdr_logbook.jpg);
+    background-repeat: no-repeat;
+    height: 43px;
+    text-indent: -9999px;
+    overflow: hidden;
+  }
+  p{
+    margin: 0px;
+  }
+}
+
+#panels-ipe-paneid-99{
+  margin-bottom: 10px;
+  h2.pane-title{
+    margin: 0px;
+    background-image: url(../images/hdr_field-notes.jpg);
+    background-repeat: no-repeat;
+    height: 43px;
+    text-indent: -9999px;
+    overflow: hidden;  
+  }
+  p{
+    margin: 0px;
+  }
+}
+
+#panels-ipe-paneid-100{
+  margin-bottom: 10px;
+  h2.pane-title{
+    margin: 0px;
+    background-image: url(../images/hdr_journals.jpg);
+    background-repeat: no-repeat;
+    height: 43px;
+    text-indent: -9999px;
+    overflow: hidden;  
+  }
+  p{
+    margin: 0px;
+  }
+}
+
+#dashboard{
+  .panels-flexible-region{
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 185px;
+    background-position: top center;
+    .inside{
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      height: 185px;
+      position: relative;
+    }
+    &.mail{
+      background-image: url(../images/mail_head.jpg);
+      margin-right: 20px;
+      .inside{
+        background-image: url(../images/mail_bottom.jpg);
+        .pane-user-messages{
+          position: absolute;
+          left: 0px;
+          top: 45px;
+        }
+      }
+    }
+    &.articles{
+      background-image: url(../images/hm_hdr_articles.jpg);
+      .inside{
+        background-image: url(../images/hm_hdr_articles2.jpg);
+      }
+    }
+    &.whats-new{
+      background-image: url(../images/hm_hdr_whatsnew.jpg);
+      .inside{
+        background-image: url(../images/hm_hdr_whatsnew2.jpg);
+      }
+    }
+    &.calendar{
+      background-image: url(../images/hm_hdr_calendar.jpg);
+      margin-right: 20px;
+      .inside{
+        background-image: url(../images/hm_hdr_calendar2.jpg);
+      }
+    }
+    &.media{
+      background-image: url(../images/hm_hdr_media.jpg);
+      .inside{
+        background-image: url(../images/hm_hdr_media2.jpg);
+      }
+    }
+  }
+}
+
+.page-user{
+  .panel-2col-stacked .panel-col-last{
+    width: 740px;
+  }
+}
+.pane-dashboard-main-panels{
+  
+}
+
+#block-menu-menu-user-media-menu{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgb(0, 102, 153);
+  width: 100%;
+  height: 28px;
+  ul.menu{
+    padding: 0px;
+    margin: 0px;
+    li{
+      list-style: none;
+      float: left;
+      width: 24%;
+      a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+        display: block;
+        text-align: center;
+        padding: 6px 10px;
+        background-repeat: no-repeat;
+        background-position: 25% center;
+        &.user-mail{
+          background-image: url(../images/navicon1.gif);
+        }
+        &.user-articles{
+          background-image: url(../images/navicon2.gif);
+        }
+        &.user-media{
+          background-image: url(../images/navicon3.gif);
+        }
+        &.user-calendar{
+          background-image: url(../images/navicon4.gif);
+        }
+        &.user-whats-new{
+          background-image: url(../images/navicon_whatsnew.gif);
+        }
+      }
+    }
+  }
+}
+
+#user-name{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  color: #1D4AFC;
+  font-weight: bold;
+  line-height: 1;
+  p{
+    margin: 0px;
+  }
+}
+
+.page-user{
+  #page{
+    #page-inner{
+      padding: 118px 20px 0px;
+      header{
+        a#logo{
+          background-image: url(../images/hd_theme_landing.jpg);
+          display: block;
+          width: 980px;
+          height: 90px;
+          position: absolute;
+          left: 0px;
+          top: 28px;
+          img{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &.page-user-mail{
+    #page #page-inner header a#logo{
+      background-image: url(../images/hm_hdr_mail3.jpg);
+    }
+  }
+  &.page-user-articles{
+    #page #page-inner header a#logo{
+      background-image: url(../images/hd_theme_articles3.jpg);
+    }
+  }
+  &.page-user-calendar{
+    #page #page-inner header a#logo{
+      background-image: url(../images/hd_theme_calendar.jpg);
+    }
+  }
+  &.page-user-media{
+    #page #page-inner header a#logo{
+      background-image: url(../images/hd_theme_media.jpg);
+    }
+  }
+  &.page-user-whats-new{
+    #page #page-inner header a#logo{
+      background-image: url(../images/hd_theme_whatsnew.jpg);
+    }
+  }
+}
+
+.pane-journey-content{
+  h2.pane-title{
+  }
+}
+
+#recent-logbook{
+  h2.pane-title{
+    background-image: url(../images/hdr_logbook.jpg);
+    background-repeat: no-repeat;
+    height: 43px;
+    text-indent: -9999px;
+    margin: 0px 0px 5px;
+  }
+  .pane-content{
+    font-size: 1.4em;
+    line-height: 1.5;
+  }
+}
+
+#recent-field-notes{
+  h2.pane-title{
+    background-image: url(../images/hdr_field-notes.jpg);
+    background-repeat: no-repeat;
+    height: 43px;
+    text-indent: -9999px;
+    margin: 0px 0px 5px;
+  }
+  .pane-content{
+    font-size: 1.4em;
+    line-height: 1.5;
+  }
+}
+
+#recent-journals{
+  h2.pane-title{
+    background-image: url(../images/hdr_journals.jpg);
+    background-repeat: no-repeat;
+    height: 43px;
+    text-indent: -9999px;
+    margin: 0px 0px 5px;
+  }
+  .pane-content{
+    font-size: 1.4em;
+    line-height: 1.5;
+  }
+}
+
+.pane-node{
+  h2.pane-title{
+    margin-top: 0px;
+  }
+}
+
+.panel-2col-stacked .panel-col-last .inside{
+  margin: 0px;
+  padding: 0px;
+}
+
+#content{
+  padding: 0px;
+}
+
+.page-user #main > #content > .tabs{
+  display: none;
+}
+
+.page-user #main > #content > #page-title{
+  font-size: 1.4em;
+  margin: 10px 0px;
+  color: #1D4AFC;
 }

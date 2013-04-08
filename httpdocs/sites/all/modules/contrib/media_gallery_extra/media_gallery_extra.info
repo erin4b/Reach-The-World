@@ -1,0 +1,13 @@
+name = Media Gallery Extra
+description = Provides additional features and improvements for the Media Gallery module.
+core = 7.x
+package = Media
+dependencies[] = media_gallery
+configure = admin/config/media/gallery
+
+; Information added by drupal.org packaging script on 2012-07-31
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "media_gallery_extra"
+datestamp = "1343694590"
+

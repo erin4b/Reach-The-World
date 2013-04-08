@@ -17,24 +17,15 @@ function video_preset_form($form, &$form_state, $preset = FALSE) {
   $pixelformats = $transcoder->getPixelFormats();
   $settings = $preset['settings'];
 
-  if (empty($formats)) {
-    drupal_set_message(t('No video output extensions are available. Please reconfigure your <a href="@transcoder-url">video transcoder</a>.', array('@transcoder-url' => url('admin/config/media/video/transcoders'))), 'warning');
-  }
-  elseif (isset($settings['video_extension']) && !isset($formats[$settings['video_extension']])) {
+  if (isset($settings['video_extension']) && !isset($formats[$settings['video_extension']])) {
     drupal_set_message(t('The currently selected @setting_name %setting_value is no longer available, possibly because you changed the transcoder type or the transcoder itself was updated. Please select a new @setting_name.', array('@setting_name' => t('Video output extension'), '%setting_value' => $settings['video_extension'])), 'warning');
     unset($settings['video_extension']);
   }
-  if (empty($codecs['encode']['video'])) {
-    drupal_set_message(t('No video codecs are available. Please reconfigure your <a href="@transcoder-url">video transcoder</a>.', array('@transcoder-url' => url('admin/config/media/video/transcoders'))), 'warning');
-  }
-  elseif (isset($settings['video_codec']) && !isset($codecs['encode']['video'][$settings['video_codec']])) {
+  if (isset($settings['video_codec']) && !isset($codecs['encode']['video'][$settings['video_codec']])) {
     drupal_set_message(t('The currently selected @setting_name %setting_value is no longer available, possibly because you changed the transcoder type or the transcoder itself was updated. Please select a new @setting_name.', array('@setting_name' => t('Video codec'), '%setting_value' => $settings['video_codec'])), 'warning');
     unset($settings['video_codec']);
   }
-  if (empty($codecs['encode']['audio'])) {
-    drupal_set_message(t('No audio codecs are available. Please reconfigure your <a href="@transcoder-url">video transcoder</a>.', array('@transcoder-url' => url('admin/config/media/video/transcoders'))), 'warning');
-  }
-  elseif (isset($settings['audio_codec']) && !isset($codecs['encode']['audio'][$settings['audio_codec']])) {
+  if (isset($settings['audio_codec']) && !isset($codecs['encode']['audio'][$settings['audio_codec']])) {
     drupal_set_message(t('The currently selected @setting_name %setting_value is no longer available, possibly because you changed the transcoder type or the transcoder itself was updated. Please select a new @setting_name.', array('@setting_name' => t('Audio codec'), '%setting_value' => $settings['audio_codec'])), 'warning');
     unset($settings['audio_codec']);
   }
@@ -369,10 +360,7 @@ function video_preset_form($form, &$form_state, $preset = FALSE) {
     '#title' => t('Enable watermark video'),
     '#default_value' => !empty($settings['video_watermark_enabled']) ? $settings['video_watermark_enabled'] : FALSE,
   );
-
-  // When the scheme is private, Zencoder can't download the file.
-  // Force the scheme to public in this case.
-  $destination = (file_default_scheme() != 'private' ? file_default_scheme() : 'public') . '://videos/watermark';
+  $destination = file_default_scheme() . '://videos/watermark';
   $form['settings']['watermark']['video_watermark_fid'] = array(
     '#type' => 'managed_file',
     '#title' => t('Upload watermark image'),
@@ -510,19 +498,19 @@ function video_preset_form($form, &$form_state, $preset = FALSE) {
     '#type' => 'fieldset',
     '#title' => t('Create clip'),
     '#collapsible' => TRUE,
-    '#collapsed' => empty($settings['clip_start']) && empty($settings['clip_length']),
+    '#collapsed' => TRUE
   );
   $form['settings']['create_clip']['clip_start'] = array(
     '#type' => 'textfield',
     '#title' => t('Start clip'),
-    '#description' => t('The starting point of a subclip (in hh:mm:ss.s or number of seconds).'),
-    '#default_value' => !empty($settings['clip_start']) ? $settings['clip_start'] : '',
+    '#description' => t('The starting point of a subclip (in timecode or number of seconds).'),
+    '#default_value' => !empty($settings['clip_start']) ? $settings['clip_start'] : ''
   );
   $form['settings']['create_clip']['clip_length'] = array(
     '#type' => 'textfield',
     '#title' => t('Clip length'),
-    '#description' => t('The length of the subclip (in hh:mm:ss.s or number of seconds).'),
-    '#default_value' => !empty($settings['clip_length']) ? $settings['clip_length'] : '',
+    '#description' => t('The length of the subclip (in timecode or number of seconds).'),
+    '#default_value' => !empty($settings['clip_length']) ? $settings['clip_length'] : ''
   );
 
 
@@ -604,7 +592,7 @@ function video_preset_submit($form, &$form_state) {
   $preset['name'] = isset($v['name']) ? $v['name'] : $old['name'];
   $preset['description'] = $v['description'];
   // unset unwanted values saved to database
-  unset($v['name'], $v['description'], $v['submit'], $v['delete'], $v['form_build_id'], $v['form_token'], $v['form_id'], $v['op'], $v['revert']);
+  unset($v['name'], $v['description'], $v['submit'], $v['delete'], $v['form_build_id'], $v['form_token'], $v['form_id'], $v['op']);
   $preset['settings'] = video_preset_array_flatten($v);
 
   // Save this preset.
@@ -682,7 +670,7 @@ function video_preset_delete_confirm($form, &$form_state, $preset) {
  */
 function video_preset_delete_confirm_submit($form, &$form_state) {
   if ($form_state['values']['confirm']) {
-    Preset::deletePreset($form_state['values']['name']);
+    video_preset_delete($form_state['values']['name']);
   }
 
   $form_state['redirect'] = 'admin/config/media/video/presets';
@@ -706,7 +694,7 @@ function video_preset_revert_confirm($form, &$form_state, $preset) {
  */
 function video_preset_revert_confirm_submit($form, &$form_state) {
   if ($form_state['values']['confirm']) {
-    Preset::deletePreset($form_state['values']['name']);
+    video_preset_revert($form_state['values']['name']);
   }
 
   $form_state['redirect'] = 'admin/config/media/video/presets';
@@ -875,6 +863,63 @@ function video_preset_get_presets() {
  */
 function video_get_preset($preset_name) {
   return Preset::getPreset($preset_name);
+}
+
+/**
+ * Deletes a preset
+ */
+function video_preset_delete($preset_name) {
+  $preset = Preset::getPreset($preset_name);
+  if (!empty($preset['settings']['video_watermark_fid'])) {
+    $file = file_load($preset['settings']['video_watermark_fid']);
+    if (!empty($file)) {
+      file_usage_delete($file, 'video');
+      $file->status = 0;
+      file_save($file);
+    }
+  }
+
+  // Delete the preset.
+  db_delete('video_preset')
+    ->condition('name', $preset_name)
+    ->execute();
+
+  // Rebuild Theme Registry
+  drupal_theme_rebuild();
+}
+
+/**
+ * Reverts a preset
+ */
+function video_preset_revert($preset_name) {
+  $preset = Preset::getPreset($preset_name);
+  if (!$preset || !$preset['overridden']) {
+    return FALSE;
+  }
+
+  // We need to determine if the watermark image is provided by the default or by the override.
+  $default_presets = Preset::getDefaultPresets();
+  $default_preset = $default_presets[$preset_name];
+
+  $watermark_override = isset($preset['settings']['video_watermark_fid']) ? intval($preset['settings']['video_watermark_fid']) : 0;
+  $watermark_default = isset($default_preset['settings']['video_watermark_fid']) ? intval($default_preset['settings']['video_watermark_fid']) : 0;
+
+  if ($watermark_override > 0 && $watermark_override != $watermark_default) {
+    $file = file_load($watermark_default);
+    if (!empty($file)) {
+      file_usage_delete($file, 'video');
+      $file->status = 0;
+      file_save($file);
+    }
+  }
+
+  // Delete the preset, this reverts the preset.
+  db_delete('video_preset')
+    ->condition('name', $preset_name)
+    ->execute();
+
+  // Rebuild Theme Registry
+  drupal_theme_rebuild();
 }
 
 /**

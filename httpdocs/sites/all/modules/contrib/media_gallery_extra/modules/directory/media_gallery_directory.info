@@ -1,0 +1,13 @@
+name = Media Gallery Directory
+description = Allows specify file directory path per gallery with patterns support.
+core = 7.x
+package = Media
+dependencies[] = media_gallery
+dependencies[] = media_gallery_extra
+
+; Information added by drupal.org packaging script on 2012-07-31
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "media_gallery_extra"
+datestamp = "1343694590"
+

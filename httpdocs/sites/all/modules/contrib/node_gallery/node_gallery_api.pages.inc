@@ -34,7 +34,7 @@ function node_gallery_api_sort_items_form($form, $form_state, $gallery, $no_jque
 
   $max_image_count = variable_get('node_gallery_sort_images_max', 750);
   if ($image_count > $max_image_count) {
-    drupal_set_message(t('There are too many images in this gallery to display. You can increase the limit by !settings_url. The current limit is !max.', array('!settings' => 'admin/config/content/node-gallery/settings', '!max' => $max_image_count)), 'warning');
+    drupal_set_message(t('There are too many images in this gallery to display. You can increase the limit by !settings_url. The current limit is !max.', array('!settings' => 'admin/config/node_gallery/settings', '!max' => $max_image_count)), 'warning');
     return $form;
   }
 
@@ -585,16 +585,13 @@ function node_gallery_api_flatten_item_edit_form($form_item, &$flattened = array
  * @return string
  *   HTML output.
  */
-function node_gallery_api_upload_items_form($gallery, $item_type = NULL) {
+function node_gallery_api_upload_items_form($gallery, $item_type) {
   global $user;
 
   if ($gallery->nid > 0) {
     // node_gallery_set_user_breadcrumb($gallery->uid, $gallery);
   }
   $relationship_type = node_gallery_api_get_relationship_type($gallery->type);
-  if (empty($item_type)) {
-    $item_type = $relationship_type->item_types[0];
-  }
 
   if (module_exists('plupload') && variable_get('node_gallery_api_plupload_integration', TRUE)) {
     if (!empty($gallery->edit_after_plupload)) {

@@ -1,6 +1,3 @@
 name = Reach The World
 description = Module built for Reach The World
 core = 7.x
-
-dependencies[] = "date"
-dependencies[] = "field_group"

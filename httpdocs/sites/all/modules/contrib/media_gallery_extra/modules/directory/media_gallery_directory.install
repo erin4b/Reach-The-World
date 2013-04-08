@@ -1,0 +1,66 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the media gallery directory
+ * module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function media_gallery_directory_install() {
+  module_load_install('media_gallery_extra');
+
+  // Create extra fields (but not instances yet) for media_gallery nodes.
+  $fields = _media_gallery_directory_fields();
+  media_gallery_extra_create_fields($fields);
+
+  // Attach fields to the media gallery node type.
+  $instances = _media_gallery_directory_instances();
+  media_gallery_extra_create_instances($instances);
+
+  // Set module weight to a value higher than media_gallery.
+  media_gallery_extra_update_weight('media_gallery_directory');
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function media_gallery_directory_uninstall() {
+  variable_del('media_gallery_directory_pattern');
+  variable_del('media_gallery_directory_pattern_update_action');
+
+  // @todo Remove directory field?
+}
+
+function _media_gallery_directory_fields() {
+  return array(
+    'media_gallery_directory' => array(
+      'field_name' => 'media_gallery_directory',
+      'cardinality' => 1,
+      'locked' => FALSE,
+      'type' => 'text',
+    ),
+  );
+}
+
+function _media_gallery_directory_instances() {
+  $t = get_t();
+  return array(
+    'media_gallery_directory' => array(
+      'field_name' => 'media_gallery_directory',
+      'label' => $t('Directory path'),
+      'description' => $t('Optional subdirectory within the galleries root directory where files will be stored. Do not include preceding or trailing slashes. Note that this setting will only affect on new file uploads and will leave the existing files intact.'),
+      'widget' => array(
+        'type' => 'text_textfield',
+      ),
+      'display' => array(
+        'default' => array(
+          'type' => 'hidden',
+          'label' => 'hidden',
+        ),
+      ),
+    ),
+  );
+}
