@@ -516,7 +516,41 @@ br{
             padding-left: 44px;
             background: url(../images/ournews.jpg) no-repeat left top;
           }
-          
+          &.daily-life {
+            padding-left: 44px;
+            background: url(../images/nav_fn_dailylife.jpg) no-repeat -1px top;
+          }
+          &.kids {
+            padding-left: 44px;
+            background: url(../images/nav_fn_kids.jpg) no-repeat -1px top;
+          } 
+          &.food {
+            padding-left: 44px;
+            background: url(../images/nav_fn_food.jpg) no-repeat -1px top;
+          }
+          &.nature {
+            padding-left: 44px;
+            background: url(../images/nav_fn_nature.jpg) no-repeat -1px top;
+          }
+          &.traditions {
+            padding-left: 44px;
+            background: url(../images/nav_fn_traditions.jpg) no-repeat -1px top;
+          }
+          &.transportation {
+            padding-left: 44px;
+            background: url(../images/nav_fn_transportation.jpg) no-repeat -1px top;
+            letter-spacing: -1px;
+          }
+          &.communities {
+            padding-left: 44px;
+            background: url(../images/nav_fn_communities.jpg) no-repeat -1px top;
+            letter-spacing: -1px;
+          }
+          &.environment {
+            padding-left: 44px;
+            background: url(../images/nav_fn_environment.jpg) no-repeat -1px top;
+          }
+
         &:hover,&.active{
           color: #0066FF;
         }
