@@ -63,7 +63,46 @@ foreach($users AS $user){
 $data = file_get_contents("http://reachtheworld.org/export.php?p=password&c=journey&id=52545");
 $journeys = json_decode($data);
 foreach($journeys AS $journey){
-  $contents = $journey->og_content;
-  unset($journey->og_content);
-  print_r($journey);
+  $q = db_select('node_transfer','nt')->fields('nt')->condition('onid',$journey->nid)->execute();
+  if($q->rowCount() > 0){
+    $row = $q->fetchObject();
+    $node = node_load($row->nnid);
+  }else{
+    $node = new stdClass;
+    $node->title = $journey->title;
+    $node->type = 'journey';
+    node_object_prepare($node);
+  }
+
+  $user = user_load_by_name($journey->name);
+  profile2_load_by_user($user, $type_name = NULL);
+
+  $node->language = LANGUAGE_NONE;
+  $node->uid = $user->uid;
+  $node->name = $user->name;
+  $node->status = $journey->status;
+  $node->promote = $journey->promote;
+  $node->comment = $journey->comment;
+
+  node_submit($node);
+  node_save($node);
+
+  db_merge('node_transfer')
+    ->key(array('nnid'=>$node->nid))
+    ->fields(array('onid'=>$journey->nid))
+    ->execute();
+  foreach($journey->og_content AS $content){
+    switch($content->type){
+      case 'journey_info':
+        $node->body[LANGUAGE_NONE][0]['value'] = $content->field_journey_description[0]->value;
+        node_submit($node);
+        node_save($node);
+      break;
+
+      case 'profile':
+        //print_r($content);
+        print_r($user);
+      break;
+    }
+  }
 }
