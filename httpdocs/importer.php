@@ -75,8 +75,6 @@ foreach($journeys AS $journey){
   }
 
   $user = user_load_by_name($journey->name);
-  profile2_load_by_user($user, $type_name = NULL);
-
   $node->language = LANGUAGE_NONE;
   $node->uid = $user->uid;
   $node->name = $user->name;
@@ -100,8 +98,7 @@ foreach($journeys AS $journey){
       break;
 
       case 'profile':
-        //print_r($content);
-        print_r($user);
+        $user = profile2_load_by_user($user);
       break;
     }
   }
