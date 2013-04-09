@@ -71,6 +71,11 @@
 ?>
 
 <div id="page">
+
+         
+          <div class="language-box"><?php if ($lang): ?> <?php print render($page['lang']); ?> <?php endif; ?></div>
+         
+
   <div id="page-inner">
     <header id="header" role="banner">
 
@@ -130,3 +135,4 @@
 </div><!-- /#page -->
 
 <?php print render($page['bottom']); ?>
+<?php print $closure; ?>
