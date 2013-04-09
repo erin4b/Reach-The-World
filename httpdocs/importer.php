@@ -63,5 +63,7 @@ foreach($users AS $user){
 $data = file_get_contents("http://reachtheworld.org/export.php?p=password&c=journey&id=52545");
 $journeys = json_decode($data);
 foreach($journeys AS $journey){
+  $contents = $journey->og_content;
+  unset($journey->og_content);
   print_r($journey);
 }
