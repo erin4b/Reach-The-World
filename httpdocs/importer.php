@@ -316,9 +316,30 @@ foreach($journeys AS $journey){
         foreach($content->image_content AS $image){
           $url = trim('http://www.reachtheworld.org/'.$image->images->_original);
           $image = file_get_contents($url);
-          $filename = array_pop(explode('/',$url));
-          $file = file_save_data($image, 'public://user/'.$user->uid.'/'.$filename, FILE_EXISTS_RENAME);
-          $enode->field_images[LANGUAGE_NONE][] = (array)$file;
+          $filename = drupal_basename($url);
+          $save_path = 'public://user/'.$user->uid;
+          file_prepare_directory($save_path,FILE_CREATE_DIRECTORY);
+
+          $destination = $save_path.'/'.$filename;
+          $replace = FILE_EXISTS_RENAME;
+
+          if($uri = file_unmanaged_save_data($image, $destination, $replace)){
+            // Create a file object.
+            $file = new stdClass();
+            $file->fid = NULL;
+            $file->uri = $uri;
+            $file->filename = drupal_basename($uri);
+            $file->filemime = file_get_mimetype($file->uri);
+            $file->uid = $user->uid;
+            $file->status = FILE_STATUS_PERMANENT;
+            if (is_file($destination)) {
+              $file->filename = drupal_basename($destination);
+            }
+
+            $file = file_save($file);
+            //$file = file_save_data($image, $save_path.$filename, FILE_EXISTS_RENAME);
+            $enode->field_images[LANGUAGE_NONE][] = (array)$file;
+          }
         }
     }
 
