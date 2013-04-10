@@ -14,7 +14,8 @@
 /**
  * Root directory of Drupal installation.
  */
-define('DRUPAL_ROOT', getcwd());
+//define('DRUPAL_ROOT', getcwd());
+define('DRUPAL_ROOT','/home/orb/public_html/reachtheworld.org/httpdocs');
 
 require_once DRUPAL_ROOT . '/includes/bootstrap.inc';
 drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
@@ -313,12 +314,15 @@ foreach($journeys AS $journey){
     if($content->image_content > 0){
         $enode->field_images = array(LANGUAGE_NONE => array());
         foreach($content->image_content AS $image){
-          $image = file_get_contents('http://www.reachtheworld.org/'.$image->images->_original);
-          $filename = array_pop(explode('/',$image->images['_original']));
-          $file = file_save_data($image, 'public://' . $filename, FILE_EXISTS_RENAME);
+          $url = trim('http://www.reachtheworld.org/'.$image->images->_original);
+          $image = file_get_contents($url);
+          $filename = array_pop(explode('/',$url));
+          $file = file_save_data($image, 'public://user/'.$user->uid.'/'.$filename, FILE_EXISTS_RENAME);
           $enode->field_images[LANGUAGE_NONE][] = (array)$file;
         }
     }
+
+    //CHECK IF LOCATION ENABLED FOR CONTENT TYPE
     if($location_enabled){
       $location = array((array)$content->locations[0]);
       $location[0]['locpick'] = (array)$location[0]['locpick'];
@@ -326,11 +330,15 @@ foreach($journeys AS $journey){
       $enode->field_location[LANGUAGE_NONE] = $location;
     }
 
+    // CHECK TO MAKE SURE THE type IS SET FOR THE OBJECT AND SAVE
     if(isset($enode->type)){
+      // GO THROUGH THE FIELD MAPPINGS TO MAKE THE TRANSFER
       foreach($fields AS $new_field=>$old_field){
+        //IF THE OLD FIELD ISNT SET THEN IT IS THE SAME AS THE NEW FIELD
         if($old_field == '') $old_field = $new_field;
         if(isset($content->$old_field)){
           $old_field_info = $content->$old_field;
+          //D7 USES LANGUAGE ENCODED FIELDS HAVE TO USE LANGUAGE_NONE FOR LANGUAGE NEUTRAL FIELDS
           $tmp = array(LANGUAGE_NONE => array());
           foreach($old_field_info AS $of){
             $tmp[LANGUAGE_NONE][] = (array)$of;
@@ -338,6 +346,7 @@ foreach($journeys AS $journey){
           $enode->$new_field = $tmp;
         }
       }
+      //OG 7.2+ USES NID TO REFERENCE OG ID
       $enode->og_group_ref[LANGUAGE_NONE][0]['target_id'] = $jnode->nid;
       save_node($enode,$content->nid);
     }
