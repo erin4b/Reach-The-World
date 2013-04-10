@@ -124,8 +124,11 @@ foreach($journeys AS $journey){
         $enode->uid = $user->uid;
         $enode->name = $user->name;
         $enode->body[LANGUAGE_NONE][0]['value'] = $content->body;
-        print_r($content);
-        die();
+        $enode->status = $journey->status;
+        $enode->promote = $journey->promote;
+        $enode->comment = $journey->comment;
+        $enode->field_date[LANGUAGE_NONE][0]['value'] = strtotime($content->field_date[0]->value);
+        //save_node($enode,$content->nid);
       break;
 
       case "fn_daily_life":
