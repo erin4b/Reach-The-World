@@ -100,6 +100,26 @@ foreach($journeys AS $journey){
       case 'profile':
         $user = profile2_load_by_user($user);
       break;
+
+      case "event":
+      case "fn_daily_life":
+      case "fn_food":
+      case "fn_kids_lives":
+      case "fn_nations":
+      case "fn_nature":
+      case "fn_traditions":
+      case "fn_transportation":
+      case "fn_world_connections":
+      case "gallery":
+      case "image":
+      case "itinerary_location":
+      case "journal":
+      case "log_book":
+      case "photo_album":
+      case "video":
+      case "video_conference":
+      case "video_gallery":
+      break;
     }
   }
 }
