@@ -128,6 +128,7 @@ foreach($journeys AS $journey){
         $enode->promote = $journey->promote;
         $enode->comment = $journey->comment;
         $enode->field_date[LANGUAGE_NONE][0]['value'] = strtotime($content->field_date[0]->value);
+        $enode->og_group_ref[LANGUAGE_NONE][0]['target_id'] = 
         //save_node($enode,$content->nid);
       break;
 
