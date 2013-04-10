@@ -60,48 +60,74 @@ foreach($users AS $user){
 }
 */
 
-$data = file_get_contents("http://reachtheworld.org/export.php?p=password&c=journey&id=52545");
-$journeys = json_decode($data);
-foreach($journeys AS $journey){
-  $q = db_select('node_transfer','nt')->fields('nt')->condition('onid',$journey->nid)->execute();
+function get_by_old_node($onid){
+  $q = db_select('node_transfer','nt')->fields('nt')->condition('onid',$onid)->execute();
+
   if($q->rowCount() > 0){
-    $row = $q->fetchObject();
+    return $q->fetchObject();
+  }
+  return FALSE;
+}
+
+function get_node($type=NULL,$nid=NULL){
+  $row = get_by_old_node($nid);
+  if($row !== FALSE){
     $node = node_load($row->nnid);
   }else{
     $node = new stdClass;
-    $node->title = $journey->title;
-    $node->type = 'journey';
-    node_object_prepare($node);
+    $node->type = $type;
   }
-
-  $user = user_load_by_name($journey->name);
+  node_object_prepare($node);
   $node->language = LANGUAGE_NONE;
-  $node->uid = $user->uid;
-  $node->name = $user->name;
-  $node->status = $journey->status;
-  $node->promote = $journey->promote;
-  $node->comment = $journey->comment;
+  return $node;
+}
 
+function save_node(&$node,$onid){
   node_submit($node);
   node_save($node);
-
   db_merge('node_transfer')
     ->key(array('nnid'=>$node->nid))
-    ->fields(array('onid'=>$journey->nid))
+    ->fields(array('onid'=>$onid))
     ->execute();
+}
+
+$data = file_get_contents("http://reachtheworld.org/export.php?p=password&c=journey&id=52545,53530,52485");
+$journeys = json_decode($data);
+foreach($journeys AS $journey){
+  $jnode = get_node('journey',$journey->nid);
+  $jnode->title = $journey->title;
+
+  $user = user_load_by_name($journey->name);
+  $jnode->uid = $user->uid;
+  $jnode->name = $user->name;
+  $jnode->status = $journey->status;
+  $jnode->promote = $journey->promote;
+  $jnode->comment = $journey->comment;
+  save_node($jnode,$journey->nid);
+
   foreach($journey->og_content AS $content){
+    $user = user_load_by_name($content->name);
     switch($content->type){
       case 'journey_info':
-        $node->body[LANGUAGE_NONE][0]['value'] = $content->field_journey_description[0]->value;
-        node_submit($node);
-        node_save($node);
+        $jnode->body[LANGUAGE_NONE][0]['value'] = $content->field_journey_description[0]->value;
+        node_submit($jnode);
+        node_save($jnode);
       break;
 
       case 'profile':
-        $user = profile2_load_by_user($user);
+        //$user = profile2_load_by_user($user);
       break;
 
       case "event":
+        $enode = get_node('event',$content->nid);
+        $enode->title = $content->title;
+        $enode->uid = $user->uid;
+        $enode->name = $user->name;
+        $enode->body[LANGUAGE_NONE][0]['value'] = $content->body;
+        print_r($content);
+        die();
+      break;
+
       case "fn_daily_life":
       case "fn_food":
       case "fn_kids_lives":
@@ -110,8 +136,6 @@ foreach($journeys AS $journey){
       case "fn_traditions":
       case "fn_transportation":
       case "fn_world_connections":
-      case "gallery":
-      case "image":
       case "itinerary_location":
       case "journal":
       case "log_book":
