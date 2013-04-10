@@ -259,8 +259,6 @@ foreach($journeys AS $journey){
       break;
 
       case "log_book":
-        print_r($content);
-        die();
         $location_enabled = TRUE;
         $enode->field_local_time[LANGUAGE_NONE][0]['value'] = strtotime($content->field_local_time[0]->value);
 
@@ -312,7 +310,15 @@ foreach($journeys AS $journey){
         $location_enabled = TRUE;
       break;
     }
-
+    if($content->image_content > 0){
+        $enode->field_images = array(LANGUAGE_NONE => array());
+        foreach($content->image_content AS $image){
+          $image = file_get_contents('http://www.reachtheworld.org/'.$image->images->_original);
+          $filename = array_pop(explode('/',$image->images['_original']));
+          $file = file_save_data($image, 'public://' . $filename, FILE_EXISTS_RENAME);
+          $enode->field_images[LANGUAGE_NONE][] = (array)$file;
+        }
+    }
     if($location_enabled){
       $location = array((array)$content->locations[0]);
       $location[0]['locpick'] = (array)$location[0]['locpick'];
