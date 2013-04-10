@@ -70,6 +70,9 @@ function get_by_old_node($onid){
 }
 
 function get_node($type=NULL,$nid=NULL){
+  $types = node_type_get_types();
+  if(!isset($types[$type]))
+    return new stdClass;
   $row = get_by_old_node($nid);
   if($row !== FALSE){
     $node = node_load($row->nnid);
@@ -103,10 +106,25 @@ foreach($journeys AS $journey){
   $jnode->status = $journey->status;
   $jnode->promote = $journey->promote;
   $jnode->comment = $journey->comment;
+  $jnode->created = $journey->created;
+  $jnode->changed = $journey->changed;
   save_node($jnode,$journey->nid);
 
   foreach($journey->og_content AS $content){
+    $fields = array();
+    $location_enabled = FALSE;
+
+    $enode = get_node($content->type,$content->nid);
     $user = user_load_by_name($content->name);
+    $enode->title = $content->title;
+    $enode->uid = $user->uid;
+    $enode->name = $user->name;
+    $enode->status = $content->status;
+    $enode->promote = $content->promote;
+    $enode->comment = $content->comment;
+    $enode->created = $content->created;
+    $enode->changed = $content->changed;
+
     switch($content->type){
       case 'journey_info':
         $jnode->body[LANGUAGE_NONE][0]['value'] = $content->field_journey_description[0]->value;
@@ -119,60 +137,132 @@ foreach($journeys AS $journey){
       break;
 
       case "event":
-        $enode = get_node('event',$content->nid);
-        $enode->title = $content->title;
-        $enode->uid = $user->uid;
-        $enode->name = $user->name;
         $enode->body[LANGUAGE_NONE][0]['value'] = $content->body;
-        $enode->status = $content->status;
-        $enode->promote = $content->promote;
-        $enode->comment = $content->comment;
         $enode->field_date[LANGUAGE_NONE][0]['value'] = strtotime($content->field_date[0]->value);
-        $enode->og_group_ref[LANGUAGE_NONE][0]['target_id'] = $jnode->nid;
-        save_node($enode,$content->nid);
       break;
 
       case "fn_daily_life":
+        $location_enabled = TRUE;
       break;
 
       case "fn_food":
+        $location_enabled = TRUE;
+        $fields = array(
+          'body'=>'abstract',
+          'field_introduction'=>'field_intro',
+          'field_food' => '',
+          'field_food_impression' => '',
+          'field_food_prepared' => '',
+          'field_food_environment' => '',
+        );
       break;
 
       case "fn_kids_lives":
+        $location_enabled = TRUE;
       break;
 
       case "fn_nations":
+        $location_enabled = TRUE;
       break;
 
       case "fn_nature":
+        $location_enabled = TRUE;
       break;
 
       case "fn_traditions":
+        $location_enabled = TRUE;
       break;
 
       case "fn_transportation":
+        $location_enabled = TRUE;
       break;
 
       case "fn_world_connections":
+        $location_enabled = TRUE;
       break;
 
       case "journal":
+        $location_enabled = TRUE;
+
       break;
 
       case "log_book":
+        $location_enabled = TRUE;
+
+        $fields = array(
+          'body' => 'abstract',
+          'field_local_time' => '',
+          'field_time_zone' => '',
+          'field_travel_distance' => '',
+          'field_travel_so_far' => '',
+          'field_mode_of_transportation' => '',
+          'field_interesting_visit' => '',
+          'field_other_travel_news' => '',
+          'field_sunny_days' => '',
+          'field_cloudy_days' => '',
+          'field_rainy_days' => '',
+          'field_snowy_days' => '',
+          'field_windy_days' => '',
+          'field_temperature' => '',
+          'field_weather' => '',
+          'field_animals' => '',
+          'field_coolest_thing' => '',
+          'field_other_nature_news' => '',
+          'field_languages_spoken' => '',
+          'field_money' => '',
+          'field_bottle_of_water' => '',
+          'field_best_meal' => '',
+          'field_music_listened' => '',
+          'field_most_fun' => '',
+          'field_break' => '',
+          'field_read' => '',
+          'field_sports' => '',
+          'field_arguments' => '',
+          'field_other_our_news' => '',
+        );
       break;
 
       case "photo_album":
+        $location_enabled = TRUE;
+
       break;
 
       case "video":
+        $location_enabled = TRUE;
+
       break;
 
       case "video_conference":
+
       break;
 
       case "video_gallery":
+        $location_enabled = TRUE;
+
       break;
+    }
+
+    if($location_enabled){
+      $location = array((array)$content->locations[0]);
+      $location[0]['locpick'] = (array)$location[0]['locpick'];
+      unset($location[0]['lid']);
+      $enode->field_location[LANGUAGE_NONE] = $location;
+    }
+
+    if(isset($enode->type)){
+      foreach($fields AS $new_field=>$old_field){
+        if($old_field == '') $old_field = $new_field;
+        if(isset($content->$old_field)){
+          $old_field_info = $content->$old_field;
+          $tmp = array(LANGUAGE_NONE => array());
+          foreach($old_field_info AS $of){
+            $tmp[LANGUAGE_NONE][] = (array)$of;
+          }
+          $enode->$new_field = $tmp;
+        }
+      }
+      $enode->og_group_ref[LANGUAGE_NONE][0]['target_id'] = $jnode->nid;
+      save_node($enode,$content->nid);
     }
   }
 }
