@@ -143,6 +143,21 @@ foreach($journeys AS $journey){
 
       case "fn_daily_life":
         $location_enabled = TRUE;
+        $fields = array(
+          'body' => 'abstract',
+          'field_introduction' => 'field_intro',
+          'field_full_name' => 'field_name',
+          'field_where_you_live' => '',
+          'field_family' => '',
+          'field_transportation' => '',
+          'field_clothing' => '',
+          'field_free_time' => '',
+          'field_language_hello' => '',
+          'field_pets' => '',
+          'field_you_traveled' => '',
+          'field_work' => '',
+          'field_say_to_us' => ''
+        );
       break;
 
       case "fn_food":
@@ -159,39 +174,98 @@ foreach($journeys AS $journey){
 
       case "fn_kids_lives":
         $location_enabled = TRUE;
+        $fields = array(
+          'body'=>'abstract',
+          'field_introduction'=>'field_intro',
+          'field_meals' => '',
+          'field_house' => '',
+          'field_chores' => '',
+          'field_jobs' => '',
+          'field_school_time' => '',
+          'field_school_travel' => '',
+          'field_school_lunch' => '',
+          'field_language' => '',
+          'field_kids_school' => 'field_kids_names',
+          'field_subjects' => '',
+          'field_homework' => '',
+          'field_after_school' => '',
+          'field_celebrity' => '',
+          'field_music' => '',
+          'field_field_grow_up' => 'field_grow_up',
+          'field_go_anywhere' => '',
+          'field_think_about_us' => '',
+          'field_questions_for_kids' => ''
+        );
       break;
 
       case "fn_nations":
         $location_enabled = TRUE;
+        $fields = array(
+          'body'=>'abstract',
+          'field_introduction'=>'field_intro',
+        );
       break;
 
       case "fn_nature":
         $location_enabled = TRUE;
+        $fields = array(
+          'body'=>'abstract',
+          'field_introduction'=>'field_intro',
+          'field_community_need' => '',
+          'field_need_cause' => '',
+          'field_need_being_met' => ''
+        );
       break;
 
       case "fn_traditions":
         $location_enabled = TRUE;
+        $fields = array(
+          'body'=>'abstract',
+          'field_introduction'=>'field_intro',
+          'field_tradition' => '',
+          'field_community' => '',
+          'field_environment_connection' => '',
+        );
       break;
 
       case "fn_transportation":
         $location_enabled = TRUE;
+        $fields = array(
+          'body'=>'abstract',
+          'field_introduction'=>'field_intro',
+          'field_get_around' => '',
+          'field_you_getting_around' => '',
+          'field_connected_to_culture' => '',
+        );
       break;
 
       case "fn_world_connections":
         $location_enabled = TRUE;
+        $fields = array(
+          'body' => 'abstract',
+          'field_introduction' => 'field_intro',
+          'field_special' => '',
+          'field_parts_of_environment' => '',
+          'field_challenges' => '',
+          'field_adopting' => ''
+        );
       break;
 
       case "journal":
         $location_enabled = TRUE;
-
+        $fields = array(
+          'body' => 'abstract',
+        );
       break;
 
       case "log_book":
+        print_r($content);
+        die();
         $location_enabled = TRUE;
+        $enode->field_local_time[LANGUAGE_NONE][0]['value'] = strtotime($content->field_local_time[0]->value);
 
         $fields = array(
           'body' => 'abstract',
-          'field_local_time' => '',
           'field_time_zone' => '',
           'field_travel_distance' => '',
           'field_travel_so_far' => '',
@@ -224,21 +298,18 @@ foreach($journeys AS $journey){
 
       case "photo_album":
         $location_enabled = TRUE;
-
       break;
 
       case "video":
         $location_enabled = TRUE;
-
       break;
 
       case "video_conference":
-
+        $enode->field_date[LANGUAGE_NONE][0]['value'] = strtotime($content->field_date[0]->value);
       break;
 
       case "video_gallery":
         $location_enabled = TRUE;
-
       break;
     }
 
