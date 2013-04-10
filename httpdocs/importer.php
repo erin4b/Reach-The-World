@@ -124,28 +124,53 @@ foreach($journeys AS $journey){
         $enode->uid = $user->uid;
         $enode->name = $user->name;
         $enode->body[LANGUAGE_NONE][0]['value'] = $content->body;
-        $enode->status = $journey->status;
-        $enode->promote = $journey->promote;
-        $enode->comment = $journey->comment;
+        $enode->status = $content->status;
+        $enode->promote = $content->promote;
+        $enode->comment = $content->comment;
         $enode->field_date[LANGUAGE_NONE][0]['value'] = strtotime($content->field_date[0]->value);
-        $enode->og_group_ref[LANGUAGE_NONE][0]['target_id'] = 
-        //save_node($enode,$content->nid);
+        $enode->og_group_ref[LANGUAGE_NONE][0]['target_id'] = $jnode->nid;
+        save_node($enode,$content->nid);
       break;
 
       case "fn_daily_life":
+      break;
+
       case "fn_food":
+      break;
+
       case "fn_kids_lives":
+      break;
+
       case "fn_nations":
+      break;
+
       case "fn_nature":
+      break;
+
       case "fn_traditions":
+      break;
+
       case "fn_transportation":
+      break;
+
       case "fn_world_connections":
-      case "itinerary_location":
+      break;
+
       case "journal":
+      break;
+
       case "log_book":
+      break;
+
       case "photo_album":
+      break;
+
       case "video":
+      break;
+
       case "video_conference":
+      break;
+
       case "video_gallery":
       break;
     }
