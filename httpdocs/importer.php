@@ -95,7 +95,7 @@ function save_node(&$node,$onid){
     ->execute();
 }
 
-$data = file_get_contents("http://reachtheworld.org/export.php?p=password&c=journey&id=52545,53530,52485");
+$data = file_get_contents("http://reachtheworld.org/export.php?p=password&c=journey&id=52545,53530,52485,562");
 $journeys = json_decode($data);
 foreach($journeys AS $journey){
   $jnode = get_node('journey',$journey->nid);
@@ -110,6 +110,9 @@ foreach($journeys AS $journey){
   $jnode->created = $journey->created;
   $jnode->changed = $journey->changed;
   save_node($jnode,$journey->nid);
+
+  $save_path = 'public://user/'.$user->uid;
+  file_prepare_directory($save_path,FILE_CREATE_DIRECTORY);
 
   foreach($journey->og_content AS $content){
     $fields = array();
@@ -301,29 +304,15 @@ foreach($journeys AS $journey){
 
       case "video":
         $location_enabled = TRUE;
-      break;
-
-      case "video_conference":
-        $enode->field_date[LANGUAGE_NONE][0]['value'] = strtotime($content->field_date[0]->value);
-      break;
-
-      case "video_gallery":
-        $location_enabled = TRUE;
-      break;
-    }
-    if($content->image_content > 0){
-        $enode->field_images = array(LANGUAGE_NONE => array());
-        foreach($content->image_content AS $image){
-          $url = trim('http://www.reachtheworld.org/'.$image->images->_original);
-          $image = file_get_contents($url);
+        $enode->field_video = array(LANGUAGE_NONE => array());
+        foreach($content->field_video AS $video){
+          $url = trim('http://www.reachtheworld.org/'.$video->filepath);
+          $video = file_get_contents($url);
           $filename = drupal_basename($url);
-          $save_path = 'public://user/'.$user->uid;
-          file_prepare_directory($save_path,FILE_CREATE_DIRECTORY);
-
           $destination = $save_path.'/'.$filename;
           $replace = FILE_EXISTS_RENAME;
 
-          if($uri = file_unmanaged_save_data($image, $destination, $replace)){
+          if($uri = file_unmanaged_save_data($video, $destination, $replace)){
             // Create a file object.
             $file = new stdClass();
             $file->fid = NULL;
@@ -337,10 +326,47 @@ foreach($journeys AS $journey){
             }
 
             $file = file_save($file);
-            //$file = file_save_data($image, $save_path.$filename, FILE_EXISTS_RENAME);
-            $enode->field_images[LANGUAGE_NONE][] = (array)$file;
+            $enode->field_video[LANGUAGE_NONE][] = (array)$file;
           }
         }
+      break;
+
+      case "video_conference":
+        $enode->field_date[LANGUAGE_NONE][0]['value'] = strtotime($content->field_date[0]->value);
+      break;
+
+      case "video_gallery":
+        $location_enabled = TRUE;
+      break;
+    }
+
+    if($content->image_content > 0){
+      $enode->field_images = array(LANGUAGE_NONE => array());
+      foreach($content->image_content AS $image){
+        $url = trim('http://www.reachtheworld.org/'.$image->images->_original);
+        $image = file_get_contents($url);
+        $filename = drupal_basename($url);
+
+        $destination = $save_path.'/'.$filename;
+        $replace = FILE_EXISTS_RENAME;
+
+        if($uri = file_unmanaged_save_data($image, $destination, $replace)){
+          // Create a file object.
+          $file = new stdClass();
+          $file->fid = NULL;
+          $file->uri = $uri;
+          $file->filename = drupal_basename($uri);
+          $file->filemime = file_get_mimetype($file->uri);
+          $file->uid = $user->uid;
+          $file->status = FILE_STATUS_PERMANENT;
+          if (is_file($destination)) {
+            $file->filename = drupal_basename($destination);
+          }
+
+          $file = file_save($file);
+          $enode->field_images[LANGUAGE_NONE][] = (array)$file;
+        }
+      }
     }
 
     //CHECK IF LOCATION ENABLED FOR CONTENT TYPE
