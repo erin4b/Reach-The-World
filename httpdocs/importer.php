@@ -17,6 +17,8 @@
 //define('DRUPAL_ROOT', getcwd());
 define('DRUPAL_ROOT','/home/orb/public_html/reachtheworld.org/httpdocs');
 
+$_SERVER['REMOTE_ADDR'] = '';
+
 require_once DRUPAL_ROOT . '/includes/bootstrap.inc';
 drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
 require_once DRUPAL_ROOT . '/' . variable_get('password_inc', 'includes/password.inc');
@@ -96,7 +98,7 @@ function save_node(&$node,$onid){
     ->execute();
 }
 
-$data = file_get_contents("http://reachtheworld.org/export.php?p=password&c=journey&id=52545,53530,52485,562");
+$data = file_get_contents("http://reachtheworld.org/export.php?p=password&c=journeys");
 $journeys = json_decode($data);
 foreach($journeys AS $journey){
   $jnode = get_node('journey',$journey->nid);
@@ -114,8 +116,9 @@ foreach($journeys AS $journey){
 
   $save_path = 'public://user/'.$user->uid;
   file_prepare_directory($save_path,FILE_CREATE_DIRECTORY);
-
+  print "Saved Journey {$journey->nid}\r\n";
   foreach($journey->og_content AS $content){
+    print "Saved {$content->type} {$content->nid}\r\n";
     $fields = array();
     $location_enabled = FALSE;
 
@@ -340,10 +343,12 @@ foreach($journeys AS $journey){
 
     //CHECK IF LOCATION ENABLED FOR CONTENT TYPE
     if($location_enabled){
-      $location = array((array)$content->locations[0]);
-      $location[0]['locpick'] = (array)$location[0]['locpick'];
-      unset($location[0]['lid']);
-      $enode->field_location[LANGUAGE_NONE] = $location;
+      if(sizeof($content->locations) > 0){
+        $location = array((array)$content->locations[0]);
+        $location[0]['locpick'] = (array)$location[0]['locpick'];
+        unset($location[0]['lid']);
+        $enode->field_location[LANGUAGE_NONE] = $location;
+      }
     }
 
     // CHECK TO MAKE SURE THE type IS SET FOR THE OBJECT AND SAVE
