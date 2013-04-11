@@ -129,20 +129,25 @@ ul li {
 }
 /* line 117, ../sass/style.scss */
 #in-the-news .content {
-  font-size: 1.1em;
+  font-size: 11px;
+}
+/* line 120, ../sass/style.scss */
+#in-the-news p {
+  padding-left: 20px;
+  background: url(../images/blt_pin.jpg) no-repeat left top;
 }
 
-/* line 123, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 #geogames p {
   margin: 0px;
 }
 
-/* line 128, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 .panel-col-bottom {
   padding-top: 15px;
 }
 
-/* line 132, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 #ad {
   background: #7FB3F0;
   border: 0px solid #7FB3F0;
@@ -152,17 +157,17 @@ ul li {
   overflow: hidden;
   margin: 10px auto;
 }
-/* line 140, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 #ad a {
   width: 100%;
   height: 100%;
 }
-/* line 143, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 #ad a img {
   float: right;
 }
 
-/* line 150, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .pane-menu-menu-journey-content-menu,
 .journey-menu {
   background-color: #0066FF;
@@ -171,7 +176,7 @@ ul li {
   padding: 0px 12px;
   margin: 20px auto 10px;
 }
-/* line 156, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .pane-menu-menu-journey-content-menu:after,
 .journey-menu:after {
   content: ".";
@@ -180,21 +185,21 @@ ul li {
   clear: both;
   visibility: hidden;
 }
-/* line 163, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .pane-menu-menu-journey-content-menu ul.menu,
 .journey-menu ul.menu {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
 }
-/* line 167, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 .pane-menu-menu-journey-content-menu ul.menu li,
 .journey-menu ul.menu li {
   float: left;
   display: block;
   margin-right: 20px;
 }
-/* line 171, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .pane-menu-menu-journey-content-menu ul.menu li a,
 .journey-menu ul.menu li a {
   display: block;
@@ -204,87 +209,87 @@ ul li {
   height: 32px;
   text-indent: -99999px;
 }
-/* line 178, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .pane-menu-menu-journey-content-menu ul.menu li a.journey-home,
 .journey-menu ul.menu li a.journey-home {
   width: 88px;
   background-image: url(../images/nav_Home_off.jpg);
 }
-/* line 181, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .pane-menu-menu-journey-content-menu ul.menu li a.journey-home.active, .pane-menu-menu-journey-content-menu ul.menu li a.journey-home:hover,
 .journey-menu ul.menu li a.journey-home.active,
 .journey-menu ul.menu li a.journey-home:hover {
   background-image: url(../images/nav_Home.jpg);
 }
-/* line 185, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 .pane-menu-menu-journey-content-menu ul.menu li a.journey-logbook,
 .journey-menu ul.menu li a.journey-logbook {
   width: 113px;
   background-image: url(../images/nav_Logbook_off.jpg);
 }
-/* line 188, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 .pane-menu-menu-journey-content-menu ul.menu li a.journey-logbook.active, .pane-menu-menu-journey-content-menu ul.menu li a.journey-logbook:hover,
 .journey-menu ul.menu li a.journey-logbook.active,
 .journey-menu ul.menu li a.journey-logbook:hover {
   background-image: url(../images/nav_Logbook.jpg);
 }
-/* line 192, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 .pane-menu-menu-journey-content-menu ul.menu li a.journey-notes,
 .journey-menu ul.menu li a.journey-notes {
   width: 140px;
   background-image: url(../images/nav_Field-Notes_off.jpg);
 }
-/* line 195, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 .pane-menu-menu-journey-content-menu ul.menu li a.journey-notes.active, .pane-menu-menu-journey-content-menu ul.menu li a.journey-notes:hover,
 .journey-menu ul.menu li a.journey-notes.active,
 .journey-menu ul.menu li a.journey-notes:hover {
   background-image: url(../images/nav_Field-Notes.jpg);
 }
-/* line 199, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .pane-menu-menu-journey-content-menu ul.menu li a.journey-journals,
 .journey-menu ul.menu li a.journey-journals {
   width: 105px;
   background-image: url(../images/nav_Journals_off.jpg);
 }
-/* line 202, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 .pane-menu-menu-journey-content-menu ul.menu li a.journey-journals.active, .pane-menu-menu-journey-content-menu ul.menu li a.journey-journals:hover,
 .journey-menu ul.menu li a.journey-journals.active,
 .journey-menu ul.menu li a.journey-journals:hover {
   background-image: url(../images/nav_Journals.jpg);
 }
-/* line 206, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 .pane-menu-menu-journey-content-menu ul.menu li a.journey-albums,
 .journey-menu ul.menu li a.journey-albums {
   width: 109px;
   background-image: url(../images/nav_albums_off.jpg);
 }
-/* line 209, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .pane-menu-menu-journey-content-menu ul.menu li a.journey-albums.active, .pane-menu-menu-journey-content-menu ul.menu li a.journey-albums:hover,
 .journey-menu ul.menu li a.journey-albums.active,
 .journey-menu ul.menu li a.journey-albums:hover {
   background-image: url(../images/nav_albums.jpg);
 }
 
-/* line 219, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 .pane-menu-menu-journey-travelers-menu,
 .pane-menu-menu-journey-travelers-menu-co {
   background-color: #FFD66A;
   border-radius: 10px;
   padding: 10px;
 }
-/* line 223, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 .pane-menu-menu-journey-travelers-menu ul.menu,
 .pane-menu-menu-journey-travelers-menu-co ul.menu {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
-/* line 227, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 .pane-menu-menu-journey-travelers-menu ul.menu li,
 .pane-menu-menu-journey-travelers-menu-co ul.menu li {
   list-style: none;
 }
-/* line 229, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .pane-menu-menu-journey-travelers-menu ul.menu li a,
 .pane-menu-menu-journey-travelers-menu-co ul.menu li a {
   font-size: 18px;
@@ -293,7 +298,7 @@ ul li {
   text-shadow: 2px 2px 2px #999;
   text-decoration: none;
 }
-/* line 235, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 .pane-menu-menu-journey-travelers-menu ul.menu li a.travelers-bio,
 .pane-menu-menu-journey-travelers-menu-co ul.menu li a.travelers-bio {
   letter-spacing: -1px;
@@ -303,12 +308,12 @@ ul li {
   height: 28px;
   line-height: 24px;
 }
-/* line 243, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 .pane-menu-menu-journey-travelers-menu ul.menu li a:hover,
 .pane-menu-menu-journey-travelers-menu-co ul.menu li a:hover {
   color: #0066FF;
 }
-/* line 246, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .pane-menu-menu-journey-travelers-menu ul.menu li a.itinerary,
 .pane-menu-menu-journey-travelers-menu-co ul.menu li a.itinerary {
   letter-spacing: 0px;
@@ -320,27 +325,27 @@ ul li {
   margin-top: 3px;
 }
 
-/* line 263, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 .node-type-journey #main .center-wrapper .panel-col-first, .node-type-log-book #main .center-wrapper .panel-col-first {
   width: 180px;
   margin-right: 20px;
 }
-/* line 266, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 .node-type-journey #main .center-wrapper .panel-col-first > .inside, .node-type-log-book #main .center-wrapper .panel-col-first > .inside {
   margin: 0px 0px 1em;
 }
-/* line 270, ../sass/style.scss */
+/* line 274, ../sass/style.scss */
 .node-type-journey #main .center-wrapper .panel-col-last, .node-type-log-book #main .center-wrapper .panel-col-last {
   width: 720px;
 }
 
-/* line 277, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 .center-front {
   margin-top: 12px;
   position: relative;
   padding-bottom: 20px;
 }
-/* line 282, ../sass/style.scss */
+/* line 286, ../sass/style.scss */
 .center-front #frontbox {
   position: relative;
   height: 398px;
@@ -349,14 +354,14 @@ ul li {
   border-radius: 10px;
   margin: 0px auto;
 }
-/* line 289, ../sass/style.scss */
+/* line 293, ../sass/style.scss */
 .center-front #frontbox .panel-col-first {
   width: 528px;
   height: auto;
   margin-left: 5px;
   float: left;
 }
-/* line 295, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 .center-front #frontbox .panel-col-last {
   float: right;
   width: 400px;
@@ -365,11 +370,11 @@ ul li {
   margin: 0px;
   margin-right: 5px;
 }
-/* line 302, ../sass/style.scss */
+/* line 306, ../sass/style.scss */
 .center-front #frontbox .panel-col-last > .inside {
   margin: 0px;
 }
-/* line 308, ../sass/style.scss */
+/* line 312, ../sass/style.scss */
 .center-front #frontbox > .pane-content .panel-col-first h2.pane-title {
   color: #fff;
   text-shadow: 2px 2px 2px #222;
@@ -377,20 +382,20 @@ ul li {
   line-height: 22px;
   margin: 10px 0px 4px;
 }
-/* line 316, ../sass/style.scss */
+/* line 320, ../sass/style.scss */
 .center-front #frontbox > .pane-content #journey-selector {
   line-height: 35px;
 }
-/* line 319, ../sass/style.scss */
+/* line 323, ../sass/style.scss */
 .center-front #frontbox > .pane-content #featured-journey {
   background: #fff;
   height: 330px;
   padding: 10px 20px;
 }
-/* line 323, ../sass/style.scss */
+/* line 327, ../sass/style.scss */
 .center-front #frontbox > .pane-content #featured-journey h2.pane-title {
   color: #1D4AFC;
-  font-size: 1.4em;
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 20px;
@@ -399,56 +404,56 @@ ul li {
   background-repeat: no-repeat;
   padding-left: 20px;
 }
-/* line 335, ../sass/style.scss */
+/* line 339, ../sass/style.scss */
 .center-front #frontbox > .pane-content #featured-journey .views-field-title a {
   color: #1D4AFC;
   font-weight: bold;
-  font-size: 2.8em;
+  font-size: 28px;
   text-decoration: none;
   line-height: 30px;
 }
 
-/* line 348, ../sass/style.scss */
+/* line 352, ../sass/style.scss */
 .front #logo {
   display: none;
 }
 
-/* line 353, ../sass/style.scss */
+/* line 357, ../sass/style.scss */
 .node-type-journey #logo {
   display: block;
 }
 
-/* line 358, ../sass/style.scss */
+/* line 362, ../sass/style.scss */
 .pane-user-login {
   position: relative;
   float: right;
   margin-top: 0px;
 }
-/* line 362, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 .pane-user-login .form-item {
   display: inline;
   float: left;
 }
-/* line 365, ../sass/style.scss */
+/* line 369, ../sass/style.scss */
 .pane-user-login .form-item label {
   color: #fff;
   font-size: 12px;
 }
-/* line 369, ../sass/style.scss */
+/* line 373, ../sass/style.scss */
 .pane-user-login .form-item label, .pane-user-login .form-item input {
   display: inline;
   margin-left: 10px;
 }
-/* line 374, ../sass/style.scss */
+/* line 378, ../sass/style.scss */
 .pane-user-login .form-item, .pane-user-login .form-actions {
   margin: 0px;
 }
-/* line 377, ../sass/style.scss */
+/* line 381, ../sass/style.scss */
 .pane-user-login .form-actions {
   float: left;
   margin: 0px 10px;
 }
-/* line 381, ../sass/style.scss */
+/* line 385, ../sass/style.scss */
 .pane-user-login .form-submit {
   border: none;
   width: 50px;
@@ -456,111 +461,111 @@ ul li {
   font-size: 12px;
   background: none;
 }
-/* line 388, ../sass/style.scss */
+/* line 392, ../sass/style.scss */
 .pane-user-login .item-list {
   display: none;
 }
 
-/* line 394, ../sass/style.scss */
+/* line 398, ../sass/style.scss */
 #mini-panel-top_menu_bar_links .panel-col-first {
   width: 395px;
   height: 33px;
 }
-/* line 398, ../sass/style.scss */
+/* line 402, ../sass/style.scss */
 #mini-panel-top_menu_bar_links .panel-col-last {
   width: 523px;
   height: 33px;
 }
 
-/* line 404, ../sass/style.scss */
+/* line 408, ../sass/style.scss */
 .logged-in #mini-panel-top_menu_bar_links .pane-user-login {
   display: none;
 }
 
-/* line 408, ../sass/style.scss */
+/* line 412, ../sass/style.scss */
 .not-logged-in #mini-panel-top_menu_bar_links #welcome-pane {
   display: none;
 }
 
-/* line 412, ../sass/style.scss */
+/* line 416, ../sass/style.scss */
 .panels-flexible-region-2-center {
   width: 100%;
 }
 
-/* line 418, ../sass/style.scss */
+/* line 422, ../sass/style.scss */
 .panels-flexible-region-2-bottom_center_,
 .panels-flexible-region-2-bottom,
 .panels-flexible-region-2-bottom_center {
   width: 33.333333333334%;
 }
 
-/* line 422, ../sass/style.scss */
+/* line 426, ../sass/style.scss */
 #main {
   padding: 0px;
 }
 
-/* line 426, ../sass/style.scss */
+/* line 430, ../sass/style.scss */
 .panel-2col .panel-col-first .inside {
   margin: 0px;
 }
 
-/* line 430, ../sass/style.scss */
+/* line 434, ../sass/style.scss */
 .panel-2col .panel-separator {
   display: none;
 }
 
-/* line 434, ../sass/style.scss */
+/* line 438, ../sass/style.scss */
 .tips {
   display: none;
 }
 
-/* line 438, ../sass/style.scss */
+/* line 442, ../sass/style.scss */
 .bubble {
   width: 325px;
   height: 148px;
 }
-/* line 441, ../sass/style.scss */
+/* line 445, ../sass/style.scss */
 .bubble .journal-info {
   border-bottom: 1px solid black;
   display: block;
 }
-/* line 444, ../sass/style.scss */
+/* line 448, ../sass/style.scss */
 .bubble .journal-info .journal-title {
   font-weight: bold;
 }
-/* line 450, ../sass/style.scss */
+/* line 454, ../sass/style.scss */
 .bubble .journal-body-contents {
   display: block;
   margin: 5px 0px;
 }
-/* line 453, ../sass/style.scss */
+/* line 457, ../sass/style.scss */
 .bubble .journal-body-contents .journal-image {
   display: block;
   float: left;
   margin-right: 10px;
 }
-/* line 458, ../sass/style.scss */
+/* line 462, ../sass/style.scss */
 .bubble .journal-body-contents .journal-body {
   display: block;
   clear: right;
 }
-/* line 463, ../sass/style.scss */
+/* line 467, ../sass/style.scss */
 .bubble .journal-journey-link {
   display: block;
   border-top: 1px solid black;
 }
 
-/* line 471, ../sass/style.scss */
+/* line 475, ../sass/style.scss */
 br {
   line-height: 2;
 }
 
-/* line 475, ../sass/style.scss */
+/* line 479, ../sass/style.scss */
 #cboxClose {
   border: 0px solid;
 }
 
-/* line 480, ../sass/style.scss */
+/* line 484, ../sass/style.scss */
 .pane-menu-menu-journey-logbook-menu, .pane-menu-menu-journey-field-notes-menu, .pane-menu-menu-journey-album-menu,
 .pane-menu-menu-journey-logbook-menu-cont {
   background: #CDA2CD;
@@ -569,7 +574,7 @@ br {
   margin-bottom: 10px;
   padding: 10px;
 }
-/* line 486, ../sass/style.scss */
+/* line 490, ../sass/style.scss */
 .pane-menu-menu-journey-logbook-menu h2.pane-title, .pane-menu-menu-journey-field-notes-menu h2.pane-title, .pane-menu-menu-journey-album-menu h2.pane-title,
 .pane-menu-menu-journey-logbook-menu-cont h2.pane-title {
   margin: 0px;
@@ -580,19 +585,19 @@ br {
   text-shadow: 2px 2px 2px #999;
   font-size: 2.4em;
 }
-/* line 495, ../sass/style.scss */
+/* line 499, ../sass/style.scss */
 .pane-menu-menu-journey-logbook-menu ul.menu, .pane-menu-menu-journey-field-notes-menu ul.menu, .pane-menu-menu-journey-album-menu ul.menu,
 .pane-menu-menu-journey-logbook-menu-cont ul.menu {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
 }
-/* line 498, ../sass/style.scss */
+/* line 502, ../sass/style.scss */
 .pane-menu-menu-journey-logbook-menu ul.menu li, .pane-menu-menu-journey-field-notes-menu ul.menu li, .pane-menu-menu-journey-album-menu ul.menu li,
 .pane-menu-menu-journey-logbook-menu-cont ul.menu li {
   list-style: none;
   margin-bottom: 3px;
 }
-/* line 501, ../sass/style.scss */
+/* line 505, ../sass/style.scss */
 .pane-menu-menu-journey-logbook-menu ul.menu li a, .pane-menu-menu-journey-field-notes-menu ul.menu li a, .pane-menu-menu-journey-album-menu ul.menu li a,
 .pane-menu-menu-journey-logbook-menu-cont ul.menu li a {
   font-size: 18px;
@@ -604,82 +609,82 @@ br {
   line-height: 28px;
   display: block;
 }
-/* line 510, ../sass/style.scss */
+/* line 514, ../sass/style.scss */
 .pane-menu-menu-journey-logbook-menu ul.menu li a.travel-news, .pane-menu-menu-journey-field-notes-menu ul.menu li a.travel-news, .pane-menu-menu-journey-album-menu ul.menu li a.travel-news,
 .pane-menu-menu-journey-logbook-menu-cont ul.menu li a.travel-news {
   padding-left: 44px;
   background: url(../images/travelnews.jpg) no-repeat -4px top;
 }
-/* line 514, ../sass/style.scss */
+/* line 518, ../sass/style.scss */
 .pane-menu-menu-journey-logbook-menu ul.menu li a.nature-news, .pane-menu-menu-journey-field-notes-menu ul.menu li a.nature-news, .pane-menu-menu-journey-album-menu ul.menu li a.nature-news,
 .pane-menu-menu-journey-logbook-menu-cont ul.menu li a.nature-news {
   padding-left: 44px;
   background: url(../images/naturenews.jpg) no-repeat -4px top;
 }
-/* line 518, ../sass/style.scss */
+/* line 522, ../sass/style.scss */
 .pane-menu-menu-journey-logbook-menu ul.menu li a.our-news, .pane-menu-menu-journey-field-notes-menu ul.menu li a.our-news, .pane-menu-menu-journey-album-menu ul.menu li a.our-news,
 .pane-menu-menu-journey-logbook-menu-cont ul.menu li a.our-news {
   padding-left: 44px;
   background: url(../images/ournews.jpg) no-repeat left top;
 }
-/* line 522, ../sass/style.scss */
+/* line 526, ../sass/style.scss */
 .pane-menu-menu-journey-logbook-menu ul.menu li a.daily-life, .pane-menu-menu-journey-field-notes-menu ul.menu li a.daily-life, .pane-menu-menu-journey-album-menu ul.menu li a.daily-life,
 .pane-menu-menu-journey-logbook-menu-cont ul.menu li a.daily-life {
   padding-left: 44px;
   background: url(../images/nav_fn_dailylife.jpg) no-repeat -1px top;
 }
-/* line 526, ../sass/style.scss */
+/* line 530, ../sass/style.scss */
 .pane-menu-menu-journey-logbook-menu ul.menu li a.kids, .pane-menu-menu-journey-field-notes-menu ul.menu li a.kids, .pane-menu-menu-journey-album-menu ul.menu li a.kids,
 .pane-menu-menu-journey-logbook-menu-cont ul.menu li a.kids {
   padding-left: 44px;
   background: url(../images/nav_fn_kids.jpg) no-repeat -1px top;
 }
-/* line 530, ../sass/style.scss */
+/* line 534, ../sass/style.scss */
 .pane-menu-menu-journey-logbook-menu ul.menu li a.food, .pane-menu-menu-journey-field-notes-menu ul.menu li a.food, .pane-menu-menu-journey-album-menu ul.menu li a.food,
 .pane-menu-menu-journey-logbook-menu-cont ul.menu li a.food {
   padding-left: 44px;
   background: url(../images/nav_fn_food.jpg) no-repeat -1px top;
 }
-/* line 534, ../sass/style.scss */
+/* line 538, ../sass/style.scss */
 .pane-menu-menu-journey-logbook-menu ul.menu li a.nature, .pane-menu-menu-journey-field-notes-menu ul.menu li a.nature, .pane-menu-menu-journey-album-menu ul.menu li a.nature,
 .pane-menu-menu-journey-logbook-menu-cont ul.menu li a.nature {
   padding-left: 44px;
   background: url(../images/nav_fn_nature.jpg) no-repeat -1px top;
 }
-/* line 538, ../sass/style.scss */
+/* line 542, ../sass/style.scss */
 .pane-menu-menu-journey-logbook-menu ul.menu li a.traditions, .pane-menu-menu-journey-field-notes-menu ul.menu li a.traditions, .pane-menu-menu-journey-album-menu ul.menu li a.traditions,
 .pane-menu-menu-journey-logbook-menu-cont ul.menu li a.traditions {
   padding-left: 44px;
   background: url(../images/nav_fn_traditions.jpg) no-repeat -1px top;
 }
-/* line 542, ../sass/style.scss */
+/* line 546, ../sass/style.scss */
 .pane-menu-menu-journey-logbook-menu ul.menu li a.transportation, .pane-menu-menu-journey-field-notes-menu ul.menu li a.transportation, .pane-menu-menu-journey-album-menu ul.menu li a.transportation,
 .pane-menu-menu-journey-logbook-menu-cont ul.menu li a.transportation {
   padding-left: 44px;
   background: url(../images/nav_fn_transportation.jpg) no-repeat -1px top;
   letter-spacing: -1px;
 }
-/* line 547, ../sass/style.scss */
+/* line 551, ../sass/style.scss */
 .pane-menu-menu-journey-logbook-menu ul.menu li a.communities, .pane-menu-menu-journey-field-notes-menu ul.menu li a.communities, .pane-menu-menu-journey-album-menu ul.menu li a.communities,
 .pane-menu-menu-journey-logbook-menu-cont ul.menu li a.communities {
   padding-left: 44px;
   background: url(../images/nav_fn_communities.jpg) no-repeat -1px top;
   letter-spacing: -1px;
 }
-/* line 552, ../sass/style.scss */
+/* line 556, ../sass/style.scss */
 .pane-menu-menu-journey-logbook-menu ul.menu li a.environment, .pane-menu-menu-journey-field-notes-menu ul.menu li a.environment, .pane-menu-menu-journey-album-menu ul.menu li a.environment,
 .pane-menu-menu-journey-logbook-menu-cont ul.menu li a.environment {
   padding-left: 44px;
   background: url(../images/nav_fn_environment.jpg) no-repeat -1px top;
 }
-/* line 557, ../sass/style.scss */
+/* line 561, ../sass/style.scss */
 .pane-menu-menu-journey-logbook-menu ul.menu li a:hover, .pane-menu-menu-journey-logbook-menu ul.menu li a.active, .pane-menu-menu-journey-field-notes-menu ul.menu li a:hover, .pane-menu-menu-journey-field-notes-menu ul.menu li a.active, .pane-menu-menu-journey-album-menu ul.menu li a:hover, .pane-menu-menu-journey-album-menu ul.menu li a.active,
 .pane-menu-menu-journey-logbook-menu-cont ul.menu li a:hover,
 .pane-menu-menu-journey-logbook-menu-cont ul.menu li a.active {
   color: #0066FF;
 }
 
-/* line 567, ../sass/style.scss */
+/* line 571, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_journey_location {
   background: #CDA2CD;
   border-radius: 10px;
@@ -688,43 +693,43 @@ br {
   font-size: 1.4em;
   line-height: 1.5;
 }
-/* line 574, ../sass/style.scss */
+/* line 578, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_journey_location .field-content > span {
   background-image: url(../images/crn_top_lft.jpg);
   background-repeat: no-repeat;
   display: block;
   padding-left: 30px;
 }
-/* line 579, ../sass/style.scss */
+/* line 583, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_journey_location .field-content > span .current-location-label {
   text-transform: uppercase;
 }
-/* line 583, ../sass/style.scss */
+/* line 587, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_journey_location .views-field-nothing {
   font-weight: bold;
   margin-bottom: 5px;
 }
-/* line 589, ../sass/style.scss */
+/* line 593, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-albums table {
   margin: 0px;
   width: 100%;
 }
-/* line 593, ../sass/style.scss */
+/* line 597, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-albums table tr td {
   width: 178.75px;
   text-align: center;
   vertical-align: top;
 }
-/* line 597, ../sass/style.scss */
+/* line 601, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-albums table tr td img {
   border: 1px solid #000;
 }
-/* line 600, ../sass/style.scss */
+/* line 604, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-albums table tr td a {
   text-decoration: none;
   color: #0066FF;
 }
-/* line 608, ../sass/style.scss */
+/* line 612, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_logbook {
   display: block;
   width: 480px;
@@ -732,7 +737,7 @@ br {
   background: transparent url(../images/postcard.jpg) no-repeat left top;
   padding: 125px 30px 30px 30px;
 }
-/* line 615, ../sass/style.scss */
+/* line 619, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue {
   transform: rotate(1deg);
   -ms-transform: rotate(1deg);
@@ -744,7 +749,7 @@ br {
   -moz-transform: rotate(1deg);
   /* Firefox */
 }
-/* line 621, ../sass/style.scss */
+/* line 625, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue .clue-location {
   float: left;
   width: 130px;
@@ -753,49 +758,49 @@ br {
   color: #333333;
   line-height: 1.5;
 }
-/* line 628, ../sass/style.scss */
+/* line 632, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue .clue-location .title {
   font-weight: bold;
   display: block;
 }
-/* line 632, ../sass/style.scss */
+/* line 636, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue .clue-location .latitude {
   display: block;
 }
-/* line 635, ../sass/style.scss */
+/* line 639, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue .clue-location .longitude {
   display: block;
 }
-/* line 638, ../sass/style.scss */
+/* line 642, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue .clue-location .by-x {
   display: block;
 }
-/* line 642, ../sass/style.scss */
+/* line 646, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue .clue-images {
   float: right;
   width: 300px;
 }
 
-/* line 652, ../sass/style.scss */
+/* line 656, ../sass/style.scss */
 .view-journey-travelers.view-id-journey_travelers {
   margin-bottom: 5px;
 }
-/* line 654, ../sass/style.scss */
+/* line 658, ../sass/style.scss */
 .view-journey-travelers.view-id-journey_travelers .views-field-name {
   font-size: 1.4em;
   font-weight: bold;
 }
-/* line 658, ../sass/style.scss */
+/* line 662, ../sass/style.scss */
 .view-journey-travelers.view-id-journey_travelers table {
   width: 100%;
   margin: 0px;
 }
-/* line 665, ../sass/style.scss */
+/* line 669, ../sass/style.scss */
 .view-journey-travelers.view-id-journey_travelers.view-display-id-default table tr td {
   text-align: center;
 }
 
-/* line 674, ../sass/style.scss */
+/* line 678, ../sass/style.scss */
 .pane-welcome-messages, .pane-menu-menu-user-mail-menu {
   background: #6995EC;
   border: 1px solid #6995EC;
@@ -807,51 +812,51 @@ br {
   padding-right: 5px;
   margin-bottom: 10px;
 }
-/* line 684, ../sass/style.scss */
+/* line 688, ../sass/style.scss */
 .pane-welcome-messages h2, .pane-menu-menu-user-mail-menu h2 {
   margin: 0px 0px 5px;
 }
-/* line 688, ../sass/style.scss */
+/* line 692, ../sass/style.scss */
 .pane-welcome-messages .view-content a, .pane-menu-menu-user-mail-menu .view-content a {
   color: white;
   text-decoration: none;
 }
-/* line 693, ../sass/style.scss */
+/* line 697, ../sass/style.scss */
 .pane-welcome-messages ul, .pane-menu-menu-user-mail-menu ul {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 }
-/* line 696, ../sass/style.scss */
+/* line 700, ../sass/style.scss */
 .pane-welcome-messages ul li, .pane-menu-menu-user-mail-menu ul li {
   list-style: none;
 }
-/* line 698, ../sass/style.scss */
+/* line 702, ../sass/style.scss */
 .pane-welcome-messages ul li a, .pane-menu-menu-user-mail-menu ul li a {
   color: #fff;
   padding-left: 10px;
   text-decoration: none;
 }
 
-/* line 708, ../sass/style.scss */
+/* line 712, ../sass/style.scss */
 form#views-form-user-messages-inbox td {
   padding: 2px 10px;
 }
 
-/* line 715, ../sass/style.scss */
+/* line 719, ../sass/style.scss */
 .page-user .center-wrapper .panel-col-first {
   width: 180px;
   margin-right: 20px;
 }
-/* line 718, ../sass/style.scss */
+/* line 722, ../sass/style.scss */
 .page-user .center-wrapper .panel-col-first .inside {
   margin: 0px;
 }
 
-/* line 725, ../sass/style.scss */
+/* line 729, ../sass/style.scss */
 #panels-ipe-paneid-98 {
   margin-bottom: 10px;
 }
-/* line 727, ../sass/style.scss */
+/* line 731, ../sass/style.scss */
 #panels-ipe-paneid-98 h2.pane-title {
   margin: 0px;
   background-image: url(../images/hdr_logbook.jpg);
@@ -860,16 +865,16 @@ form#views-form-user-messages-inbox td {
   text-indent: -9999px;
   overflow: hidden;
 }
-/* line 735, ../sass/style.scss */
+/* line 739, ../sass/style.scss */
 #panels-ipe-paneid-98 p {
   margin: 0px;
 }
 
-/* line 740, ../sass/style.scss */
+/* line 744, ../sass/style.scss */
 #panels-ipe-paneid-99 {
   margin-bottom: 10px;
 }
-/* line 742, ../sass/style.scss */
+/* line 746, ../sass/style.scss */
 #panels-ipe-paneid-99 h2.pane-title {
   margin: 0px;
   background-image: url(../images/hdr_field-notes.jpg);
@@ -878,16 +883,16 @@ form#views-form-user-messages-inbox td {
   text-indent: -9999px;
   overflow: hidden;
 }
-/* line 750, ../sass/style.scss */
+/* line 754, ../sass/style.scss */
 #panels-ipe-paneid-99 p {
   margin: 0px;
 }
 
-/* line 755, ../sass/style.scss */
+/* line 759, ../sass/style.scss */
 #panels-ipe-paneid-100 {
   margin-bottom: 10px;
 }
-/* line 757, ../sass/style.scss */
+/* line 761, ../sass/style.scss */
 #panels-ipe-paneid-100 h2.pane-title {
   margin: 0px;
   background-image: url(../images/hdr_journals.jpg);
@@ -896,80 +901,80 @@ form#views-form-user-messages-inbox td {
   text-indent: -9999px;
   overflow: hidden;
 }
-/* line 765, ../sass/style.scss */
+/* line 769, ../sass/style.scss */
 #panels-ipe-paneid-100 p {
   margin: 0px;
 }
 
-/* line 771, ../sass/style.scss */
+/* line 775, ../sass/style.scss */
 #dashboard .panels-flexible-region {
   background-repeat: no-repeat;
   width: 360px;
   height: 185px;
   background-position: top center;
 }
-/* line 776, ../sass/style.scss */
+/* line 780, ../sass/style.scss */
 #dashboard .panels-flexible-region .inside {
   background-repeat: no-repeat;
   background-position: bottom center;
   height: 185px;
   position: relative;
 }
-/* line 782, ../sass/style.scss */
+/* line 786, ../sass/style.scss */
 #dashboard .panels-flexible-region.mail {
   background-image: url(../images/mail_head.jpg);
   margin-right: 20px;
 }
-/* line 785, ../sass/style.scss */
+/* line 789, ../sass/style.scss */
 #dashboard .panels-flexible-region.mail .inside {
   background-image: url(../images/mail_bottom.jpg);
 }
-/* line 787, ../sass/style.scss */
+/* line 791, ../sass/style.scss */
 #dashboard .panels-flexible-region.mail .inside .pane-user-messages {
   position: absolute;
   left: 0px;
   top: 45px;
 }
-/* line 794, ../sass/style.scss */
+/* line 798, ../sass/style.scss */
 #dashboard .panels-flexible-region.articles {
   background-image: url(../images/hm_hdr_articles.jpg);
 }
-/* line 796, ../sass/style.scss */
+/* line 800, ../sass/style.scss */
 #dashboard .panels-flexible-region.articles .inside {
   background-image: url(../images/hm_hdr_articles2.jpg);
 }
-/* line 800, ../sass/style.scss */
+/* line 804, ../sass/style.scss */
 #dashboard .panels-flexible-region.whats-new {
   background-image: url(../images/hm_hdr_whatsnew.jpg);
 }
-/* line 802, ../sass/style.scss */
+/* line 806, ../sass/style.scss */
 #dashboard .panels-flexible-region.whats-new .inside {
   background-image: url(../images/hm_hdr_whatsnew2.jpg);
 }
-/* line 806, ../sass/style.scss */
+/* line 810, ../sass/style.scss */
 #dashboard .panels-flexible-region.calendar {
   background-image: url(../images/hm_hdr_calendar.jpg);
   margin-right: 20px;
 }
-/* line 809, ../sass/style.scss */
+/* line 813, ../sass/style.scss */
 #dashboard .panels-flexible-region.calendar .inside {
   background-image: url(../images/hm_hdr_calendar2.jpg);
 }
-/* line 813, ../sass/style.scss */
+/* line 817, ../sass/style.scss */
 #dashboard .panels-flexible-region.media {
   background-image: url(../images/hm_hdr_media.jpg);
 }
-/* line 815, ../sass/style.scss */
+/* line 819, ../sass/style.scss */
 #dashboard .panels-flexible-region.media .inside {
   background-image: url(../images/hm_hdr_media2.jpg);
 }
 
-/* line 823, ../sass/style.scss */
+/* line 827, ../sass/style.scss */
 .page-user .panel-2col-stacked .panel-col-last {
   width: 740px;
 }
 
-/* line 831, ../sass/style.scss */
+/* line 835, ../sass/style.scss */
 #block-menu-menu-user-media-menu {
   position: absolute;
   left: 0px;
@@ -978,18 +983,18 @@ form#views-form-user-messages-inbox td {
   width: 100%;
   height: 28px;
 }
-/* line 838, ../sass/style.scss */
+/* line 842, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu {
   padding: 0px;
   margin: 0px;
 }
-/* line 841, ../sass/style.scss */
+/* line 845, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li {
   list-style: none;
   float: left;
   width: 24%;
 }
-/* line 845, ../sass/style.scss */
+/* line 849, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a {
   text-decoration: none;
   color: white;
@@ -1000,28 +1005,28 @@ form#views-form-user-messages-inbox td {
   background-repeat: no-repeat;
   background-position: 25% center;
 }
-/* line 854, ../sass/style.scss */
+/* line 858, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-mail {
   background-image: url(../images/navicon1.gif);
 }
-/* line 857, ../sass/style.scss */
+/* line 861, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-articles {
   background-image: url(../images/navicon2.gif);
 }
-/* line 860, ../sass/style.scss */
+/* line 864, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-media {
   background-image: url(../images/navicon3.gif);
 }
-/* line 863, ../sass/style.scss */
+/* line 867, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-calendar {
   background-image: url(../images/navicon4.gif);
 }
-/* line 866, ../sass/style.scss */
+/* line 870, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-whats-new {
   background-image: url(../images/navicon_whatsnew.gif);
 }
 
-/* line 874, ../sass/style.scss */
+/* line 878, ../sass/style.scss */
 #user-name {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4em;
@@ -1029,16 +1034,16 @@ form#views-form-user-messages-inbox td {
   font-weight: bold;
   line-height: 1;
 }
-/* line 880, ../sass/style.scss */
+/* line 884, ../sass/style.scss */
 #user-name p {
   margin: 0px;
 }
 
-/* line 887, ../sass/style.scss */
+/* line 891, ../sass/style.scss */
 .page-user #page #page-inner {
   padding: 118px 20px 0px;
 }
-/* line 890, ../sass/style.scss */
+/* line 894, ../sass/style.scss */
 .page-user #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_landing.jpg);
   display: block;
@@ -1048,32 +1053,32 @@ form#views-form-user-messages-inbox td {
   left: 0px;
   top: 28px;
 }
-/* line 898, ../sass/style.scss */
+/* line 902, ../sass/style.scss */
 .page-user #page #page-inner header a#logo img {
   display: none;
 }
-/* line 906, ../sass/style.scss */
+/* line 910, ../sass/style.scss */
 .page-user.page-user-mail #page #page-inner header a#logo {
   background-image: url(../images/hm_hdr_mail3.jpg);
 }
-/* line 911, ../sass/style.scss */
+/* line 915, ../sass/style.scss */
 .page-user.page-user-articles #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_articles3.jpg);
 }
-/* line 916, ../sass/style.scss */
+/* line 920, ../sass/style.scss */
 .page-user.page-user-calendar #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_calendar.jpg);
 }
-/* line 921, ../sass/style.scss */
+/* line 925, ../sass/style.scss */
 .page-user.page-user-media #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_media.jpg);
 }
-/* line 926, ../sass/style.scss */
+/* line 930, ../sass/style.scss */
 .page-user.page-user-whats-new #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_whatsnew.jpg);
 }
 
-/* line 938, ../sass/style.scss */
+/* line 942, ../sass/style.scss */
 #recent-logbook h2.pane-title {
   background-image: url(../images/hdr_logbook.jpg);
   background-repeat: no-repeat;
@@ -1081,13 +1086,13 @@ form#views-form-user-messages-inbox td {
   text-indent: -9999px;
   margin: 0px 0px 5px;
 }
-/* line 945, ../sass/style.scss */
+/* line 949, ../sass/style.scss */
 #recent-logbook .pane-content {
   font-size: 14px;
   line-height: 18px;
 }
 
-/* line 952, ../sass/style.scss */
+/* line 956, ../sass/style.scss */
 #recent-field-notes h2.pane-title {
   background-image: url(../images/hdr_field-notes.jpg);
   background-repeat: no-repeat;
@@ -1095,13 +1100,13 @@ form#views-form-user-messages-inbox td {
   text-indent: -9999px;
   margin: 0px 0px 5px;
 }
-/* line 959, ../sass/style.scss */
+/* line 963, ../sass/style.scss */
 #recent-field-notes .pane-content {
   font-size: 14px;
   line-height: 18px;
 }
 
-/* line 966, ../sass/style.scss */
+/* line 970, ../sass/style.scss */
 #recent-journals h2.pane-title {
   background-image: url(../images/hdr_journals.jpg);
   background-repeat: no-repeat;
@@ -1109,34 +1114,34 @@ form#views-form-user-messages-inbox td {
   text-indent: -9999px;
   margin: 0px 0px 5px;
 }
-/* line 973, ../sass/style.scss */
+/* line 977, ../sass/style.scss */
 #recent-journals .pane-content {
   font-size: 14px;
   line-height: 18px;
 }
 
-/* line 980, ../sass/style.scss */
+/* line 984, ../sass/style.scss */
 .pane-node h2.pane-title {
   margin-top: 0px;
 }
 
-/* line 985, ../sass/style.scss */
+/* line 989, ../sass/style.scss */
 .panel-2col-stacked .panel-col-last .inside {
   margin: 0px;
   padding: 0px;
 }
 
-/* line 990, ../sass/style.scss */
+/* line 994, ../sass/style.scss */
 #content {
   padding: 0px;
 }
 
-/* line 994, ../sass/style.scss */
+/* line 998, ../sass/style.scss */
 .page-user #main > #content > .tabs {
   display: none;
 }
 
-/* line 998, ../sass/style.scss */
+/* line 1002, ../sass/style.scss */
 .page-user #main > #content > #page-title {
   font-size: 1.4em;
   margin: 10px 0px;
