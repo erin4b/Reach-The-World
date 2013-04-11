@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Welcome | Reach The World</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/default/files/id-facta_favicon.ico" type="image/x-icon" />
+<script src="http://maps.google.com/maps?file=api&amp;v=2.115&amp;key=AIzaSyD-0ZGmJ8UI_y1kTwaPypAHpCmPpqeai0A&amp;hl=en" type="text/javascript"></script>
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/block_edit/block_edit.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/itweak_upload/itweak_upload.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/ctools/css/ctools.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/filefield/filefield.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/glossary/glossary.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/img_assist/img_assist.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/lightbox2/css/lightbox.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/og/theme/og.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/panels/css/panels.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/privatemsg_recipient_list/privatemsg_recipient_list.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/video/css/video.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/misc/farbtastic/farbtastic.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/calendar/calendar.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/gmap/gmap.css?H" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/id-facta/style.css?H" />
+    <script type="text/javascript" src="/sites/all/modules/jquery_update/replace/jquery.min.js?H"></script>
+<script type="text/javascript" src="/misc/drupal.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/block_edit/block_edit.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/google_analytics/googleanalytics.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/img_assist/img_assist.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/lightbox2/js/auto_image_handling.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/lightbox2/js/lightbox.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/og/og.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/panels/js/panels.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/video/js/video.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/views_slideshow/js/views_slideshow.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/gmap/js/gmap_views_ajax.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/gmap/js/gmap.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/gmap/js/marker.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/gmap/js/highlight.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/gmap/js/gmap_marker.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/gmap/js/poly.js?H"></script>
+<script type="text/javascript" src="/sites/default/files/js/gmap_markers.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/gmap/js/icon.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/gmap/js/markerloader_static.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/views/js/base.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/views/js/ajax_view.js?H"></script>
+<script type="text/javascript" src="/sites/all/modules/ctools/js/jump-menu.js?H"></script>
+<script type="text/javascript" src="/sites/all/themes/id-facta/scripts/AC_RunActiveContent.js?H"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "block_edit": { "hover_links": 1 }, "googleanalytics": { "trackOutbound": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "lightbox2": { "rtl": 0, "file_path": "/(\\w\\w/)sites/default/files", "default_image": "/sites/all/modules/lightbox2/images/brokenimage.jpg", "border_size": 10, "font_color": "000", "box_color": "fff", "top_position": "", "overlay_opacity": "0.8", "overlay_color": "000", "disable_close_click": 1, "resize_sequence": 0, "resize_speed": 400, "fade_in_speed": 400, "slide_down_speed": 600, "use_alt_layout": 0, "disable_resize": 0, "disable_zoom": 0, "force_show_nav": 0, "show_caption": 0, "loop_items": 0, "node_link_text": "", "node_link_target": 0, "image_count": "Image !current of !total", "video_count": "Video !current of !total", "page_count": "Page !current of !total", "lite_press_x_close": "press \x3ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\x3e\x3ckbd\x3ex\x3c/kbd\x3e\x3c/a\x3e to close", "download_link_text": "", "enable_login": false, "enable_contact": false, "keys_close": "c x 27", "keys_previous": "p 37", "keys_next": "n 39", "keys_zoom": "z", "keys_play_pause": "32", "display_image_size": "", "image_node_sizes": "(\\.journey photo featured|\\.journey photo |\\.thumbnail)", "trigger_lightbox_classes": "img.inline,img.image-img_assist_custom,img.journey photo featured, img.image-journey photo featured,img.journey photo , img.image-journey photo ,img.thumbnail, img.image-thumbnail", "trigger_lightbox_group_classes": "", "trigger_slideshow_classes": "", "trigger_lightframe_classes": "", "trigger_lightframe_group_classes": "", "custom_class_handler": "lightbox_ungrouped", "custom_trigger_classes": "img.journey-featured-photo,img.journey-photo-block", "disable_for_gallery_lists": 0, "disable_for_acidfree_gallery_lists": true, "enable_acidfree_videos": true, "slideshow_interval": 5000, "slideshow_automatic_start": true, "slideshow_automatic_exit": true, "show_play_pause": true, "pause_on_next_click": false, "pause_on_previous_click": true, "loop_slides": false, "iframe_width": 600, "iframe_height": 400, "iframe_border": 1, "enable_video": 0 }, "gmap_markermanager": [  ], "gmap": { "auto1map": { "width": "490px", "height": "350px", "zoom": 1, "maxzoom": "14", "controltype": "Small", "align": "None", "maptype": "Satellite", "mtc": "hier", "baselayers": { "Map": 1, "Satellite": 1, "Hybrid": 1, "Physical": 1 }, "styles": { "line_default": [ "0000ff", "5", "45", "", "" ], "poly_default": [ "000000", "3", "25", "ff0000", "45" ], "highlight_color": "ff0000" }, "line_colors": [ "#00cc00", "#ff0000", "#0000ff" ], "behavior": { "locpick": false, "nodrag": 0, "nokeyboard": 1, "nomousezoom": 0, "nocontzoom": 0, "autozoom": 0, "dynmarkers": 0, "overview": 0, "collapsehack": 0, "scale": 1, "extramarkerevents": false, "clickableshapes": false, "googlebar": 0, "highlight": 0 }, "markermode": "1", "longitude": "10.546875", "latitude": "27.059125784374068", "id": "auto1map", "markers": [ { "latitude": 41.878114, "longitude": -87.629798, "markername": "small red", "offset": 0, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eSo Many Things to Do and So Little Time Before......SPAIN!\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby NatalieH\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-55419\" style=\"width: 142px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/Screen shot 2013-02-27 at 4.42.09 PM.thumbnail.png\" alt=\"As the sun sets on Barcelona..\" title=\"As the sun sets on Barcelona..\"  class=\"image image-thumbnail \" width=\"142\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \n\x3cp\x3eI just looked at my calendar, and to my surprise today officially marks a month before I start my study abroad program in...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/natalies-journey-spain\"\x3eNatalie\x26#039;s Journey to Spain\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": -34.611144, "longitude": -58.419865, "markername": "small red", "offset": 1, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eCulture Shock\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby MatthewC\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-55414\" style=\"width: 120px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/P2250296.thumbnail.JPG\" alt=\"Argentine Flag\" title=\"Argentine Flag\"  class=\"image image-thumbnail \" width=\"120\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eI cannot believe how quickly time has flown since I first arrived in Buenos Aires nearly three weeks ago. It seems like it was...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/matthews-journey-argentina\"\x3eMatthew\x26#039;s Journey to Argentina\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 10.473523, "longitude": -84.016742, "markername": "small red", "offset": 2, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eSpanish, Schoolmates and Stereotypes in Heredia\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby DevonL\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-55275\" style=\"width: 120px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/Sbienvenido.thumbnail.jpg\" alt=\"Bienvenido!\" title=\"Bienvenido!\"  class=\"image image-thumbnail \" width=\"120\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eHi there!\x26nbsp; I can’t believe I have been in Costa Rica over a month now. \x26nbsp;Traveling gets you out of your comfort zone....\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/devons-journey-costa-rica\"\x3eDevon\x26#039;s Journey to Costa Rica\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 45.523452, "longitude": -122.676207, "markername": "small red", "offset": 3, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3ePortland, Oregon\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby ChrisS\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-55334\" style=\"width: 161px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/217306_10150219436261072_299248836071_8925922_7661193_n.thumbnail.jpg\" alt=\"217306 10150219436261072 299248836071 8925922 7661193 n\" title=\"217306 10150219436261072 299248836071 8925922 7661193 n\"  class=\"image image-thumbnail \" width=\"161\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3ePortland is a cool town. People always say it rains here a lot, but you get used to it when you live here. The winters are...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/chris-journey-spain\"\x3eChris\x26#039; Journey to Spain \x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": -12.970382, "longitude": -38.512382, "markername": "small red", "offset": 4, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eLearning how to Live in Brazil\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby NatF\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-55158\" style=\"width: 68px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/traveling_0.thumbnail.jpg\" alt=\"meandluggage\" title=\"meandluggage\"  class=\"image image-thumbnail \" width=\"68\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eI have had to learn many lessons and ask many questions to live in this new city and adapt to Brazilian life. Adapting to a new...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/natalies-journey-brazil\"\x3eNatalie\x26#039;s Journey to Brazil\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 47.072, "longitude": -122.976973, "markername": "small red", "offset": 5, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eGetting Ready for the Journey of My Life\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby NobleR\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-53256\" style=\"width: 120px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/pyramids_of_giza_wallpaper_3-normal.thumbnail.jpg\" alt=\"What I want to see\" title=\"What I want to see\"  class=\"image image-thumbnail \" width=\"120\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \n\x3cp\x3eThis week was a monumental week for me! I finally was approved to go to Egypt by my school. The dean of my school had to...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/nobles-journey-egypt\"\x3eNoble\x26#039;s Journey to Egypt\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 59.90802, "longitude": 30.409998, "markername": "small red", "offset": 6, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eLearning and Fitting in a Little\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby ValT\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-55266\" style=\"width: 90px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/SAM_1928_0.thumbnail.JPG\" alt=\"cafe friends\" title=\"cafe friends\"  class=\"image image-thumbnail \" width=\"90\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eHello Everyone!\x3c/p\x3e\n\x3cp\x3eIt’s officially been two weeks since I began my Spring semester here at Saint Petersburg State...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/valeries-journey-russia\"\x3eValerie\x26#039;s Journey to Russia\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 13.113222, "longitude": -59.598809, "markername": "small red", "offset": 7, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eA moment out of American expectations\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby JheanelleD\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-55239\" style=\"width: 120px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/11149_210604109081283_1903960704_n.thumbnail.jpg\" alt=\"car lot\" title=\"car lot\"  class=\"image image-thumbnail \" width=\"120\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eHere in Barbados in my study-abroad classes, the students are different from what I am used to at home. Many of the students...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/jheanelles-journey-barbados\"\x3eJheanelle\x26#039;s Journey to Barbados\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 10.473523, "longitude": -84.016742, "markername": "small red", "offset": 8, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eThe Potatoes!\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby JessE\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-55253\" style=\"width: 109px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/potatoes-1.thumbnail.jpg\" alt=\"Potatoes\" title=\"Potatoes\"  class=\"image image-thumbnail \" width=\"109\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eWhile I am in Costa Rica, my primary focus is to improve my Spanish speaking skills. Luckily, my Mama Tica (host mom) does not...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/jessicas-journey-costa-rica\"\x3eJessica\x26#039;s Journey to Costa Rica\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 37.07, "longitude": 36.25, "markername": "small red", "offset": 9, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eActing Out Life and Drinking Tea\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby LatashaW\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-55159\" style=\"width: 90px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/IMG_4010.thumbnail.JPG\" alt=\"Turkish tea\" title=\"Turkish tea\"  class=\"image image-thumbnail \" width=\"90\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eHave you ever played the game of Charades, where one person acts out a word without speaking? Living in a foreign country can...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/latashas-journey-turkey\"\x3eLatasha\x26#039;s Journey to Turkey\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": -6.822921, "longitude": 39.269661, "markername": "small red", "offset": 10, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eSwahili Language and Swahili Food\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby AmandaC\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-55164\" style=\"width: 135px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/chipati.thumbnail.jpg\" alt=\"Chipati\" title=\"Chipati\"  class=\"image image-thumbnail \" width=\"135\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eIt’s crazy to think I’ve been in Dar Es Salaam, Tanzania for almost a month now! Things feel familiar now but it wasn’t always...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/amandas-journey-tanzania\"\x3eAmanda\x26#039;s Journey to Tanzania\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 37.566535, "longitude": 126.977969, "markername": "small red", "offset": 11, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eLooking Back to Find Where We\x26#039;re Going\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby CameronC\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-52726\" style=\"width: 121px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/Where in the world is Cameron now.thumbnail.jpg\" alt=\"Where in the world is Cameron now\" title=\"Where in the world is Cameron now\"  class=\"image image-thumbnail \" width=\"121\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eBefore I left my home in the states, I talked to my grandparents about my trip to Korea. I am very close with them and I knew...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/camerons-journey-south-korea\"\x3eCameron\x26#039;s Journey to South Korea\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 41.927368, "longitude": 41.9981, "markername": "small red", "offset": 12, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eWelcome to Georgia!\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby SusannaP\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-55113\" style=\"width: 188px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/Old Georgian.thumbnail.jpg\" alt=\"Old Georgian\" title=\"Old Georgian\"  class=\"image image-thumbnail \" width=\"188\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eI arrived in Georgia almost four and a half months ago. I am teaching English at a school in my town, Ozurgeti where I live. I...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/susannas-journey-republic-georgia\"\x3eSusanna\x26#039;s Journey to the Republic of Georgia\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 33.522526, "longitude": -117.707553, "markername": "small red", "offset": 13, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3ePacking My World into a Suitcase\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby ChristineC\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-55091\" style=\"width: 137px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/RTW packing.thumbnail.jpg\" alt=\"RTW packing\" title=\"RTW packing\"  class=\"image image-thumbnail \" width=\"137\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eThe best part about leaving the country is the new outlook I have on the city I am leaving. It is like putting on glasses and...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/christines-journey-england\"\x3eChristine\x26#039;s Journey to England\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 41.181474, "longitude": 29.038547, "markername": "small red", "offset": 14, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eIf This is a Bus Stop, Why Didn\x26#039;t the Bus Stop?\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby AngelaA\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-53087\" style=\"width: 120px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/IMG_2777.thumbnail.JPG\" alt=\"The Bull\" title=\"The Bull\"  class=\"image image-thumbnail \" width=\"120\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \n\x3cp\x3eLiving in a country where I do not speak the native language has called for some creativity when it comes to communication....\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/angelas-journey-turkey\"\x3eAngela\x26#039;s Journey to Turkey\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 51.517099, "longitude": -0.146084, "markername": "small red", "offset": 15, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eThis Week in London\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby EbonyJ\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-54583\" style=\"width: 68px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/photo 1_28.thumbnail.JPG\" alt=\"The Victoria and Albert Museum\" title=\"The Victoria and Albert Museum\"  class=\"image image-thumbnail \" width=\"68\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eI love being here in London. I am having so much fun. The people here speak English. I speak English too. Although we speak the...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/ebonys-journey-united-kingdom\"\x3eEbony\x26#039;s Journey to the United Kingdom \x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 42.575055, "longitude": -8.133856, "markername": "small red", "offset": 16, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eCastles, Coasts and the End of the Earth\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby LeelaG\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-54271\" style=\"width: 120px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/JourneyPic.thumbnail.jpg\" alt=\"JourneyPic\" title=\"JourneyPic\"  class=\"image image-thumbnail \" width=\"120\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3e    The northwest province of Spain, Galicia, invites you in with green valleys and delicious seafood and wild coastlines....\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/leelas-journey-spain\"\x3eLeela\x26#039;s Journey to Spain\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 33.533333, "longitude": -5.116667, "markername": "small red", "offset": 17, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eMorocco: Journey of a Lifetime\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby AshleyL\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-53408\" style=\"width: px;\"\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eHi! Or, \x3cem\x3eAs salamu alaykum \x3c/em\x3eas we would say here in the magical land of Morocco. \x3cem\x3eAs salamu alaykum\x3c/em\x3e means \"peace...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/ashleys-journey-morocco\"\x3eAshley\x26#039;s Journey to Morocco\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 43.774481, "longitude": 7.49754, "markername": "small red", "offset": 18, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eFirst Impressions\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby SalmanB\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-54871\" style=\"width: 120px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/WP_000342.thumbnail.jpg\" alt=\"Menton City\" title=\"Menton City\"  class=\"image image-thumbnail \" width=\"120\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3e\x3cem\x3eBonjour\x3c/em\x3e\x26nbsp;(boh-joor) to everyone! And a good day it is, indeed! This weekend was full of rain and thunder, but now...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/salmans-journey-france\"\x3eSalman\x26#039;s Journey to France\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 49.19506, "longitude": 16.606837, "markername": "small red", "offset": 19, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eFirst Two Weeks in Brno\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby LydiaM\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-54843\" style=\"width: 120px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/Lydia2_Brnochurchtram.thumbnail.JPG\" alt=\"Lydia2 Brnochurchtram\" title=\"Lydia2 Brnochurchtram\"  class=\"image image-thumbnail \" width=\"120\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \n\x3cp\x3eMy time in Brno, Czech Republic has been such a crazy, fun and ridiculous blur so far. I arrived in Brno two weeks ago, and I...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/lydias-journey-czech-republic\"\x3eLydia\x26#039;s Journey to the Czech Republic\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 8.6, "longitude": -71.15, "markername": "small red", "offset": 20, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eIn the Beginning...\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby AnnaS\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-53488\" style=\"width: 120px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/2_22.thumbnail.jpg\" alt=\"Participants of Study Abroad\" title=\"Participants of Study Abroad\"  class=\"image image-thumbnail \" width=\"120\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eI’ve officially been here a month and a couple days and it feels like it’s only been a week! Mérida is a gorgeous city filled...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/annas-journey-venezuela\"\x3eAnna\x26#039;s Journey to Venezuela\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 41.750324, "longitude": 22.220984, "markername": "small red", "offset": 21, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eA Sunday Stroll in Štip\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby TiffanyE\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-55066\" style=\"width: 120px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/Picture of Stip.thumbnail.JPG\" alt=\"Štip, Macedonia\" title=\"Štip, Macedonia\"  class=\"image image-thumbnail \" width=\"120\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eMy friend Ana invited me for a walk last Sunday. It was a beautiful day, very sunny and not too chilly. I didn’t take a coat....\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/tiffanys-journey-macedonia\"\x3eTiffany\x26#039;s Journey to Macedonia\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 39.921034, "longitude": 116.443188, "markername": "small red", "offset": 22, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eChinese New Year!\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby DallenH\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-54376\" style=\"width: 120px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/IMG_2594_1.thumbnail.JPG\" alt=\"Chinese New Year\" title=\"Chinese New Year\"  class=\"image image-thumbnail \" width=\"120\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \n\x3cp\x3eSo far, I have lived in China for one whole month already.\x26nbsp; The time has flown by!\x26nbsp; I am going to my school tomorrow...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/dallens-journey-china\"\x3eDallen\x26#039;s Journey to China\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 35.912222, "longitude": 14.504167, "markername": "small red", "offset": 23, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eBeach Day: A Day to Reflect\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby KellyR\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-54927\" style=\"width: 120px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/253060_4717090848607_1022567908_n.thumbnail.jpg\" alt=\"Beach Day\" title=\"Beach Day\"  class=\"image image-thumbnail \" width=\"120\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eI just spent a week and a half guiding my sister, Sam, around Malta. It was crazy! I decided I needed to take a moment to think...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/kellys-journey-malta\"\x3eKelly\x26#039;s Journey to Malta\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 32.221743, "longitude": -110.926479, "markername": "small red", "offset": 24, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eGoodbye, Tucson!\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby BryandaA\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-54757\" style=\"width: 90px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/Screen Shot 2013-02-24 at 11.41.53 PM.thumbnail.png\" alt=\"Tumamoc\" title=\"Tumamoc\"  class=\"image image-thumbnail \" width=\"90\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eI\x26nbsp;know you are all excited to hear about my first thoughts and experiences in Chile because I feel the same way. Only two...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/bryandas-journey-chile\"\x3eBryanda\x26#039;s Journey to Chile\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 31.229797, "longitude": 121.402259, "markername": "small red", "offset": 25, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eShanghai So Far!\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby JulieH\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-53165\" style=\"width: 120px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/photo-7.thumbnail.jpg\" alt=\"The Bund\" title=\"The Bund\"  class=\"image image-thumbnail \" width=\"120\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eThe first day I arrived in China I was very scared! I missed my mom, my little sister Christine, my bed and the comfort of...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/julie-anns-journey-china\"\x3eJulie-Ann\x26#039;s Journey to China\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 24.676683, "longitude": 121.766925, "markername": "small red", "offset": 26, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eMy Top Five Favorite Things about Living in Taiwan\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby AubreyT\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-54721\" style=\"width: 107px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/536811_10101762071426765_269942329_n.thumbnail.jpg\" alt=\"river tracing standing\" title=\"river tracing standing\"  class=\"image image-thumbnail \" width=\"107\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eI have been living in the beautiful tropical island of Taiwan for almost seven months now. With a natural environment as rich...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/aubreys-journey-taiwan\"\x3eAubrey\x26#039;s Journey to Taiwan\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 34.81434, "longitude": 135.650658, "markername": "small red", "offset": 27, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eAdjusting to Life In Japan\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby AliciaH\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-54293\" style=\"width: 120px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/alicia_main_street_2.thumbnail.JPG\" alt=\"Alicia main street 2\" title=\"Alicia main street 2\"  class=\"image image-thumbnail \" width=\"120\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eI have been living in Japan for about three weeks now. It took me time to adjust to the different lifestyle and culture here....\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/alicias-journey-japan\"\x3eAlicia\x26#039;s Journey to Japan\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 52.167894, "longitude": -9.525986, "markername": "small red", "offset": 28, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eThe Ring of Kerry Heritage Weekend \x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby AlexS\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-52753\" style=\"width: 135px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/hiking photo .thumbnail.jpg\" alt=\"Hiking in Ireland. \" title=\"Hiking in Ireland. \"  class=\"image image-thumbnail \" width=\"135\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3e\x26nbsp;\x3c/p\x3e\n\x3cp\x3eIt was Friday afternoon at 2:05pm when a bus of fifty college students departed from Cork City for the two hour...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/alexandras-journey-ireland\"\x3eAlexandra\x26#039;s Journey to Ireland\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" }, { "latitude": 40.626293, "longitude": 14.375799, "markername": "small red", "offset": 29, "opts": { "title": "", "highlight": 0, "highlightcolor": "#FF0000" }, "text": "\x3cdiv class=\"gmap-popup\"\x3e  \n  \x3cdiv class=\"views-field views-field-title\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"title\"\x3eFirst Week in Italy\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-name\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"name\"\x3eby BernardoD\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-image-attach-images\"\x3e        \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"image_attach\"\x3e\x3cdiv class=\"image-attach-node-54641\" style=\"width: 124px;\"\x3e\x3cimg src=\"http://www.reachtheworld.org/sites/default/files/images/Sorrento.thumbnail.jpg\" alt=\"Sorrento\" title=\"Sorrento\"  class=\"image image-thumbnail \" width=\"124\" height=\"90\" /\x3e\x3c/div\x3e\n\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-body\"\x3e        \x3cdiv class=\"field-content\"\x3e\x3cdiv class=\"body\"\x3e \x3cp\x3eStudying abroad means that someone has the wonderful experience of studying in another country outside of the U.S. for a month...\x3c/div\x3e  \x3c/div\x3e  \n  \x3cdiv class=\"views-field views-field-groups\"\x3e    \x3cspan class=\"views-label views-label-groups\"\x3eRead about this journey here:: \x3c/span\x3e    \x3cspan class=\"field-content\"\x3e\x3cdiv class=\"item-list\"\x3e\x3cul\x3e\x3cli\x3e\x3ca href=\"/journey/bernardos-journey-italy\"\x3eBernardo\x26#039;s Journey to Italy\x3c/a\x3e\x3c/li\x3e\n\x3c/ul\x3e\x3c/div\x3e\x3c/span\x3e  \x3c/div\x3e\x3c/div\x3e" } ] } }, "views": { "ajax_path": [ "/views/ajax", "/views/ajax", "/views/ajax", "/views/ajax" ], "ajaxViews": { "views_dom_id:b453f2d79e6104c3bc2bcbc41cb2c28c": { "view_name": "gmap", "view_display_id": "block_2", "view_args": "", "view_path": "node/56385", "view_base_path": null, "view_dom_id": "b453f2d79e6104c3bc2bcbc41cb2c28c", "pager_element": 0 }, "views_dom_id:58e6468161c601b244a1b877ebc036a6": { "view_name": "journey_front", "view_display_id": "attachment_1", "view_args": "", "view_path": "node/56385", "view_base_path": null, "view_dom_id": "58e6468161c601b244a1b877ebc036a6", "pager_element": 0 }, "views_dom_id:e17b1bc1b46b5e7c54be23be923eb75f": { "view_name": "journey_front", "view_display_id": "attachment_2", "view_args": "", "view_path": "node/56385", "view_base_path": null, "view_dom_id": "e17b1bc1b46b5e7c54be23be923eb75f", "pager_element": 0 }, "views_dom_id:d1f8832d6504fe91d810bc124727171f": { "view_name": "journey_front", "view_display_id": "block_1", "view_args": "", "view_path": "node/56385", "view_base_path": null, "view_dom_id": "d1f8832d6504fe91d810bc124727171f", "pager_element": 0 } } } });
+//--><!]]>
+</script>
+
+<!--[if IE 6]>
+	<style type="text/css">
+	#mainMenu ul {margin-left: -40px;}
+	</style>
+<![endif]-->
+
+<!--[if IE 7]>
+	<style type="text/css">
+	#searchBox input {height:13px;}
+	</style>
+<![endif]-->
+
+</head>
+
+<body class="front not-logged-in page-node node-type-page no-sidebars">
+
+<div id="wrapper">
+<div id="innerwrap">
+
+<div id="banner"><div id="block-block-22" class="clear-block block block-block">
+
+
+  <div class="content"><div id="logo-home-top">
+                                                       
+                                <script type="text/javascript">
+                                        AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','940','height','120','title','Reach the World Home Page','src','/sites/all/themes/id-facta/img/home/1_SlideShow3','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','/sites/all/themes/id-facta/img/home/1_SlideShow3' ); //end AC code
+                                        </script>               <noscript>
+                  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="940" height="120" title="Reach the World Home Page">
+                  <param name="movie" value="/sites/all/themes/id-facta/img/home/1_SlideShow3.swf" />
+                  <param name="quality" value="high" />
+                  <embed src="/sites/all/themes/id-factaimg/home/1_SlideShow3.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="940" height="120"></embed>
+                </object>
+                </noscript>                                        
+                                        </div>
+</div>
+</div>
+</div>
+
+<div id="menublock"><div id="block-menu-menu-frontmenu" class="clear-block block block-menu">
+
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="/content/mission-and-impact" title="">About Us</a></li>
+<li class="leaf"><a href="/content/get-involved" title="">Get Involved!</a></li>
+<li class="leaf"><a href="/content/donate" title="">Donate</a></li>
+<li class="leaf last"><a href="/content/map" title="">Map</a></li>
+</ul></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h3>User login</h3>
+
+  <div class="content"><form action="/welcome?destination=node%2F56385"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-f8e5574beb4bf84d8fd7960600112abb" value="form-f8e5574beb4bf84d8fd7960600112abb"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+</div>
+		
+<div class="container">
+	
+	<div id="main">
+
+		<div id="frontbox">
+                                <div id="frontleft"> <div id="block-views-gmap-block_2" class="clear-block block block-views">
+
+  <h3>Choose a Journey</h3>
+
+  <div class="content"><div class="view view-gmap view-id-gmap view-display-id-block_2 view-dom-id-b453f2d79e6104c3bc2bcbc41cb2c28c">
+    
+  
+  
+      <div class="view-content">
+      <div style="width: 490px; height: 350px;" id="gmap-auto1map-gmap0" class="gmap-control gmap-gmap gmap gmap-map gmap-auto1map-gmap">Javascript is required to view this map.</div>    </div>
+  
+  
+  
+  
+  
+  
+</div></div>
+</div>
+ </div>     
+                                <div id="frontright">
+		                <div id="block-views-journey_front-dropdown_block" class="clear-block block block-views">
+
+
+  <div class="content"><div class="view view-journey-front view-id-journey_front view-display-id-dropdown_block view-dom-id-dd88346afcbe2f7191415b083cbffe39">
+    
+  
+  
+      <div class="view-content">
+      <form action="/"  accept-charset="UTF-8" method="post" id="ctools-jump-menu">
+<div><div class="container-inline"><div class="form-item" id="edit-jump-wrapper">
+ <select name="jump" class="form-select ctools-jump-menu-select ctools-jump-menu-change" id="edit-jump" ><option value="" selected="selected">Other Journeys</option><option value="/journey/akirahs-journey-south-africa">  
+          Akirah&#039;s Journey to South Africa  </option><option value="/journey/alethas-journey-venezuela">  
+          Aletha&#039;s Journey to Venezuela  </option><option value="/journey/alexandras-journey-ireland">  
+          Alexandra&#039;s Journey to Ireland  </option><option value="/journey/alicias-journey-japan">  
+          Alicia&#039;s Journey to Japan  </option><option value="/journey/allisons-journey-chile">  
+          Allison&#039;s Journey to Chile  </option><option value="/journey/amandas-journey-tanzania">  
+          Amanda&#039;s Journey to Tanzania  </option><option value="/journey/angelas-journey-turkey">  
+          Angela&#039;s Journey to Turkey  </option><option value="/journey/anissas-journey-hong-kong">  
+          Anissa&#039;s Journey to Hong Kong  </option><option value="/journey/annas-journey-venezuela">  
+          Anna&#039;s Journey to Venezuela  </option><option value="/journey/ashleys-journey-morocco">  
+          Ashley&#039;s Journey to Morocco  </option><option value="/journey/aubreys-journey-taiwan">  
+          Aubrey&#039;s Journey to Taiwan  </option><option value="/journey/audras-journey-nepal">  
+          Audra&#039;s Journey to Nepal  </option><option value="/journey/bernardos-journey-italy">  
+          Bernardo&#039;s Journey to Italy  </option><option value="/journey/biking-silk-road">  
+          Biking the Silk Road  </option><option value="/journey/bryandas-journey-chile">  
+          Bryanda&#039;s Journey to Chile  </option><option value="/journey/camerons-journey-south-korea">  
+          Cameron&#039;s Journey to South Korea  </option><option value="/journey/casey-mariels-journey-brasil">  
+          Casey Mariel&#039;s Journey to Brasil  </option><option value="/journey/chamarras-journey-japan">  
+          Chamarra&#039;s Journey to Japan  </option><option value="/journey/chris-journey-spain">  
+          Chris&#039; Journey to Spain   </option><option value="/journey/christines-journey-bolivia">  
+          Christine&#039;s Journey to Bolivia  </option><option value="/journey/christines-journey-england">  
+          Christine&#039;s Journey to England  </option><option value="/journey/dallens-journey-china">  
+          Dallen&#039;s Journey to China  </option><option value="/journey/devons-journey-costa-rica">  
+          Devon&#039;s Journey to Costa Rica  </option><option value="/journey/ebonys-journey-united-kingdom">  
+          Ebony&#039;s Journey to the United Kingdom   </option><option value="/journey/elishas-journey-france">  
+          Elisha&#039;s Journey to France  </option><option value="/journey/emilys-journey-slovak-republic">  
+          Emily&#039;s Journey to the Slovak Republic  </option><option value="/journey/emmalynes-journey-spain">  
+          Emmalyne&#039;s Journey to Spain   </option><option value="/journey/eriks-journey-china">  
+          Erik&#039;s Journey to China  </option><option value="/journey/geotech-journey">  
+          GeoTech Journey  </option><option value="/journey/huas-journey-costa-rica">  
+          Hua&#039;s Journey to Costa Rica  </option><option value="/journey/jacobs-journey-sri-lanka">  
+          Jacob&#039;s Journey to Sri Lanka  </option><option value="/journey/jaslins-journey-turkey">  
+          Jaslin&#039;s Journey to Turkey   </option><option value="/journey/jessicas-journey-costa-rica">  
+          Jessica&#039;s Journey to Costa Rica  </option><option value="/journey/jheanelles-journey-barbados">  
+          Jheanelle&#039;s Journey to Barbados  </option><option value="/journey/jihoons-journey-hong-kong">  
+          Jihoon&#039;s Journey to Hong Kong  </option><option value="/journey/julias-journey-jordan">  
+          Julia&#039;s Journey to Jordan  </option><option value="/journey/julie-anns-journey-china">  
+          Julie-Ann&#039;s Journey to China  </option><option value="/journey/katherines-journey-poland">  
+          Katherine&#039;s Journey to Poland  </option><option value="/journey/kellys-journey-malta">  
+          Kelly&#039;s Journey to Malta  </option><option value="/journey/kelsis-journey-south-korea">  
+          Kelsi&#039;s Journey to South Korea  </option><option value="/journey/kerrys-journey-columbia">  
+          Kerry&#039;s Journey to Columbia  </option><option value="/journey/kevins-journey-norway">  
+          Kevin&#039;s Journey to Norway  </option><option value="/journey/kristas-journey-senegal">  
+          Krista&#039;s Journey to Senegal  </option><option value="/journey/latashas-journey-turkey">  
+          Latasha&#039;s Journey to Turkey  </option><option value="/journey/leelas-journey-spain">  
+          Leela&#039;s Journey to Spain  </option><option value="/journey/louis-journey-sweden">  
+          Louis&#039; Journey to Sweden  </option><option value="/journey/lydias-journey-czech-republic">  
+          Lydia&#039;s Journey to the Czech Republic  </option><option value="/journey/mackenzies-journey-ecuador">  
+          Mackenzie&#039;s Journey to Ecuador  </option><option value="/journey/matthews-journey-argentina">  
+          Matthew&#039;s Journey to Argentina  </option><option value="/journey/micheles-journey-chile">  
+          Michele&#039;s Journey to Chile  </option><option value="/journey/natalies-journey-brazil">  
+          Natalie&#039;s Journey to Brazil  </option><option value="/journey/natalies-journey-spain">  
+          Natalie&#039;s Journey to Spain  </option><option value="/journey/nobles-journey-egypt">  
+          Noble&#039;s Journey to Egypt  </option><option value="/journey/nurtas-journey-botswana">  
+          Nurta&#039;s Journey to Botswana  </option><option value="/journey/poojas-journey-insead">  
+          Pooja&#039;s Journey with INSEAD  </option><option value="/journey/ryans-journey-italy">  
+          Ryan&#039;s Journey to Italy  </option><option value="/journey/salmans-journey-france">  
+          Salman&#039;s Journey to France  </option><option value="/journey/shannons-journey-egypt">  
+          Shannon&#039;s Journey to Egypt  </option><option value="/journey/stephanies-journey-columbia">  
+          Stephanie&#039;s Journey to Columbia  </option><option value="/journey/susannas-journey-republic-georgia">  
+          Susanna&#039;s Journey to the Republic of Georgia  </option><option value="/journey/tanyas-journey-germany">  
+          Tanya&#039;s Journey to Germany  </option><option value="/journey/theresas-journey-south-korea">  
+          Theresa&#039;s Journey to South Korea  </option><option value="/journey/tiffanys-journey-macedonia">  
+          Tiffany&#039;s Journey to Macedonia  </option><option value="/journey/tys-journey-south-africa">  
+          Ty&#039;s Journey to South Africa  </option><option value="/journey/valeries-journey-india">  
+          Valerie&#039;s Journey to India  </option><option value="/journey/valeries-journey-russia">  
+          Valerie&#039;s Journey to Russia  </option><option value="/journey/victorias-journey-dominican-republic">  
+          Victoria&#039;s Journey to the Dominican Republic  </option><option value="/journey/world-savvys-journey-bangladesh">  
+          World Savvy&#039;s Journey to Bangladesh  </option></select>
+</div>
+<input type="submit" name="op" id="edit-go" value="Go"  class="form-submit ctools-jump-menu-button ctools-jump-menu-hide" />
+</div><input type="hidden" name="form_build_id" id="form-c5737e7134e0a6e98b2b625be54ebb04" value="form-c5737e7134e0a6e98b2b625be54ebb04"  />
+<input type="hidden" name="form_id" id="edit-ctools-jump-menu" value="ctools_jump_menu"  />
+
+</div></form>
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div>
+</div>
+<div id="block-views-journey_front-block_1" class="clear-block block block-views">
+
+
+  <div class="content"><div class="view view-journey-front view-id-journey_front view-display-id-block_1 view-dom-id-d1f8832d6504fe91d810bc124727171f">
+        <div class="view-header">
+      <div class="headtitle">Featured Journey</div>
+    </div>
+  
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/journey/audras-journey-nepal">Audra&#039;s Journey to Nepal</a></span>  </div>  </div>
+    </div>
+  
+  
+      <div class="attachment attachment-after">
+      <div class="view view-journey-front view-id-journey_front view-display-id-attachment_1 view-dom-id-58e6468161c601b244a1b877ebc036a6">
+    
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-abstract-value">        <div class="field-content">For the last month I have lived in Sauraha, Chitwan. Sauraha is in the southern part of Nepal. It is surrounded by a large area area of untouched wild lands with many exotic and endangered species. </div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div><div class="view view-journey-front view-id-journey_front view-display-id-attachment_2 view-dom-id-e17b1bc1b46b5e7c54be23be923eb75f">
+    
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-image-image">        <span class="field-content"><img src="http://www.reachtheworld.org/sites/default/files/images/062_5.journey photo featured.JPG" alt="Peeling ginger" title="Peeling ginger"  class="image image-journey photo featured " width="300" height="200" /></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  
+  
+  
+  
+</div></div>
+</div>
+     
+                 </div>
+		</div>
+     	        	         	    	
+		
+		<div id="content"> 											<div id="node-56385" class="node">
+
+
+
+  
+  <div class="content clear-block">
+        </div>
+
+  <div class="clear-block">
+    <div class="meta">
+        </div>
+
+      </div>
+
+</div>
+		</div>
+	</div>	
+	
+	</div> 		
+
+<div id="footer">
+
+	<div id="triptych">
+
+                <div id="trip1" class="trip"><div id="block-views-front_news-news_block" class="clear-block block block-views">
+
+  <h3>In the News</h3>
+
+  <div class="content"><div class="view view-front-news view-id-front_news view-display-id-news_block view-dom-id-639e20da43e4f2c1989c2a05947acb02">
+    
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-field-home-page-text-value">        <span class="field-content"> <p>RTW will hold its <a href="http://www.reachtheworld.org/about/events" title="Annual Benefit">annual benefit</a> on March 13, 2013 at The Princeton Club of New York. Actor and travel writer <a href="http://image.s4.exct.net/lib/fe9915707663077e70/m/1/2013PressRelease_McCarthy.pdf" target="_blank" title="Read the Press Release!" rel="nofollow">Andrew McCarthy</a> will receive the Cronkite Award for Excellence!</p>
+ </span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+      
+  <div class="views-field views-field-field-home-page-text-value">        <span class="field-content"> <p>On September 11, 2012, RTW participated in <a href="http://www.cantor.com/CD/charity_day_2012" target="_blank" rel="nofollow">Cantor Fitzgerald Charity Day</a>. Susie Essman of HBO's <em>Curb Your Enthusiasm</em> represented RTW at this major event.</p>
+ </span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div>
+</div>
+  </div>   
+                        <div id="trip2" class="trip"><div id="block-views-front_news-block_2" class="clear-block block block-views">
+
+  <h3>Get Involved!</h3>
+
+  <div class="content"><div class="view view-front-news view-id-front_news view-display-id-block_2 view-dom-id-f207a2db6fac23372a38fb327d0e6682">
+    
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-front-page-text-value">        <span class="field-content"> <p>Interested in joining Reach the World? Click here to <a href="http://www.reachtheworld.org/content/get-involved">Get Involved!</a></p>
+ </span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div>
+</div>
+  </div>   
+                        <div id="trip3" class="trip"><div id="block-block-21" class="clear-block block block-block">
+
+
+  <div class="content"><p><a href="http://www.reachtheworld.org/geogames/"><img alt="" src="/sites/default/files/geogames.jpg" style="width: 310px; height: 160px;" /></a></p>
+</div>
+</div>
+  </div>   
+        		
+	</div>
+
+	<div id="searchBox"> </div>
+	<div id="footerin">
+		<div id="footermenu">  </div>
+	</div>
+</div> 
+
+<div id="credits">  </div>
+
+</div>
+</div>
+
+<div id="postfooter">
+                <div id="foot"><div id="block-block-18" class="clear-block block block-block">
+
+
+  <div class="content"><p><a href="http://www.reachtheworld.org/">Home</a> | <a href="http://www.reachtheworld.org/content/contact-us">Contact Us</a> | <a href="http://www.reachtheworld.org/content/reachtheworldorg-privacy-policy">Privacy Policy</a> | <a href="http://www.reachtheworld.org/content/get-involved">Get Involved</a></p>
+</div>
+</div>
+<div id="block-block-19" class="clear-block block block-block">
+
+
+  <div class="content">&copy; 2013 Reach the World</div>
+</div>
+</div>
+        </div>
+
+
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-3236532-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+	    
+</body>
+</html>
