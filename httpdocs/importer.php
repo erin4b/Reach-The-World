@@ -20,6 +20,7 @@ define('DRUPAL_ROOT','/home/orb/public_html/reachtheworld.org/httpdocs');
 require_once DRUPAL_ROOT . '/includes/bootstrap.inc';
 drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
 require_once DRUPAL_ROOT . '/' . variable_get('password_inc', 'includes/password.inc');
+GLOBAL $user;
 
 /*
 $data = file_get_contents("http://reachtheworld.org/export.php?p=password&c=users");
@@ -306,28 +307,12 @@ foreach($journeys AS $journey){
         $location_enabled = TRUE;
         $enode->field_video = array(LANGUAGE_NONE => array());
         foreach($content->field_video AS $video){
-          $url = trim('http://www.reachtheworld.org/'.$video->filepath);
+          $url = str_ireplace(' ','%20',trim('http://www.reachtheworld.org/'.$video->filepath));
           $video = file_get_contents($url);
           $filename = drupal_basename($url);
-          $destination = $save_path.'/'.$filename;
-          $replace = FILE_EXISTS_RENAME;
-
-          if($uri = file_unmanaged_save_data($video, $destination, $replace)){
-            // Create a file object.
-            $file = new stdClass();
-            $file->fid = NULL;
-            $file->uri = $uri;
-            $file->filename = drupal_basename($uri);
-            $file->filemime = file_get_mimetype($file->uri);
-            $file->uid = $user->uid;
-            $file->status = FILE_STATUS_PERMANENT;
-            if (is_file($destination)) {
-              $file->filename = drupal_basename($destination);
-            }
-
-            $file = file_save($file);
-            $enode->field_video[LANGUAGE_NONE][] = (array)$file;
-          }
+          $destination = 'public://videos/original/'.$filename;
+          $file = file_save_data($video,$destination);
+          $enode->field_video[LANGUAGE_NONE][] = (array)$file;
         }
       break;
 
@@ -343,30 +328,14 @@ foreach($journeys AS $journey){
     if($content->image_content > 0){
       $enode->field_images = array(LANGUAGE_NONE => array());
       foreach($content->image_content AS $image){
-        $url = trim('http://www.reachtheworld.org/'.$image->images->_original);
+        $url = str_ireplace(' ','%20',trim('http://www.reachtheworld.org/'.$image->images->_original));
         $image = file_get_contents($url);
         $filename = drupal_basename($url);
-
         $destination = $save_path.'/'.$filename;
-        $replace = FILE_EXISTS_RENAME;
-
-        if($uri = file_unmanaged_save_data($image, $destination, $replace)){
-          // Create a file object.
-          $file = new stdClass();
-          $file->fid = NULL;
-          $file->uri = $uri;
-          $file->filename = drupal_basename($uri);
-          $file->filemime = file_get_mimetype($file->uri);
-          $file->uid = $user->uid;
-          $file->status = FILE_STATUS_PERMANENT;
-          if (is_file($destination)) {
-            $file->filename = drupal_basename($destination);
-          }
-
-          $file = file_save($file);
-          $enode->field_images[LANGUAGE_NONE][] = (array)$file;
-        }
+        $file = file_save_data($image,$destination);
+        $enode->field_images[LANGUAGE_NONE][] = (array)$file;
       }
+
     }
 
     //CHECK IF LOCATION ENABLED FOR CONTENT TYPE

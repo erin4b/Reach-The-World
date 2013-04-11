@@ -508,7 +508,7 @@ function og_node_access($node, $op, $account) {
   $type = is_string($node) ? $node : (is_array($node) ? $node['type'] : $node->type);
 
   if ($op == 'create' && og_is_group_content_type('node', $type) && variable_get('og_node_access_strict', TRUE)) {
-    if (user_access('administer group', $account)) {
+    if (user_access('administer group')) {
       return NODE_ACCESS_ALLOW;
     }
     // We can't check if user has create permissions using og_user_access(), as
@@ -2322,8 +2322,8 @@ function og_is_group_type($entity_type, $bundle_name) {
  *
  * This is a wrapper function around og_get_group_type().
  *
- * @param $entity_type
- *   The entity type to be checked.
+ * @param $node_type
+ *   The node type to be checked.
  */
 function og_is_group_content_type($entity_type, $bundle_name) {
   return og_get_group_type($entity_type, $bundle_name, 'group content');
@@ -2437,21 +2437,17 @@ function og_is_member($group_type, $gid, $entity_type = 'user', $entity = NULL, 
 /**
  * Check if group should use default roles and permissions.
  *
- * @param $group_type
- *   The entity type of the group.
  * @param $gid
- *   The group ID or the group entity.
- *
+ *   The group ID.
  * @return
  *   TRUE if group should use default roles and permissions.
  */
-function og_is_group_default_access($group_type, $gid) {
+function og_is_group_default_access($entity_type, $entity) {
   if (!field_info_field(OG_DEFAULT_ACCESS_FIELD)) {
     // Don't bother loading entity if field does not exist.
     return TRUE;
   }
-
-  $wrapper = entity_metadata_wrapper($group_type, $gid);
+  $wrapper = entity_metadata_wrapper($entity_type, $entity);
   if (empty($wrapper->{OG_DEFAULT_ACCESS_FIELD})) {
     return TRUE;
   }
@@ -2564,8 +2560,6 @@ function og_roles($group_type, $bundle, $gid = 0, $force_group = FALSE, $include
  * Get array of default roles, keyed by their declaring module.
  *
  * @param $include
- *   (optional) If TRUE also anonymous and authenticated roles will be returned.
- *   Defaults to TRUE.
  *
  * @return
  *   Array of default roles, grouped by module name.
@@ -2659,16 +2653,9 @@ function og_get_user_roles($group_type, $gid, $uid = NULL, $include = TRUE) {
  * Create a stub OG role object.
  *
  * @param $name
- *   A name of the role.
- * @param $group_type
- *   (optional) The entity type of the group.
  * @param $gid
- *   (optional) The group ID.
+ * @param $group_type
  * @param $group_bundle
- *   (optional) The bundle of the group.
- *
- * @return
- *   A stub OG role object.
  */
 function og_role_create($name, $group_type = '', $gid = 0, $group_bundle = '') {
   $role = new stdClass;
@@ -2682,12 +2669,11 @@ function og_role_create($name, $group_type = '', $gid = 0, $group_bundle = '') {
 /**
  * Fetch a user role from database.
  *
- * @param $rid
+ * @param $role
  *   An integer with the role ID.
- *
  * @return
- *   A fully-loaded role object if a role with the given ID exists,
- *   FALSE otherwise.
+ *   A fully-loaded role object if a role with the given name or ID
+ *   exists, FALSE otherwise.
  */
 function og_role_load($rid) {
   return db_select('og_role', 'r')
@@ -2703,7 +2689,6 @@ function og_role_load($rid) {
  * @param $role
  *   A role object to modify or add. If $role->rid is not specified, a new
  *   role will be created.
- *
  * @return
  *   Status constant indicating if role was created or updated.
  *   Failure to write the user role record will return FALSE. Otherwise.
@@ -2731,7 +2716,7 @@ function og_role_save($role) {
 /**
  * Delete a user role from database.
  *
- * @param $rid
+ * @param $role
  *   An integer with the role ID.
  */
 function og_role_delete($rid) {
@@ -2789,13 +2774,13 @@ function og_get_user_roles_name($rids = array()) {
  *
  * @see og_modules_uninstalled()
  *
- * @param $modules
- *   Array with the module names.
+ * @param $module
+ *   Array with the modules name.
  */
 function og_permissions_delete_by_module($modules = array()) {
-  db_delete('og_role_permission')
-    ->condition('module', $modules, 'IN')
-    ->execute();
+   db_delete('og_role_permission')
+     ->condition('module', $modules, 'IN')
+     ->execute();
 }
 
 /**
@@ -2807,7 +2792,6 @@ function og_permissions_delete_by_module($modules = array()) {
  *   The bundle type.
  * @param $gid
  *   The group ID.
- *
  * @return
  *   The newly created roles keyed by role ID and role name as the value. Or
  *   FALSE if no roles were created.
@@ -2855,10 +2839,6 @@ function og_roles_override($group_type, $bundle, $gid) {
 /**
  * Grant a group role to a user.
  *
- * @param $group_type
- *   The entity type of the group.
- * @param $gid
- *   The group ID.
  * @param $uid
  *   The user ID.
  * @param $rid
@@ -2892,10 +2872,6 @@ function og_role_grant($group_type, $gid, $uid, $rid) {
 /**
  * Revoke a group role from a user.
  *
- * @param $group_type
- *   The entity type of the group.
- * @param $gid
- *   The group ID.
  * @param $uid
  *   The user ID.
  * @param $rid
@@ -3211,7 +3187,6 @@ function og_get_fieldable_entity_list() {
  *
  * @param $type
  *   The machine-readable name of the node type.
- *
  * @return array
  *   An array of permission names and descriptions.
  */
@@ -3260,12 +3235,8 @@ function og_list_permissions($type) {
 /**
  * Return a form element with crafted links to create nodes for a group.
  *
- * @param $group_type
- *   The entity type of the group.
  * @param $gid
  *   The group ID.
- * @param $field_name
- *   The group audience field name.
  * @param $destination
  *   Optional; The destiantion after a node is created. Defaults to the
  *   destination passed in the URL if exists, otherwise back to the current
@@ -3334,9 +3305,6 @@ function og_node_create_links($group_type, $gid, $field_name, $destination = NUL
  * @param $account
  *   Optional; The user object to fetch group memberships for. Defaults to the
  *   acting user.
- * @param $group_type
- *   Optional; The entity type of the groups to fetch. By default all group
- *   types will be fetched.
  *
  * @return
  *   An array with the group IDs or an empty array.
