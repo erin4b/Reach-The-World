@@ -362,7 +362,7 @@ ul {
 .pane-user-login{
   position: relative;
   float: right;
-  margin-top: 0px;
+  margin-top: 5px;
   .form-item{
     display: inline;
     float: left;
@@ -794,7 +794,10 @@ form#views-form-user-messages-inbox {
         .pane-user-messages{
           position: absolute;
           left: 0px;
-          top: 45px;
+          top: 65px;
+          ul{
+            margin: 0px;
+          }
         }
       }
     }
@@ -815,6 +818,14 @@ form#views-form-user-messages-inbox {
       margin-right: 20px;
       .inside{
         background-image: url(../images/hm_hdr_calendar2.jpg);
+        .pane-calendar{
+          position: absolute;
+          left: 0px;
+          top: 65px;
+          ul{
+            margin: 0px;
+          }
+        }
       }
     }
     &.media{
@@ -1006,4 +1017,8 @@ form#views-form-user-messages-inbox {
   font-size: 1.4em;
   margin: 10px 0px;
   color: #1D4AFC;
+}
+
+.panel-2col-stacked .panel-separator{
+  margin: 0px;
 }
