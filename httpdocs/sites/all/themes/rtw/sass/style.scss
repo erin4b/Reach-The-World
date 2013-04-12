@@ -805,6 +805,15 @@ form#views-form-user-messages-inbox {
       background-image: url(../images/hm_hdr_articles.jpg);
       .inside{
         background-image: url(../images/hm_hdr_articles2.jpg);
+        .pane-articles{
+          position: absolute;
+          left: 0px;
+          top: 65px;
+          padding-left: 20px;
+          ul{
+            margin: 0px;
+          }
+        }
       }
     }
     &.whats-new{

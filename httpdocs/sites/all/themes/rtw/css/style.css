@@ -951,48 +951,59 @@ form#views-form-user-messages-inbox td {
 #dashboard .panels-flexible-region.articles .inside {
   background-image: url(../images/hm_hdr_articles2.jpg);
 }
-/* line 810, ../sass/style.scss */
+/* line 808, ../sass/style.scss */
+#dashboard .panels-flexible-region.articles .inside .pane-articles {
+  position: absolute;
+  left: 0px;
+  top: 65px;
+  padding-left: 20px;
+}
+/* line 813, ../sass/style.scss */
+#dashboard .panels-flexible-region.articles .inside .pane-articles ul {
+  margin: 0px;
+}
+/* line 819, ../sass/style.scss */
 #dashboard .panels-flexible-region.whats-new {
   background-image: url(../images/hm_hdr_whatsnew.jpg);
 }
-/* line 812, ../sass/style.scss */
+/* line 821, ../sass/style.scss */
 #dashboard .panels-flexible-region.whats-new .inside {
   background-image: url(../images/hm_hdr_whatsnew2.jpg);
 }
-/* line 816, ../sass/style.scss */
+/* line 825, ../sass/style.scss */
 #dashboard .panels-flexible-region.calendar {
   background-image: url(../images/hm_hdr_calendar.jpg);
   margin-right: 20px;
 }
-/* line 819, ../sass/style.scss */
+/* line 828, ../sass/style.scss */
 #dashboard .panels-flexible-region.calendar .inside {
   background-image: url(../images/hm_hdr_calendar2.jpg);
 }
-/* line 821, ../sass/style.scss */
+/* line 830, ../sass/style.scss */
 #dashboard .panels-flexible-region.calendar .inside .pane-calendar {
   position: absolute;
   left: 0px;
   top: 65px;
 }
-/* line 825, ../sass/style.scss */
+/* line 834, ../sass/style.scss */
 #dashboard .panels-flexible-region.calendar .inside .pane-calendar ul {
   margin: 0px;
 }
-/* line 831, ../sass/style.scss */
+/* line 840, ../sass/style.scss */
 #dashboard .panels-flexible-region.media {
   background-image: url(../images/hm_hdr_media.jpg);
 }
-/* line 833, ../sass/style.scss */
+/* line 842, ../sass/style.scss */
 #dashboard .panels-flexible-region.media .inside {
   background-image: url(../images/hm_hdr_media2.jpg);
 }
 
-/* line 841, ../sass/style.scss */
+/* line 850, ../sass/style.scss */
 .page-user .panel-2col-stacked .panel-col-last {
   width: 740px;
 }
 
-/* line 849, ../sass/style.scss */
+/* line 858, ../sass/style.scss */
 #block-menu-menu-user-media-menu {
   position: absolute;
   left: 0px;
@@ -1001,18 +1012,18 @@ form#views-form-user-messages-inbox td {
   width: 100%;
   height: 28px;
 }
-/* line 856, ../sass/style.scss */
+/* line 865, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu {
   padding: 0px;
   margin: 0px;
 }
-/* line 859, ../sass/style.scss */
+/* line 868, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li {
   list-style: none;
   float: left;
   width: 24%;
 }
-/* line 863, ../sass/style.scss */
+/* line 872, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a {
   text-decoration: none;
   color: white;
@@ -1023,28 +1034,28 @@ form#views-form-user-messages-inbox td {
   background-repeat: no-repeat;
   background-position: 25% center;
 }
-/* line 872, ../sass/style.scss */
+/* line 881, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-mail {
   background-image: url(../images/navicon1.gif);
 }
-/* line 875, ../sass/style.scss */
+/* line 884, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-articles {
   background-image: url(../images/navicon2.gif);
 }
-/* line 878, ../sass/style.scss */
+/* line 887, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-media {
   background-image: url(../images/navicon3.gif);
 }
-/* line 881, ../sass/style.scss */
+/* line 890, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-calendar {
   background-image: url(../images/navicon4.gif);
 }
-/* line 884, ../sass/style.scss */
+/* line 893, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-whats-new {
   background-image: url(../images/navicon_whatsnew.gif);
 }
 
-/* line 892, ../sass/style.scss */
+/* line 901, ../sass/style.scss */
 #user-name {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4em;
@@ -1052,16 +1063,16 @@ form#views-form-user-messages-inbox td {
   font-weight: bold;
   line-height: 1;
 }
-/* line 898, ../sass/style.scss */
+/* line 907, ../sass/style.scss */
 #user-name p {
   margin: 0px;
 }
 
-/* line 905, ../sass/style.scss */
+/* line 914, ../sass/style.scss */
 .page-user #page #page-inner {
   padding: 118px 20px 0px;
 }
-/* line 908, ../sass/style.scss */
+/* line 917, ../sass/style.scss */
 .page-user #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_landing.jpg);
   display: block;
@@ -1071,32 +1082,32 @@ form#views-form-user-messages-inbox td {
   left: 0px;
   top: 28px;
 }
-/* line 916, ../sass/style.scss */
+/* line 925, ../sass/style.scss */
 .page-user #page #page-inner header a#logo img {
   display: none;
 }
-/* line 924, ../sass/style.scss */
+/* line 933, ../sass/style.scss */
 .page-user.page-user-mail #page #page-inner header a#logo {
   background-image: url(../images/hm_hdr_mail3.jpg);
 }
-/* line 929, ../sass/style.scss */
+/* line 938, ../sass/style.scss */
 .page-user.page-user-articles #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_articles3.jpg);
 }
-/* line 934, ../sass/style.scss */
+/* line 943, ../sass/style.scss */
 .page-user.page-user-calendar #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_calendar.jpg);
 }
-/* line 939, ../sass/style.scss */
+/* line 948, ../sass/style.scss */
 .page-user.page-user-media #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_media.jpg);
 }
-/* line 944, ../sass/style.scss */
+/* line 953, ../sass/style.scss */
 .page-user.page-user-whats-new #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_whatsnew.jpg);
 }
 
-/* line 956, ../sass/style.scss */
+/* line 965, ../sass/style.scss */
 #recent-logbook h2.pane-title {
   background-image: url(../images/hdr_logbook.jpg);
   background-repeat: no-repeat;
@@ -1104,13 +1115,13 @@ form#views-form-user-messages-inbox td {
   text-indent: -9999px;
   margin: 0px 0px 5px;
 }
-/* line 963, ../sass/style.scss */
+/* line 972, ../sass/style.scss */
 #recent-logbook .pane-content {
   font-size: 14px;
   line-height: 18px;
 }
 
-/* line 970, ../sass/style.scss */
+/* line 979, ../sass/style.scss */
 #recent-field-notes h2.pane-title {
   background-image: url(../images/hdr_field-notes.jpg);
   background-repeat: no-repeat;
@@ -1118,13 +1129,13 @@ form#views-form-user-messages-inbox td {
   text-indent: -9999px;
   margin: 0px 0px 5px;
 }
-/* line 977, ../sass/style.scss */
+/* line 986, ../sass/style.scss */
 #recent-field-notes .pane-content {
   font-size: 14px;
   line-height: 18px;
 }
 
-/* line 984, ../sass/style.scss */
+/* line 993, ../sass/style.scss */
 #recent-journals h2.pane-title {
   background-image: url(../images/hdr_journals.jpg);
   background-repeat: no-repeat;
@@ -1132,41 +1143,41 @@ form#views-form-user-messages-inbox td {
   text-indent: -9999px;
   margin: 0px 0px 5px;
 }
-/* line 991, ../sass/style.scss */
+/* line 1000, ../sass/style.scss */
 #recent-journals .pane-content {
   font-size: 14px;
   line-height: 18px;
 }
 
-/* line 998, ../sass/style.scss */
+/* line 1007, ../sass/style.scss */
 .pane-node h2.pane-title {
   margin-top: 0px;
 }
 
-/* line 1003, ../sass/style.scss */
+/* line 1012, ../sass/style.scss */
 .panel-2col-stacked .panel-col-last .inside {
   margin: 0px;
   padding: 0px;
 }
 
-/* line 1008, ../sass/style.scss */
+/* line 1017, ../sass/style.scss */
 #content {
   padding: 0px;
 }
 
-/* line 1012, ../sass/style.scss */
+/* line 1021, ../sass/style.scss */
 .page-user #main > #content > .tabs {
   display: none;
 }
 
-/* line 1016, ../sass/style.scss */
+/* line 1025, ../sass/style.scss */
 .page-user #main > #content > #page-title {
   font-size: 1.4em;
   margin: 10px 0px;
   color: #1D4AFC;
 }
 
-/* line 1022, ../sass/style.scss */
+/* line 1031, ../sass/style.scss */
 .panel-2col-stacked .panel-separator {
   margin: 0px;
 }
