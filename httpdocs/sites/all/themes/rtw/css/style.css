@@ -326,16 +326,16 @@ ul li {
 }
 
 /* line 267, ../sass/style.scss */
-.node-type-journey #main .center-wrapper .panel-col-first, .node-type-log-book #main .center-wrapper .panel-col-first {
+.node-type-journey #main .center-wrapper .panel-col-first, .node-type-log-book #main .center-wrapper .panel-col-first, .node-type-journal #main .center-wrapper .panel-col-first {
   width: 180px;
   margin-right: 20px;
 }
 /* line 270, ../sass/style.scss */
-.node-type-journey #main .center-wrapper .panel-col-first > .inside, .node-type-log-book #main .center-wrapper .panel-col-first > .inside {
+.node-type-journey #main .center-wrapper .panel-col-first > .inside, .node-type-log-book #main .center-wrapper .panel-col-first > .inside, .node-type-journal #main .center-wrapper .panel-col-first > .inside {
   margin: 0px 0px 1em;
 }
 /* line 274, ../sass/style.scss */
-.node-type-journey #main .center-wrapper .panel-col-last, .node-type-log-book #main .center-wrapper .panel-col-last {
+.node-type-journey #main .center-wrapper .panel-col-last, .node-type-log-book #main .center-wrapper .panel-col-last, .node-type-journal #main .center-wrapper .panel-col-last {
   width: 720px;
 }
 
