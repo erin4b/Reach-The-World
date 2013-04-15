@@ -693,7 +693,13 @@ br {
   color: #0066FF;
 }
 
-/* line 579, ../sass/style.scss */
+/* line 577, ../sass/style.scss */
+.pane-journey-content {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* line 584, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_journey_location {
   background: #CDA2CD;
   border-radius: 10px;
@@ -702,47 +708,47 @@ br {
   font-size: 1.4em;
   line-height: 1.5;
 }
-/* line 586, ../sass/style.scss */
+/* line 591, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_journey_location .field-content > span {
   background-image: url(../images/crn_top_lft.jpg);
   background-repeat: no-repeat;
   display: block;
   padding-left: 30px;
 }
-/* line 591, ../sass/style.scss */
+/* line 596, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_journey_location .field-content > span .current-location-label {
   text-transform: uppercase;
 }
-/* line 595, ../sass/style.scss */
+/* line 600, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_journey_location .views-row-1 {
   margin: -10px 0 0 -10px;
 }
-/* line 598, ../sass/style.scss */
+/* line 603, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_journey_location .views-field-nothing {
   font-weight: bold;
   margin-bottom: 5px;
 }
-/* line 604, ../sass/style.scss */
+/* line 609, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-albums table {
   margin: 0px;
   width: 100%;
 }
-/* line 608, ../sass/style.scss */
+/* line 613, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-albums table tr td {
   width: 178.75px;
   text-align: center;
   vertical-align: top;
 }
-/* line 612, ../sass/style.scss */
+/* line 617, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-albums table tr td img {
   border: 1px solid #000;
 }
-/* line 615, ../sass/style.scss */
+/* line 620, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-albums table tr td a {
   text-decoration: none;
   color: #0066FF;
 }
-/* line 623, ../sass/style.scss */
+/* line 628, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_logbook {
   display: block;
   width: 480px;
@@ -750,7 +756,7 @@ br {
   background: transparent url(../images/postcard.jpg) no-repeat left top;
   padding: 125px 30px 30px 30px;
 }
-/* line 630, ../sass/style.scss */
+/* line 635, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue {
   transform: rotate(1deg);
   -ms-transform: rotate(1deg);
@@ -762,7 +768,7 @@ br {
   -moz-transform: rotate(1deg);
   /* Firefox */
 }
-/* line 636, ../sass/style.scss */
+/* line 641, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue .clue-location {
   float: left;
   width: 130px;
@@ -771,49 +777,49 @@ br {
   color: #333333;
   line-height: 1.5;
 }
-/* line 643, ../sass/style.scss */
+/* line 648, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue .clue-location .title {
   font-weight: bold;
   display: block;
 }
-/* line 647, ../sass/style.scss */
+/* line 652, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue .clue-location .latitude {
   display: block;
 }
-/* line 650, ../sass/style.scss */
+/* line 655, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue .clue-location .longitude {
   display: block;
 }
-/* line 653, ../sass/style.scss */
+/* line 658, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue .clue-location .by-x {
   display: block;
 }
-/* line 657, ../sass/style.scss */
+/* line 662, ../sass/style.scss */
 .view-journey-content.view-id-journey_content.view-display-id-recent_logbook .clue .clue-images {
   float: right;
   width: 300px;
 }
 
-/* line 667, ../sass/style.scss */
+/* line 672, ../sass/style.scss */
 .view-journey-travelers.view-id-journey_travelers {
   margin-bottom: 5px;
 }
-/* line 669, ../sass/style.scss */
+/* line 674, ../sass/style.scss */
 .view-journey-travelers.view-id-journey_travelers .views-field-name {
   font-size: 1.4em;
   font-weight: bold;
 }
-/* line 673, ../sass/style.scss */
+/* line 678, ../sass/style.scss */
 .view-journey-travelers.view-id-journey_travelers table {
   width: 100%;
   margin: 0px;
 }
-/* line 680, ../sass/style.scss */
+/* line 685, ../sass/style.scss */
 .view-journey-travelers.view-id-journey_travelers.view-display-id-default table tr td {
   text-align: center;
 }
 
-/* line 689, ../sass/style.scss */
+/* line 694, ../sass/style.scss */
 .pane-welcome-messages, .pane-menu-menu-user-mail-menu {
   background: #6995EC;
   border: 1px solid #6995EC;
@@ -825,51 +831,51 @@ br {
   padding-right: 5px;
   margin-bottom: 10px;
 }
-/* line 699, ../sass/style.scss */
+/* line 704, ../sass/style.scss */
 .pane-welcome-messages h2, .pane-menu-menu-user-mail-menu h2 {
   margin: 0px 0px 5px;
 }
-/* line 703, ../sass/style.scss */
+/* line 708, ../sass/style.scss */
 .pane-welcome-messages .view-content a, .pane-menu-menu-user-mail-menu .view-content a {
   color: white;
   text-decoration: none;
 }
-/* line 708, ../sass/style.scss */
+/* line 713, ../sass/style.scss */
 .pane-welcome-messages ul, .pane-menu-menu-user-mail-menu ul {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 }
-/* line 711, ../sass/style.scss */
+/* line 716, ../sass/style.scss */
 .pane-welcome-messages ul li, .pane-menu-menu-user-mail-menu ul li {
   list-style: none;
 }
-/* line 713, ../sass/style.scss */
+/* line 718, ../sass/style.scss */
 .pane-welcome-messages ul li a, .pane-menu-menu-user-mail-menu ul li a {
   color: #fff;
   padding-left: 10px;
   text-decoration: none;
 }
 
-/* line 723, ../sass/style.scss */
+/* line 728, ../sass/style.scss */
 form#views-form-user-messages-inbox td {
   padding: 2px 10px;
 }
 
-/* line 730, ../sass/style.scss */
+/* line 735, ../sass/style.scss */
 .page-user .center-wrapper .panel-col-first {
   width: 180px;
   margin-right: 20px;
 }
-/* line 733, ../sass/style.scss */
+/* line 738, ../sass/style.scss */
 .page-user .center-wrapper .panel-col-first .inside {
   margin: 0px;
 }
 
-/* line 740, ../sass/style.scss */
+/* line 745, ../sass/style.scss */
 #panels-ipe-paneid-98 {
   margin-bottom: 10px;
 }
-/* line 742, ../sass/style.scss */
+/* line 747, ../sass/style.scss */
 #panels-ipe-paneid-98 h2.pane-title {
   margin: 0px;
   background-image: url(../images/hdr_logbook.jpg);
@@ -878,16 +884,16 @@ form#views-form-user-messages-inbox td {
   text-indent: -9999px;
   overflow: hidden;
 }
-/* line 750, ../sass/style.scss */
+/* line 755, ../sass/style.scss */
 #panels-ipe-paneid-98 p {
   margin: 0px;
 }
 
-/* line 755, ../sass/style.scss */
+/* line 760, ../sass/style.scss */
 #panels-ipe-paneid-99 {
   margin-bottom: 10px;
 }
-/* line 757, ../sass/style.scss */
+/* line 762, ../sass/style.scss */
 #panels-ipe-paneid-99 h2.pane-title {
   margin: 0px;
   background-image: url(../images/hdr_field-notes.jpg);
@@ -896,16 +902,16 @@ form#views-form-user-messages-inbox td {
   text-indent: -9999px;
   overflow: hidden;
 }
-/* line 765, ../sass/style.scss */
+/* line 770, ../sass/style.scss */
 #panels-ipe-paneid-99 p {
   margin: 0px;
 }
 
-/* line 770, ../sass/style.scss */
+/* line 775, ../sass/style.scss */
 #panels-ipe-paneid-100 {
   margin-bottom: 10px;
 }
-/* line 772, ../sass/style.scss */
+/* line 777, ../sass/style.scss */
 #panels-ipe-paneid-100 h2.pane-title {
   margin: 0px;
   background-image: url(../images/hdr_journals.jpg);
@@ -914,105 +920,105 @@ form#views-form-user-messages-inbox td {
   text-indent: -9999px;
   overflow: hidden;
 }
-/* line 780, ../sass/style.scss */
+/* line 785, ../sass/style.scss */
 #panels-ipe-paneid-100 p {
   margin: 0px;
 }
 
-/* line 786, ../sass/style.scss */
+/* line 791, ../sass/style.scss */
 #dashboard .panels-flexible-region {
   background-repeat: no-repeat;
   width: 360px;
   height: 185px;
   background-position: top center;
 }
-/* line 791, ../sass/style.scss */
+/* line 796, ../sass/style.scss */
 #dashboard .panels-flexible-region .inside {
   background-repeat: no-repeat;
   background-position: bottom center;
   height: 185px;
   position: relative;
 }
-/* line 797, ../sass/style.scss */
+/* line 802, ../sass/style.scss */
 #dashboard .panels-flexible-region.mail {
   background-image: url(../images/mail_head.jpg);
   margin-right: 20px;
 }
-/* line 800, ../sass/style.scss */
+/* line 805, ../sass/style.scss */
 #dashboard .panels-flexible-region.mail .inside {
   background-image: url(../images/mail_bottom.jpg);
 }
-/* line 802, ../sass/style.scss */
+/* line 807, ../sass/style.scss */
 #dashboard .panels-flexible-region.mail .inside .pane-user-messages {
   position: absolute;
   left: 0px;
   top: 65px;
 }
-/* line 806, ../sass/style.scss */
+/* line 811, ../sass/style.scss */
 #dashboard .panels-flexible-region.mail .inside .pane-user-messages ul {
   margin: 0px;
 }
-/* line 812, ../sass/style.scss */
+/* line 817, ../sass/style.scss */
 #dashboard .panels-flexible-region.articles {
   background-image: url(../images/hm_hdr_articles.jpg);
 }
-/* line 814, ../sass/style.scss */
+/* line 819, ../sass/style.scss */
 #dashboard .panels-flexible-region.articles .inside {
   background-image: url(../images/hm_hdr_articles2.jpg);
 }
-/* line 816, ../sass/style.scss */
+/* line 821, ../sass/style.scss */
 #dashboard .panels-flexible-region.articles .inside .pane-articles {
   position: absolute;
   left: 0px;
   top: 65px;
   padding-left: 20px;
 }
-/* line 821, ../sass/style.scss */
+/* line 826, ../sass/style.scss */
 #dashboard .panels-flexible-region.articles .inside .pane-articles ul {
   margin: 0px;
 }
-/* line 827, ../sass/style.scss */
+/* line 832, ../sass/style.scss */
 #dashboard .panels-flexible-region.whats-new {
   background-image: url(../images/hm_hdr_whatsnew.jpg);
 }
-/* line 829, ../sass/style.scss */
+/* line 834, ../sass/style.scss */
 #dashboard .panels-flexible-region.whats-new .inside {
   background-image: url(../images/hm_hdr_whatsnew2.jpg);
 }
-/* line 833, ../sass/style.scss */
+/* line 838, ../sass/style.scss */
 #dashboard .panels-flexible-region.calendar {
   background-image: url(../images/hm_hdr_calendar.jpg);
   margin-right: 20px;
 }
-/* line 836, ../sass/style.scss */
+/* line 841, ../sass/style.scss */
 #dashboard .panels-flexible-region.calendar .inside {
   background-image: url(../images/hm_hdr_calendar2.jpg);
 }
-/* line 838, ../sass/style.scss */
+/* line 843, ../sass/style.scss */
 #dashboard .panels-flexible-region.calendar .inside .pane-calendar {
   position: absolute;
   left: 0px;
   top: 65px;
 }
-/* line 842, ../sass/style.scss */
+/* line 847, ../sass/style.scss */
 #dashboard .panels-flexible-region.calendar .inside .pane-calendar ul {
   margin: 0px;
 }
-/* line 848, ../sass/style.scss */
+/* line 853, ../sass/style.scss */
 #dashboard .panels-flexible-region.media {
   background-image: url(../images/hm_hdr_media.jpg);
 }
-/* line 850, ../sass/style.scss */
+/* line 855, ../sass/style.scss */
 #dashboard .panels-flexible-region.media .inside {
   background-image: url(../images/hm_hdr_media2.jpg);
 }
 
-/* line 858, ../sass/style.scss */
+/* line 863, ../sass/style.scss */
 .page-user .panel-2col-stacked .panel-col-last {
   width: 740px;
 }
 
-/* line 866, ../sass/style.scss */
+/* line 871, ../sass/style.scss */
 #block-menu-menu-user-media-menu {
   position: absolute;
   left: 0px;
@@ -1021,18 +1027,18 @@ form#views-form-user-messages-inbox td {
   width: 100%;
   height: 28px;
 }
-/* line 873, ../sass/style.scss */
+/* line 878, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu {
   padding: 0px;
   margin: 0px;
 }
-/* line 876, ../sass/style.scss */
+/* line 881, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li {
   list-style: none;
   float: left;
   width: 24%;
 }
-/* line 880, ../sass/style.scss */
+/* line 885, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a {
   text-decoration: none;
   color: white;
@@ -1043,28 +1049,28 @@ form#views-form-user-messages-inbox td {
   background-repeat: no-repeat;
   background-position: 25% center;
 }
-/* line 889, ../sass/style.scss */
+/* line 894, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-mail {
   background-image: url(../images/navicon1.gif);
 }
-/* line 892, ../sass/style.scss */
+/* line 897, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-articles {
   background-image: url(../images/navicon2.gif);
 }
-/* line 895, ../sass/style.scss */
+/* line 900, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-media {
   background-image: url(../images/navicon3.gif);
 }
-/* line 898, ../sass/style.scss */
+/* line 903, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-calendar {
   background-image: url(../images/navicon4.gif);
 }
-/* line 901, ../sass/style.scss */
+/* line 906, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-whats-new {
   background-image: url(../images/navicon_whatsnew.gif);
 }
 
-/* line 909, ../sass/style.scss */
+/* line 914, ../sass/style.scss */
 #user-name {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4em;
@@ -1072,16 +1078,16 @@ form#views-form-user-messages-inbox td {
   font-weight: bold;
   line-height: 1;
 }
-/* line 915, ../sass/style.scss */
+/* line 920, ../sass/style.scss */
 #user-name p {
   margin: 0px;
 }
 
-/* line 922, ../sass/style.scss */
+/* line 927, ../sass/style.scss */
 .page-user #page #page-inner {
   padding: 118px 20px 0px;
 }
-/* line 925, ../sass/style.scss */
+/* line 930, ../sass/style.scss */
 .page-user #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_landing.jpg);
   display: block;
@@ -1091,32 +1097,32 @@ form#views-form-user-messages-inbox td {
   left: 0px;
   top: 28px;
 }
-/* line 933, ../sass/style.scss */
+/* line 938, ../sass/style.scss */
 .page-user #page #page-inner header a#logo img {
   display: none;
 }
-/* line 941, ../sass/style.scss */
+/* line 946, ../sass/style.scss */
 .page-user.page-user-mail #page #page-inner header a#logo {
   background-image: url(../images/hm_hdr_mail3.jpg);
 }
-/* line 946, ../sass/style.scss */
+/* line 951, ../sass/style.scss */
 .page-user.page-user-articles #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_articles3.jpg);
 }
-/* line 951, ../sass/style.scss */
+/* line 956, ../sass/style.scss */
 .page-user.page-user-calendar #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_calendar.jpg);
 }
-/* line 956, ../sass/style.scss */
+/* line 961, ../sass/style.scss */
 .page-user.page-user-media #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_media.jpg);
 }
-/* line 961, ../sass/style.scss */
+/* line 966, ../sass/style.scss */
 .page-user.page-user-whats-new #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_whatsnew.jpg);
 }
 
-/* line 973, ../sass/style.scss */
+/* line 978, ../sass/style.scss */
 #recent-logbook h2.pane-title {
   background-image: url(../images/hdr_logbook.jpg);
   background-repeat: no-repeat;
@@ -1124,13 +1130,13 @@ form#views-form-user-messages-inbox td {
   text-indent: -9999px;
   margin: 0px 0px 5px;
 }
-/* line 980, ../sass/style.scss */
+/* line 985, ../sass/style.scss */
 #recent-logbook .pane-content {
   font-size: 14px;
   line-height: 18px;
 }
 
-/* line 987, ../sass/style.scss */
+/* line 992, ../sass/style.scss */
 #recent-field-notes h2.pane-title {
   background-image: url(../images/hdr_field-notes.jpg);
   background-repeat: no-repeat;
@@ -1138,13 +1144,13 @@ form#views-form-user-messages-inbox td {
   text-indent: -9999px;
   margin: 0px 0px 5px;
 }
-/* line 994, ../sass/style.scss */
+/* line 999, ../sass/style.scss */
 #recent-field-notes .pane-content {
   font-size: 14px;
   line-height: 18px;
 }
 
-/* line 1001, ../sass/style.scss */
+/* line 1006, ../sass/style.scss */
 #recent-journals h2.pane-title {
   background-image: url(../images/hdr_journals.jpg);
   background-repeat: no-repeat;
@@ -1152,41 +1158,41 @@ form#views-form-user-messages-inbox td {
   text-indent: -9999px;
   margin: 0px 0px 5px;
 }
-/* line 1008, ../sass/style.scss */
+/* line 1013, ../sass/style.scss */
 #recent-journals .pane-content {
   font-size: 14px;
   line-height: 18px;
 }
 
-/* line 1015, ../sass/style.scss */
+/* line 1020, ../sass/style.scss */
 .pane-node h2.pane-title {
   margin-top: 0px;
 }
 
-/* line 1020, ../sass/style.scss */
+/* line 1025, ../sass/style.scss */
 .panel-2col-stacked .panel-col-last .inside {
   margin: 0px;
   padding: 0px;
 }
 
-/* line 1025, ../sass/style.scss */
+/* line 1030, ../sass/style.scss */
 #content {
   padding: 0px;
 }
 
-/* line 1029, ../sass/style.scss */
+/* line 1034, ../sass/style.scss */
 .page-user #main > #content > .tabs {
   display: none;
 }
 
-/* line 1033, ../sass/style.scss */
+/* line 1038, ../sass/style.scss */
 .page-user #main > #content > #page-title {
   font-size: 1.4em;
   margin: 10px 0px;
   color: #1D4AFC;
 }
 
-/* line 1039, ../sass/style.scss */
+/* line 1044, ../sass/style.scss */
 .panel-2col-stacked .panel-separator {
   margin: 0px;
 }

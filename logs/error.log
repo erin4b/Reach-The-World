@@ -125,3 +125,12 @@ PHP message: PHP Fatal error:  Function name must be a string in /home/orb/publi
 2013/04/08 18:05:37 [error] 4478#0: *6515 open() "/home/orb/public_html/reachtheworld.org/httpdocs/apple-touch-icon-precomposed.png" failed (2: No such file or directory), client: 72.192.22.215, server: reachtheworld.makesimplesites.com, request: "GET /apple-touch-icon-precomposed.png HTTP/1.1", host: "reachtheworld.makesimplesites.com"
 2013/04/08 18:05:37 [error] 4478#0: *6515 open() "/home/orb/public_html/reachtheworld.org/httpdocs/apple-touch-icon.png" failed (2: No such file or directory), client: 72.192.22.215, server: reachtheworld.makesimplesites.com, request: "GET /apple-touch-icon.png HTTP/1.1", host: "reachtheworld.makesimplesites.com"
 2013/04/10 12:43:59 [error] 4475#0: *10052 open() "/home/orb/public_html/reachtheworld.org/httpdocs/sites/default/files/js/gmap_markers.js" failed (2: No such file or directory), client: 96.253.44.122, server: reachtheworld.makesimplesites.com, request: "GET /sites/default/files/js/gmap_markers.js HTTP/1.1", host: "reachtheworld.makesimplesites.com", referrer: "http://reachtheworld.makesimplesites.com/"
+2013/04/15 15:49:59 [error] 2951#0: *20643 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/orb/public_html/reachtheworld.org/httpdocs/includes/database/database.inc:2168
+Stack trace:
+#0 /home/orb/public_html/reachtheworld.org/httpdocs/includes/database/database.inc(2168): PDOStatement->execute(Array)
+#1 /home/orb/public_html/reachtheworld.org/httpdocs/includes/database/database.inc(680): DatabaseStatementBase->execute(Array, Array)
+#2 /home/orb/public_html/reachtheworld.org/httpdocs/includes/database/database.inc(2347): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/orb/public_html/reachtheworld.org/httpdocs/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/orb/public_html/reachtheworld.org/httpdocs/includes/lock.inc(146): lock_may_be_available('schema:runtime:...')
+#5 /home/orb/public_html/reachtheworld.org/httpdocs/includes/bootstrap.inc(420): lock_acquire('schema:runtime:...')
+#6 /home/orb/public_" while reading upstream, client: 96.253.44.122, server: reachtheworld.makesimplesites.com, request: "GET /journey/audras-journey-nepal HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.socket:", host: "reachtheworld.makesimplesites.com"
