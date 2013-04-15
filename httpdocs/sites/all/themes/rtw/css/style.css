@@ -694,7 +694,7 @@ br {
 }
 
 /* line 577, ../sass/style.scss */
-.pane-journey-content {
+.panel-col-first #ctools-jump-menu {
   margin-bottom: 10px;
   text-align: center;
 }
