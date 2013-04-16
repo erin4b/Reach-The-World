@@ -1288,3 +1288,13 @@ h2 {
 .region-bottom #block-menu-menu-footer-menu .menu li a {
   font-size: 13px;
 }
+
+/* line 1134, ../sass/style.scss */
+#content .panel-2col-stacked .panel-col-first {
+  width: 180px;
+  margin-right: 20px;
+}
+/* line 1138, ../sass/style.scss */
+#content .panel-2col-stacked .panel-col-last {
+  width: 720px;
+}

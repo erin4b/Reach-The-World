@@ -1128,3 +1128,15 @@ h2 {
     }
   }
 }
+
+#content {
+  .panel-2col-stacked {
+    .panel-col-first {
+      width: 180px;
+      margin-right: 20px;
+    }
+    .panel-col-last {
+      width: 720px;
+    }
+  }
+}
