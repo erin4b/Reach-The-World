@@ -1256,3 +1256,19 @@ form#views-form-user-messages-inbox td {
 #admin-menu {
   margin-top: -30px;
 }
+
+/* line 1103, ../sass/style.scss */
+.view-journey-content select#edit-jump {
+  max-width: 180px;
+}
+
+/* line 1108, ../sass/style.scss */
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* line 1113, ../sass/style.scss */
+.view-field-title {
+  font-weight: bold;
+}

@@ -1098,3 +1098,18 @@ form#views-form-user-messages-inbox {
 #admin-menu {
   margin-top: -30px;
 }
+
+.view-journey-content {
+  select#edit-jump {
+    max-width: 180px;
+  }
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.view-field-title {
+  font-weight: bold;
+}
