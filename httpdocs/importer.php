@@ -24,8 +24,7 @@ drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
 require_once DRUPAL_ROOT . '/' . variable_get('password_inc', 'includes/password.inc');
 GLOBAL $user;
 
-/*
-$data = file_get_contents("http://reachtheworld.org/export.php?p=password&c=users");
+$data = file_get_contents("http://www.reachtheworld.org/export.php?p=password&c=users");
 $users = json_decode($data);
 foreach($users AS $user){
   if($user->name != ''){
@@ -57,13 +56,24 @@ foreach($users AS $user){
         $r = user_role_load_by_name($role);
         $acct['roles'][$r->rid] = $r->name;
       }
+
+      if(isset($user->picture) && $user->picture != ''){
+        $url = str_ireplace(' ','%20',trim('http://www.reachtheworld.org/'.$user->picture));
+        $image = file_get_contents($url);
+        $filename = drupal_basename($url);
+        $save_path = 'public://pictures';
+        $destination = $save_path.'/'.$filename;
+        $file = file_save_data($image,$destination);
+        $user_obj->picture = $file;
+      }
       user_save($user_obj, $acct);
-      db_update('users')->fields(array('pass' => $hashed_pass))->condition('uid', $user_obj->uid)->execute();
+      //db_update('users')->fields(array('pass' => $hashed_pass))->condition('uid', $user_obj->uid)->execute();
+      print "User {$user->name} Saved\r\n";
     }
   }
 }
-*/
 
+/*
 function get_by_old_node($onid){
   $q = db_select('node_transfer','nt')->fields('nt')->condition('onid',$onid)->execute();
 
@@ -373,3 +383,4 @@ foreach($journeys AS $journey){
     }
   }
 }
+*/
