@@ -152,7 +152,7 @@ foreach($journeys AS $journey){
       case "fn_daily_life":
         $location_enabled = TRUE;
         $fields = array(
-          'body' => 'abstract',
+          'body' => 'field_abstract',
           'field_introduction' => 'field_intro',
           'field_full_name' => 'field_name',
           'field_where_you_live' => '',
@@ -171,7 +171,7 @@ foreach($journeys AS $journey){
       case "fn_food":
         $location_enabled = TRUE;
         $fields = array(
-          'body'=>'abstract',
+          'body'=>'field_abstract',
           'field_introduction'=>'field_intro',
           'field_food' => '',
           'field_food_impression' => '',
@@ -183,7 +183,7 @@ foreach($journeys AS $journey){
       case "fn_kids_lives":
         $location_enabled = TRUE;
         $fields = array(
-          'body'=>'abstract',
+          'body'=>'field_abstract',
           'field_introduction'=>'field_intro',
           'field_meals' => '',
           'field_house' => '',
@@ -209,7 +209,7 @@ foreach($journeys AS $journey){
       case "fn_nations":
         $location_enabled = TRUE;
         $fields = array(
-          'body'=>'abstract',
+          'body'=>'field_abstract',
           'field_introduction'=>'field_intro',
         );
       break;
@@ -217,7 +217,7 @@ foreach($journeys AS $journey){
       case "fn_nature":
         $location_enabled = TRUE;
         $fields = array(
-          'body'=>'abstract',
+          'body'=>'field_abstract',
           'field_introduction'=>'field_intro',
           'field_community_need' => '',
           'field_need_cause' => '',
@@ -228,7 +228,7 @@ foreach($journeys AS $journey){
       case "fn_traditions":
         $location_enabled = TRUE;
         $fields = array(
-          'body'=>'abstract',
+          'body'=>'field_abstract',
           'field_introduction'=>'field_intro',
           'field_tradition' => '',
           'field_community' => '',
@@ -239,7 +239,7 @@ foreach($journeys AS $journey){
       case "fn_transportation":
         $location_enabled = TRUE;
         $fields = array(
-          'body'=>'abstract',
+          'body'=>'field_abstract',
           'field_introduction'=>'field_intro',
           'field_get_around' => '',
           'field_you_getting_around' => '',
@@ -250,7 +250,7 @@ foreach($journeys AS $journey){
       case "fn_world_connections":
         $location_enabled = TRUE;
         $fields = array(
-          'body' => 'abstract',
+          'body' => 'field_abstract',
           'field_introduction' => 'field_intro',
           'field_special' => '',
           'field_parts_of_environment' => '',
@@ -262,7 +262,7 @@ foreach($journeys AS $journey){
       case "journal":
         $location_enabled = TRUE;
         $fields = array(
-          'body' => 'abstract',
+          'body' => 'field_abstract',
         );
       break;
 
@@ -271,7 +271,7 @@ foreach($journeys AS $journey){
         $enode->field_local_time[LANGUAGE_NONE][0]['value'] = strtotime($content->field_local_time[0]->value);
 
         $fields = array(
-          'body' => 'abstract',
+          'body' => 'field_abstract',
           'field_time_zone' => '',
           'field_travel_distance' => '',
           'field_travel_so_far' => '',
