@@ -75,8 +75,7 @@
 <div><pre><? print_r(get_defined_vars()); ?></pre></div>
 <? */ ?>
          
-          <div class="language-box"><?php if ($page['lang']): ?> <?php print render($page['lang']); ?>> <?php endif; ?></div>
-         
+          <div class="language-box"><?php print render($page['lang']); ?></div>         
 
   <div id="page-inner">
     <header id="header" role="banner">

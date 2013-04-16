@@ -1198,12 +1198,41 @@ form#views-form-user-messages-inbox td {
 }
 
 /* line 1048, ../sass/style.scss */
+#page-title {
+  font-size: 24px;
+  float: right;
+  margin-top: -40px;
+  margin-right: 5px;
+  color: #0166FF;
+}
+
+/* line 1056, ../sass/style.scss */
 .panel-2col-stacked .panel-separator {
   margin: 0px;
 }
 
-/* line 1052, ../sass/style.scss */
-.pane-views {
+/* line 1060, ../sass/style.scss */
+.node-type-journey .pane-views {
   margin-top: 10px;
   margin-bottom: 25px;
+}
+
+/* line 1065, ../sass/style.scss */
+.view-display-id-attachment_2 table {
+  margin: 0 0 0 0;
+}
+
+/* line 1069, ../sass/style.scss */
+.pane-journey-content .views-field {
+  margin-bottom: 10px;
+}
+
+/* line 1075, ../sass/style.scss */
+#navigation ul.menu li {
+  color: #1D4AFC;
+  font-size: 14px;
+}
+/* line 1078, ../sass/style.scss */
+#navigation ul.menu li a {
+  text-decoration: none;
 }

@@ -1045,11 +1045,39 @@ form#views-form-user-messages-inbox {
   color: #1D4AFC;
 }
 
+#page-title {
+  font-size: 24px;
+  float: right;
+  margin-top: -40px;
+  margin-right: 5px;
+  color: #0166FF;
+}
+
 .panel-2col-stacked .panel-separator{
   margin: 0px;
 }
 
-.pane-views {
+.node-type-journey .pane-views {
   margin-top: 10px;
   margin-bottom: 25px;
+}
+
+.view-display-id-attachment_2 table {
+  margin: 0 0 0 0;
+}
+
+.pane-journey-content .views-field {
+  margin-bottom: 10px;
+}
+
+#navigation {
+  ul.menu {
+    li {
+      color: #1D4AFC;
+      font-size: 14px;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
 }
