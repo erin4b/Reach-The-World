@@ -597,6 +597,10 @@ br{
           text-transform: uppercase;
         }
       }
+      .views-field-body .field-content {
+        font-size: 15px;
+        padding: 0px 10px;
+      }
       .views-row-1 {
         margin: -10px 0 0 -10px;
       }
@@ -1043,4 +1047,9 @@ form#views-form-user-messages-inbox {
 
 .panel-2col-stacked .panel-separator{
   margin: 0px;
+}
+
+.pane-views {
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
