@@ -375,19 +375,18 @@ ul {
     display: inline;
     float: left;
     label{
+      display: inline;
       color: #fff;
       font-size: 12px;
     }
-    label, input{
-      display: inline;
-      margin-left: 5px;
-    }
     input {
+      display: inline;
       width: 90px;
+      margin-left: 0px;
     }
     label {
-      margin-left: 15px;
-      .form-required {
+      margin-left: 10px;
+      span.form-required {
         display: none;
       }
     }
@@ -405,6 +404,9 @@ ul {
     color: #fff;
     font-size: 12px;
     background: none;
+    padding: 3px;
+    margin-top: 2px;
+    margin-left: 4px;
   }
   .item-list{
     display: none;

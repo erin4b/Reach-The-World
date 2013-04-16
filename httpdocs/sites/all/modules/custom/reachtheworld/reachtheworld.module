@@ -163,9 +163,26 @@ function rtw_content_block_form($form,&$form_state){
 }
 
 function article_type_selector($form,$form_state){
-  $drupal_form = drupal_get_form($form_state['values']['content_type_selector']);
-  dsm($drupal_form);
-  return $form;
+  // Drupal 7    
+  // Embed node creation form on a custom page inside module.
+  module_load_include('inc', 'node', 'node.pages');
+  $type = $form_state['values']['content_type_selector'];
+  if($type != ''){
+    $drupal_form = node_add($form_state['values']['content_type_selector']);
+    $drupal_form['actions']['submit']['#ajax'] = array(
+      'wrapper' => 'article-type',
+      'callback' => 'node_add_callback',
+      'method' => 'replace',
+      'effect' => 'fade'
+    );
+    dsm($drupal_form);
+    return $drupal_form;
+  }
+  return array();
+}
+
+function node_add_callback($form,$form_state){
+  return array();
 }
 
 ?>
