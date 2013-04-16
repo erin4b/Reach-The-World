@@ -114,4 +114,58 @@ function reactheworld_file_entity_add_upload($form, &$form_state, array $options
   return $form;
 }
 
+/**
+ * Implements hook_block_info()
+ **/
+function reachtheworld_block_info(){
+  return array(
+    'rtw_content_block' => array(
+      'info' => t('RTW Content Form Block'),
+      'cachce' => DRUPAL_NO_CACHE
+    )
+  );
+}
+
+/**
+ * Implements hook_block_view()
+ **/
+function reachtheworld_block_view($delta=''){
+  switch($delta){
+    case 'rtw_content_block':
+      $block = array();
+      $block['subject'] = t('RTW Content Form Block');
+      $block['content'] = drupal_get_form('rtw_content_block_form');
+      return $block;
+    break;
+  }
+}
+
+function rtw_content_block_form($form,&$form_state){
+  $form['content_type_selector'] = array(
+    '#type' => 'select',
+    '#options' => array(''=>'Select','fn_daily_life'=>'Field Note - Daily Life'),
+    '#title' => t('Select Article Type'),
+    '#ajax' => array(
+      'callback' => 'article_type_selector',
+      'wrapper' => 'article-type',
+      'method' => 'replace',
+      'effect' => 'fade'
+    )
+  );
+
+  $form['content-types'] = array(
+    '#type' => 'fieldest',
+    '#prefix' => '<div id="article-type">',
+    '#suffix' => '</div>'
+  );
+
+  return $form;
+}
+
+function article_type_selector($form,$form_state){
+  $drupal_form = drupal_get_form($form_state['values']['content_type_selector']);
+  dsm($drupal_form);
+  return $form;
+}
+
 ?>

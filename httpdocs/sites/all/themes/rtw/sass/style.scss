@@ -380,15 +380,24 @@ ul {
     }
     label, input{
       display: inline;
-      margin-left: 10px;
+      margin-left: 5px;
+    }
+    input {
+      width: 90px;
+    }
+    label {
+      margin-left: 15px;
+      .form-required {
+        display: none;
+      }
     }
   }
   .form-item,.form-actions{
     margin: 0px;
   }
   .form-actions{
-    float: left;
-    margin: 0px 10px;
+    float: right;
+    margin: 0px 10px 0px 0px;
   }
   .form-submit{
     border: none;
