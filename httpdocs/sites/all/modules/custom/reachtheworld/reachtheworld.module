@@ -175,7 +175,9 @@ function article_type_selector($form,$form_state){
       'method' => 'replace',
       'effect' => 'fade'
     );
-    dsm($drupal_form);
+    print '<pre>';
+    print_r($drupal_form);
+    print '</pre>';
     return $drupal_form;
   }
   return array();
