@@ -1249,3 +1249,8 @@ form#views-form-user-messages-inbox td {
 #navigation ul.menu li a {
   text-decoration: none;
 }
+
+/* line 1096, ../sass/style.scss */
+#admin-menu {
+  margin-top: -30px;
+}
