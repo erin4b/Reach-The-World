@@ -1303,11 +1303,16 @@ ul.primary li {
 
 /* line 1147, ../sass/style.scss */
 #mini-panel-top_menu_bar_links .panel-col-first {
-  width: 395px !important;
+  width: 495px !important;
   height: 33px;
 }
 /* line 1151, ../sass/style.scss */
 #mini-panel-top_menu_bar_links .panel-col-last {
-  width: 510px !important;
+  width: 410px !important;
   height: 33px;
+}
+
+/* line 1157, ../sass/style.scss */
+div.widgets-element-horizontal {
+  margin-right: 10px;
 }
