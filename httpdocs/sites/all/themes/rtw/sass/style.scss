@@ -1,5 +1,9 @@
 @import "base";
 
+html { 
+  font-size: 12px;
+}
+
 p{
   margin-top: 5px;
 }
@@ -1140,3 +1144,10 @@ h2 {
     }
   }
 }
+ul.primary {
+  li {
+    position: relative;
+    z-index: 100;
+  }
+}
+
