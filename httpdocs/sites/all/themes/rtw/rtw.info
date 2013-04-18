@@ -99,6 +99,7 @@ scripts[] = js/AC_RunActiveContent.js
 regions[lang]           = Language Box
 regions[header]         = Header
 regions[navigation]     = Navigation bar
+regions[sidebar]        = Sidebar
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content

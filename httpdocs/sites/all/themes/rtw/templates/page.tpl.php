@@ -104,6 +104,8 @@
 
     <div id="main">
 
+      <div id="sidebar"><?php print render ($page['sidebar']); ?></div>
+
       <div id="content" class="column" role="main">
         <?php print render($page['highlighted']); ?>
         <?php print $breadcrumb; ?>

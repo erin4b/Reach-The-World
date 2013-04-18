@@ -2,6 +2,9 @@
 
 html { 
   font-size: 12px;
+    #content {
+      font-size: 14px;
+    }
 }
 
 p{
@@ -1168,5 +1171,74 @@ div.widgets-element-horizontal{
 #block-block-1 {
   p {
     font-size: 13px;
+  }
+}
+
+.page-map {
+  #content {
+    margin-top: 30px;
+  }
+  .panel-col-first {
+    .inside {
+      background: #CDA2CD;
+      border: 1px solid #CDA2CD;
+      border-radius: 10px;
+      padding: 10px;
+        ul {
+          li {
+            list-style: none;
+            padding: 4px 0px;
+          }
+        }
+        a {
+          color: #000;
+          font-weight: bold;
+          font-size: 14px;
+          text-decoration: none;
+          
+        }
+        a:hover {
+          color: #333;
+        }
+    }
+  }
+}
+
+#block-menu-menu-header-menu {
+ background: #CDA2CD;
+ border: 1px solid #CDA2CD;
+ border-radius: 10px;
+
+  ul {
+    li {
+      list-style: none;
+      padding: 4px 0px;
+    }
+  }
+  a {
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #333;
+  }
+}
+ 
+#sidebar {
+  float: left;
+    .block {
+      width: 150px;
+      height: 100%;
+      margin-top: 30px;
+      padding: 10px
+    }
+}
+
+.section-donate, .section-get-involved, .section-mission-and-impact {
+  #content {
+    width: 720px;
+    float: right;
   }
 }
