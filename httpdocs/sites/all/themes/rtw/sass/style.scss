@@ -66,10 +66,10 @@ ul {
         a{
           color: #fff;
           text-decoration: none;
-          font-size: 1.8em;
+          font-size: 18px;
           line-height: 32px;
           font-weight: bold;
-        }
+        } 
       }
     }
   }
@@ -328,9 +328,9 @@ ul {
         h2.pane-title{
           color: #fff;
           text-shadow: 2px 2px 2px #222;
-          font-size: 2.6em;
-          line-height: 22px;
-          margin: 10px 0px 4px;
+          font-size: 23px;
+          line-height: 29px;
+          margin: 2px 0px 4px;
         }
       }
       #journey-selector{
@@ -355,9 +355,10 @@ ul {
           a{
             color: #1D4AFC;
             font-weight: bold;
-            font-size: 28px;
+            font-size: 25px;
             text-decoration: none;
             line-height: 30px;
+            letter-spacing: -1px;
           }
         }
       }
@@ -1120,6 +1121,11 @@ h2 {
       padding: 0px 8px;
       a {
         font-size: 13px;
+        line-height: 16px;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
       }
     }
   }
@@ -1157,4 +1163,10 @@ ul.primary {
 
 div.widgets-element-horizontal{
   margin-right: 10px;
+}
+
+#block-block-1 {
+  p {
+    font-size: 13px;
+  }
 }
