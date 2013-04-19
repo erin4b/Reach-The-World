@@ -162,6 +162,8 @@ function rtw_node_block(){
       $style  = $pg->getStyle($node->type);
 
       $node_body = drupal_render(node_view(clone $node));
+      //$node_body = html_entity_decode($node_body);
+      $node_body = str_ireplace(array('&lt;','&gt;'),array('<','>'), $node_body);
 
       $pg->paginate($node_body, $paging);
       $body = cleaning($pg->getPage($page));
