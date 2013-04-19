@@ -153,6 +153,45 @@ function reachtheworld_block_view($delta=''){
 }
 
 function rtw_node_block(){
+  if(arg(1) != ''){
+    $node = node_load(arg(1));
+    if($node){
+      $pg     = Pagination::instance();
+      $page   = $pg->getPageVar();
+      //$paging = $pg->getValue($node->type);
+      $paging = 300;
+      $style  = $pg->getStyle($node->type);
+      $ignore = array_map('trim', explode(',', variable_get('pagination_ignore', '') ) );
+
+      $node_body = drupal_render(node_view(clone $node));
+
+      $pg->paginate($node_body, $paging);
+      $body = $pg->getPage($page);
+
+
+      // Specify configuration
+      $config = array(
+        'indent'         => true,
+        'output-xhtml'   => true,
+        'wrap'           => 200
+      );
+
+      // Tidy
+      $tidy = new tidy;
+      $tidy->parseString($html, $config, 'utf8');
+      $tidy->cleanRepair();
+
+      if ($style < PAGINATION_TOC)  {
+        $body .= $pg->getPager();
+      }
+
+      if ($style > PAGINATION_DEFAULT && $pg->getPageCount() > 1)  {
+        $body = $pg->getToc($node->nid) . $body;
+      }
+
+      return $body;
+    }
+  }
   return '';
 }
 
@@ -207,17 +246,7 @@ function node_add_callback($form,$form_state){
  * Implements hook_panels_pane_content_alter()
  **/
 function reachtheworld_panels_pane_content_alter($content, $pane, $args, $context){
-  switch($content->delta){
-    case 'node-full':
-      //dsm(get_defined_vars());
-      //dsm($content);
-    break;
-  }
   return $content;
-}
-
-function reachtheworld_post_render(){
-  dsm(func_get_args());
 }
 
 ?>
