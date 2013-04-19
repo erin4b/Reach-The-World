@@ -1,5 +1,7 @@
 <?php
 
+module_load_include('inc','pagination','includes/Pagination');
+
 /**
  * Implements hook_admin_paths_alter()
  **/
@@ -123,7 +125,7 @@ function reachtheworld_block_info(){
       'info' => t('RTW Content Form Block'),
       'cache' => DRUPAL_NO_CACHE
     ),
-    'rtw_content_node' => array(
+    'rtw_node_block' => array(
       'info' => t('RTW Node'),
       'cache' => DRUPAL_NO_CACHE
     )
@@ -135,29 +137,22 @@ function reachtheworld_block_info(){
  **/
 function reachtheworld_block_view($delta=''){
   switch($delta){
+    case 'rtw_node_block':
+      $block = array();
+      $block['subject'] = t('RTW Node Block');
+      $block['content'] = rtw_node_block();
+      return $block;
+    break;
     case 'rtw_content_block':
       $block = array();
       $block['subject'] = t('RTW Content Form Block');
       $block['content'] = drupal_get_form('rtw_content_block_form');
       return $block;
     break;
-    case 'rtw_content_node':
-      $block = array();
-      $block['subject'] = t('RTW Node');
-      $block['content'] = rtw_content_node();
-      return $block;
-    break;
   }
 }
 
-function rtw_content_node(){
-  if(arg(1) != ''){
-    $node = node_load(arg(1));
-    if($node){
-      $view = node_view($node);
-      return drupal_render($view);
-    }
-  }
+function rtw_node_block(){
   return '';
 }
 
@@ -212,6 +207,17 @@ function node_add_callback($form,$form_state){
  * Implements hook_panels_pane_content_alter()
  **/
 function reachtheworld_panels_pane_content_alter($content, $pane, $args, $context){
+  switch($content->delta){
+    case 'node-full':
+      //dsm(get_defined_vars());
+      //dsm($content);
+    break;
+  }
   return $content;
 }
+
+function reachtheworld_post_render(){
+  dsm(func_get_args());
+}
+
 ?>
