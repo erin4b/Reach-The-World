@@ -1116,7 +1116,11 @@ h2 {
   font-weight: bold;
 }
 
-.region-bottom #block-menu-menu-footer-menu {
+.region-bottom {
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+  #block-menu-menu-footer-menu {
   .menu {
     padding-left: 76px;
     li {
@@ -1132,6 +1136,7 @@ h2 {
       }
     }
   }
+}
 }
 
 #content {
@@ -1240,5 +1245,25 @@ div.widgets-element-horizontal{
   #content {
     width: 720px;
     float: right;
+  }
+}
+
+.pane-reachtheworld-rtw-node-block {
+  .item-list {
+    text-align: center;
+    ul.pager {
+      display: inline-block;
+      text-align: center;
+      background: #0066FF;
+      color: #fff;
+      border: 1px solid #0066FF;
+      border-radius: 10px;
+      padding: 4px;
+      font-weight: bold;
+       a {
+         color: #fff;
+        text-decoration: none;
+      }
+    }
   }
 }

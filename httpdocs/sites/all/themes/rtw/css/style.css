@@ -1277,119 +1277,125 @@ h2 {
   font-weight: bold;
 }
 
-/* line 1120, ../sass/style.scss */
+/* line 1119, ../sass/style.scss */
+.region-bottom {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+}
+/* line 1124, ../sass/style.scss */
 .region-bottom #block-menu-menu-footer-menu .menu {
   padding-left: 76px;
 }
-/* line 1122, ../sass/style.scss */
+/* line 1126, ../sass/style.scss */
 .region-bottom #block-menu-menu-footer-menu .menu li {
   width: auto;
   padding: 0px 8px;
 }
-/* line 1125, ../sass/style.scss */
+/* line 1129, ../sass/style.scss */
 .region-bottom #block-menu-menu-footer-menu .menu li a {
   font-size: 13px;
   line-height: 16px;
   text-decoration: none;
 }
-/* line 1130, ../sass/style.scss */
+/* line 1134, ../sass/style.scss */
 .region-bottom #block-menu-menu-footer-menu .menu li a:hover {
   text-decoration: underline;
 }
 
-/* line 1139, ../sass/style.scss */
+/* line 1144, ../sass/style.scss */
 #content .panel-2col-stacked .panel-col-first {
   width: 180px;
   margin-right: 20px;
 }
-/* line 1143, ../sass/style.scss */
+/* line 1148, ../sass/style.scss */
 #content .panel-2col-stacked .panel-col-last {
   width: 720px;
 }
 
-/* line 1149, ../sass/style.scss */
+/* line 1154, ../sass/style.scss */
 ul.primary li {
   position: relative;
   z-index: 100;
 }
 
-/* line 1157, ../sass/style.scss */
+/* line 1162, ../sass/style.scss */
 #mini-panel-top_menu_bar_links .panel-col-first {
   width: 495px !important;
   height: 33px;
 }
-/* line 1161, ../sass/style.scss */
+/* line 1166, ../sass/style.scss */
 #mini-panel-top_menu_bar_links .panel-col-last {
   width: 410px !important;
   height: 33px;
 }
 
-/* line 1167, ../sass/style.scss */
+/* line 1172, ../sass/style.scss */
 div.widgets-element-horizontal {
   margin-right: 10px;
 }
 
-/* line 1172, ../sass/style.scss */
+/* line 1177, ../sass/style.scss */
 #block-block-1 p {
   font-size: 13px;
 }
 
-/* line 1178, ../sass/style.scss */
+/* line 1183, ../sass/style.scss */
 .page-map #content {
   margin-top: 30px;
 }
-/* line 1182, ../sass/style.scss */
+/* line 1187, ../sass/style.scss */
 .page-map .panel-col-first .inside {
   background: #CDA2CD;
   border: 1px solid #CDA2CD;
   border-radius: 10px;
   padding: 10px;
 }
-/* line 1188, ../sass/style.scss */
+/* line 1193, ../sass/style.scss */
 .page-map .panel-col-first .inside ul li {
   list-style: none;
   padding: 4px 0px;
 }
-/* line 1193, ../sass/style.scss */
+/* line 1198, ../sass/style.scss */
 .page-map .panel-col-first .inside a {
   color: #000;
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
 }
-/* line 1200, ../sass/style.scss */
+/* line 1205, ../sass/style.scss */
 .page-map .panel-col-first .inside a:hover {
   color: #333;
 }
 
-/* line 1207, ../sass/style.scss */
+/* line 1212, ../sass/style.scss */
 #block-menu-menu-header-menu {
   background: #CDA2CD;
   border: 1px solid #CDA2CD;
   border-radius: 10px;
 }
-/* line 1213, ../sass/style.scss */
+/* line 1218, ../sass/style.scss */
 #block-menu-menu-header-menu ul li {
   list-style: none;
   padding: 4px 0px;
 }
-/* line 1218, ../sass/style.scss */
+/* line 1223, ../sass/style.scss */
 #block-menu-menu-header-menu a {
   color: #000;
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
 }
-/* line 1224, ../sass/style.scss */
+/* line 1229, ../sass/style.scss */
 #block-menu-menu-header-menu a:hover {
   color: #333;
 }
 
-/* line 1229, ../sass/style.scss */
+/* line 1234, ../sass/style.scss */
 #sidebar {
   float: left;
 }
-/* line 1231, ../sass/style.scss */
+/* line 1236, ../sass/style.scss */
 #sidebar .block {
   width: 150px;
   height: 100%;
@@ -1397,8 +1403,29 @@ div.widgets-element-horizontal {
   padding: 10px;
 }
 
-/* line 1240, ../sass/style.scss */
+/* line 1245, ../sass/style.scss */
 .section-donate #content, .section-get-involved #content, .section-mission-and-impact #content {
   width: 720px;
   float: right;
+}
+
+/* line 1252, ../sass/style.scss */
+.pane-reachtheworld-rtw-node-block .item-list {
+  text-align: center;
+}
+/* line 1254, ../sass/style.scss */
+.pane-reachtheworld-rtw-node-block .item-list ul.pager {
+  display: inline-block;
+  text-align: center;
+  background: #0066FF;
+  color: #fff;
+  border: 1px solid #0066FF;
+  border-radius: 10px;
+  padding: 4px;
+  font-weight: bold;
+}
+/* line 1263, ../sass/style.scss */
+.pane-reachtheworld-rtw-node-block .item-list ul.pager a {
+  color: #fff;
+  text-decoration: none;
 }
