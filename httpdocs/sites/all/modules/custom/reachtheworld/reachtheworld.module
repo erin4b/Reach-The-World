@@ -166,7 +166,7 @@ function rtw_node_block(){
       $node_body = str_ireplace(array('&lt;','&gt;'),array('<','>'), $node_body);
 
       $pg->paginate($node_body, $paging);
-      $body = cleaning($pg->getPage($page));
+      $body = '<div class="body-content">'.cleaning($pg->getPage($page)).'</div>';
 
       if ($style < PAGINATION_TOC)  {
         $body .= $pg->getPager();
