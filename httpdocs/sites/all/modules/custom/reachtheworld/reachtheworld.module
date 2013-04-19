@@ -158,28 +158,13 @@ function rtw_node_block(){
     if($node){
       $pg     = Pagination::instance();
       $page   = $pg->getPageVar();
-      //$paging = $pg->getValue($node->type);
       $paging = 300;
       $style  = $pg->getStyle($node->type);
-      $ignore = array_map('trim', explode(',', variable_get('pagination_ignore', '') ) );
 
       $node_body = drupal_render(node_view(clone $node));
 
       $pg->paginate($node_body, $paging);
-      $body = $pg->getPage($page);
-
-
-      // Specify configuration
-      $config = array(
-        'indent'         => true,
-        'output-xhtml'   => true,
-        'wrap'           => 200
-      );
-
-      // Tidy
-      $tidy = new tidy;
-      $tidy->parseString($html, $config, 'utf8');
-      $tidy->cleanRepair();
+      $body = cleaning($pg->getPage($page));
 
       if ($style < PAGINATION_TOC)  {
         $body .= $pg->getPager();
@@ -249,4 +234,64 @@ function reachtheworld_panels_pane_content_alter($content, $pane, $args, $contex
   return $content;
 }
 
+
+function cleaning($what_to_clean, $tidy_config='' ) {
+   
+    $config = array(
+        'show-body-only' => true,
+        'clean' => true,
+        'char-encoding' => 'utf8',
+        'add-xml-decl' => true,
+        'add-xml-space' => true,
+        'output-html' => false,
+        'output-xml' => false,
+        'output-xhtml' => true,
+        'numeric-entities' => false,
+        'ascii-chars' => false,
+        'doctype' => 'strict',
+        'bare' => true,
+        'fix-uri' => true,
+        'indent' => true,
+        'indent-spaces' => 4,
+        'tab-size' => 4,
+        'wrap-attributes' => true,
+        'wrap' => 0,
+        'indent-attributes' => true,
+        'join-classes' => false,
+        'join-styles' => false,
+        'enclose-block-text' => true,
+        'fix-bad-comments' => true,
+        'fix-backslash' => true,
+        'replace-color' => false,
+        'wrap-asp' => false,
+        'wrap-jste' => false,
+        'wrap-php' => false,
+        'write-back' => true,
+        'drop-proprietary-attributes' => false,
+        'hide-comments' => false,
+        'hide-endtags' => false,
+        'literal-attributes' => false,
+        'drop-empty-paras' => true,
+        'enclose-text' => true,
+        'quote-ampersand' => true,
+        'quote-marks' => false,
+        'quote-nbsp' => true,
+        'vertical-space' => true,
+        'wrap-script-literals' => false,
+        'tidy-mark' => true,
+        'merge-divs' => false,
+        'repeated-attributes' => 'keep-last',
+        'break-before-br' => true,
+    );
+   
+    if( $tidy_config == '' ) {
+        $tidy_config = &$config;
+    }
+   
+    $tidy = new tidy();
+    $out = $tidy->repairString($what_to_clean, $tidy_config, 'UTF8');
+    unset($tidy);
+    unset($tidy_config);
+    return($out);
+}
 ?>
