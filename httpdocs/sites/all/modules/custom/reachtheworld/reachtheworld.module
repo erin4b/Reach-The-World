@@ -121,7 +121,11 @@ function reachtheworld_block_info(){
   return array(
     'rtw_content_block' => array(
       'info' => t('RTW Content Form Block'),
-      'cachce' => DRUPAL_NO_CACHE
+      'cache' => DRUPAL_NO_CACHE
+    ),
+    'rtw_content_node' => array(
+      'info' => t('RTW Node'),
+      'cache' => DRUPAL_NO_CACHE
     )
   );
 }
@@ -137,7 +141,24 @@ function reachtheworld_block_view($delta=''){
       $block['content'] = drupal_get_form('rtw_content_block_form');
       return $block;
     break;
+    case 'rtw_content_node':
+      $block = array();
+      $block['subject'] = t('RTW Node');
+      $block['content'] = rtw_content_node();
+      return $block;
+    break;
   }
+}
+
+function rtw_content_node(){
+  if(arg(1) != ''){
+    $node = node_load(arg(1));
+    if($node){
+      $view = node_view($node);
+      return drupal_render($view);
+    }
+  }
+  return '';
 }
 
 function rtw_content_block_form($form,&$form_state){
@@ -187,4 +208,10 @@ function node_add_callback($form,$form_state){
   return array();
 }
 
+/**
+ * Implements hook_panels_pane_content_alter()
+ **/
+function reachtheworld_panels_pane_content_alter($content, $pane, $args, $context){
+  return $content;
+}
 ?>
