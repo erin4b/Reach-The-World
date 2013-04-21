@@ -2,5 +2,6 @@ name = Reach The World
 description = Module built for Reach The World
 core = 7.x
 
-dependencies[] = 'field_collection';
-dependencies[] = 'pagination';
+dependencies[] = field_collection
+dependencies[] = pagination
+dependencies[] = views

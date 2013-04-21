@@ -178,6 +178,7 @@ function reachtheworld_form_alter(&$form,&$form_state,$form_id){
           $form['field_page'][LANGUAGE_NONE][0]['value']['#value'] = $page+1;
           $form['#prefix'] = '<div id="image-wrapper">';
           $form['#suffix'] = '</div>';
+          $form['actions']['submit']['#value'] = t('Add Photo');
           $form['actions']['submit']['#submit'] = array('rtw_image_upload');
           $form['actions']['submit']['#ajax'] = array(
             'callback' => 'rtw_image_uplaod',
@@ -236,6 +237,8 @@ function rtw_node_block(){
 
       $pg->paginate($node_body, $paging);
       $body = '<div class="body-content">'.cleaning($pg->getPage($page)).'</div>';
+  
+      $body .= views_embed_view('article_images','default',$node->nid,$page+1);
 
       if ($style < PAGINATION_TOC)  {
         $body .= $pg->getPager();
@@ -364,5 +367,15 @@ function cleaning($what_to_clean, $tidy_config='' ) {
     unset($tidy);
     unset($tidy_config);
     return($out);
+}
+
+/**
+ * Implements hook_views_api()
+ **/
+function reachtheworld_views_api(){
+  return array(
+    'api' => 3.0,
+    'path' => drupal_get_path('module','reachtheworld')
+  );
 }
 ?>
