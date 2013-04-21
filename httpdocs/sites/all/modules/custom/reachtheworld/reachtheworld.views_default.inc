@@ -34,7 +34,7 @@ function reachtheworld_views_default_views(){
   $handler->display->display_options['footer']['block']['field'] = 'block';
   $handler->display->display_options['footer']['block']['empty'] = TRUE;
   $handler->display->display_options['footer']['block']['block_to_insert'] = 'reachtheworld:rtw_image_block';
-  $handler->display->display_options['footer']['block']['title'] = '<none>';
+  $handler->display->display_options['footer']['block']['title'] = 'Add an image';
   /* Relationship: Content: Images (field_page_images) */
   $handler->display->display_options['relationships']['field_page_images_value']['id'] = 'field_page_images_value';
   $handler->display->display_options['relationships']['field_page_images_value']['table'] = 'field_data_field_page_images';
