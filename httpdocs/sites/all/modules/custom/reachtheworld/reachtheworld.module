@@ -166,7 +166,11 @@ function reachtheworld_block_view($delta=''){
  * Implements hook_form_alter()
  **/
 function reachtheworld_form_alter($form,&$form_state,$form_id){
-  dsm($form_id);
+  switch($form_id){
+    case 'field_collection_item_form':
+      //dsm($form);
+    break;
+  }
 }
 
 function rtw_image_block(){
@@ -174,7 +178,17 @@ function rtw_image_block(){
     $node = node_load(arg(1));
     if($node){
       module_load_include('inc','field_collection','field_collection.pages');
+      $pg     = Pagination::instance();
+      $page   = $pg->getPageVar();
       $form = field_collection_item_add('field_page_images','node',$node->nid);
+      $form['field_image']['#title_display'] = 'invisible';
+      $form['field_image'][LANGUAGE_NONE]['#title_display'] = 'invisible';
+      $form['field_image'][LANGUAGE_NONE][0]['#title_display'] = 'invisible';
+      $form['field_image'][LANGUAGE_NONE][0]['#title_display']['title'] = 'invisible';
+      $form['field_page'][LANGUAGE_NONE][0]['#prefix'] = '<div style="display:none;">';
+      $form['field_page'][LANGUAGE_NONE][0]['#suffix'] = '</div>';
+      $form['field_page'][LANGUAGE_NONE][0]['value']['#value'] = $page+1;
+      dsm($form);
       return $form;
     }
   }

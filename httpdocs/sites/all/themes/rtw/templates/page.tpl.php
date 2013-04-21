@@ -71,11 +71,7 @@
 ?>
 
 <div id="page">
-<? /* ?>
-<div><pre><? print_r(get_defined_vars()); ?></pre></div>
-<? */ ?>
-         
-          <div class="language-box"><?php print render($page['lang']); ?></div>         
+  <div class="language-box"><?php print render($page['lang']); ?></div>         
 
   <div id="page-inner">
     <header id="header" role="banner">
@@ -115,7 +111,7 @@
           <h1 class="title" id="page-title"><?php print $title; ?></h1>
         <?php endif; ?>
         <?php print render($title_suffix); ?>
-        <?php //print $messages; ?>
+        <?php print $messages; ?>
         <?php print render($tabs); ?>
         <?php print render($page['help']); ?>
         <?php if ($action_links): ?>
