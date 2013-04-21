@@ -181,14 +181,10 @@ function rtw_image_block(){
       $pg     = Pagination::instance();
       $page   = $pg->getPageVar();
       $form = field_collection_item_add('field_page_images','node',$node->nid);
-      $form['field_image']['#title_display'] = 'invisible';
-      $form['field_image'][LANGUAGE_NONE]['#title_display'] = 'invisible';
-      $form['field_image'][LANGUAGE_NONE][0]['#title_display'] = 'invisible';
-      $form['field_image'][LANGUAGE_NONE][0]['#title_display']['title'] = 'invisible';
+      $form['field_image'][LANGUAGE_NONE][0]['title']['#title_display'] = 'invisible';
       $form['field_page'][LANGUAGE_NONE][0]['#prefix'] = '<div style="display:none;">';
       $form['field_page'][LANGUAGE_NONE][0]['#suffix'] = '</div>';
       $form['field_page'][LANGUAGE_NONE][0]['value']['#value'] = $page+1;
-      dsm($form);
       return $form;
     }
   }
