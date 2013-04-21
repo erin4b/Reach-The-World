@@ -128,6 +128,10 @@ function reachtheworld_block_info(){
     'rtw_node_block' => array(
       'info' => t('RTW Node'),
       'cache' => DRUPAL_NO_CACHE
+    ),
+    'rtw_image_block' => array(
+      'info' => t('RTW Image Block'),
+      'cache' => DRUPAL_NO_CACHE
     )
   );
 }
@@ -137,6 +141,12 @@ function reachtheworld_block_info(){
  **/
 function reachtheworld_block_view($delta=''){
   switch($delta){
+    case 'rtw_image_block':
+      $block = array();
+      $block['subject'] = t('RTW Image Block');
+      $block['content'] = rtw_image_block();
+      return $block;
+    break;
     case 'rtw_node_block':
       $block = array();
       $block['subject'] = t('RTW Node Block');
@@ -150,6 +160,25 @@ function reachtheworld_block_view($delta=''){
       return $block;
     break;
   }
+}
+
+/**
+ * Implements hook_form_alter()
+ **/
+function reachtheworld_form_alter($form,&$form_state,$form_id){
+  dsm($form_id);
+}
+
+function rtw_image_block(){
+  if(arg(1) != ''){
+    $node = node_load(arg(1));
+    if($node){
+      module_load_include('inc','field_collection','field_collection.pages');
+      $form = field_collection_item_add('field_page_images','node',$node->nid);
+      return $form;
+    }
+  }
+  return '';
 }
 
 function rtw_node_block(){
