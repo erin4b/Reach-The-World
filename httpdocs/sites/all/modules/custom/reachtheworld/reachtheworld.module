@@ -184,7 +184,6 @@ function reachtheworld_form_alter(&$form,&$form_state,$form_id){
             'callback' => 'rtw_image_uplaod',
             'wrapper' => 'image-wrapper'
           );
-          unset($form['#validate']);
           unset($form['#submit']);
         break;
       }
