@@ -805,11 +805,14 @@ form#views-form-user-messages-inbox {
 }
 
 #dashboard{
+  position: relative;
+  width: 750px;
   .panels-flexible-region{
     background-repeat: no-repeat;
     width: 360px;
     height: 185px;
     background-position: top center;
+    display:inline-block;
     .inside{
       background-repeat: no-repeat;
       background-position: bottom center;

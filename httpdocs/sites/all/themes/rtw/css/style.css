@@ -947,100 +947,106 @@ form#views-form-user-messages-inbox td {
   margin: 0px;
 }
 
-/* line 808, ../sass/style.scss */
+/* line 807, ../sass/style.scss */
+#dashboard {
+  position: relative;
+  width: 750px;
+}
+/* line 810, ../sass/style.scss */
 #dashboard .panels-flexible-region {
   background-repeat: no-repeat;
   width: 360px;
   height: 185px;
   background-position: top center;
+  display: inline-block;
 }
-/* line 813, ../sass/style.scss */
+/* line 816, ../sass/style.scss */
 #dashboard .panels-flexible-region .inside {
   background-repeat: no-repeat;
   background-position: bottom center;
   height: 185px;
   position: relative;
 }
-/* line 819, ../sass/style.scss */
+/* line 822, ../sass/style.scss */
 #dashboard .panels-flexible-region.mail {
   background-image: url(../images/mail_head.jpg);
   margin-right: 20px;
 }
-/* line 822, ../sass/style.scss */
+/* line 825, ../sass/style.scss */
 #dashboard .panels-flexible-region.mail .inside {
   background-image: url(../images/mail_bottom.jpg);
 }
-/* line 824, ../sass/style.scss */
+/* line 827, ../sass/style.scss */
 #dashboard .panels-flexible-region.mail .inside .pane-user-messages {
   position: absolute;
   left: 0px;
   top: 65px;
 }
-/* line 828, ../sass/style.scss */
+/* line 831, ../sass/style.scss */
 #dashboard .panels-flexible-region.mail .inside .pane-user-messages ul {
   margin: 0px;
 }
-/* line 834, ../sass/style.scss */
+/* line 837, ../sass/style.scss */
 #dashboard .panels-flexible-region.articles {
   background-image: url(../images/hm_hdr_articles.jpg);
 }
-/* line 836, ../sass/style.scss */
+/* line 839, ../sass/style.scss */
 #dashboard .panels-flexible-region.articles .inside {
   background-image: url(../images/hm_hdr_articles2.jpg);
 }
-/* line 838, ../sass/style.scss */
+/* line 841, ../sass/style.scss */
 #dashboard .panels-flexible-region.articles .inside .pane-articles {
   position: absolute;
   left: 0px;
   top: 65px;
   padding-left: 20px;
 }
-/* line 843, ../sass/style.scss */
+/* line 846, ../sass/style.scss */
 #dashboard .panels-flexible-region.articles .inside .pane-articles ul {
   margin: 0px;
 }
-/* line 849, ../sass/style.scss */
+/* line 852, ../sass/style.scss */
 #dashboard .panels-flexible-region.whats-new {
   background-image: url(../images/hm_hdr_whatsnew.jpg);
 }
-/* line 851, ../sass/style.scss */
+/* line 854, ../sass/style.scss */
 #dashboard .panels-flexible-region.whats-new .inside {
   background-image: url(../images/hm_hdr_whatsnew2.jpg);
 }
-/* line 855, ../sass/style.scss */
+/* line 858, ../sass/style.scss */
 #dashboard .panels-flexible-region.calendar {
   background-image: url(../images/hm_hdr_calendar.jpg);
   margin-right: 20px;
 }
-/* line 858, ../sass/style.scss */
+/* line 861, ../sass/style.scss */
 #dashboard .panels-flexible-region.calendar .inside {
   background-image: url(../images/hm_hdr_calendar2.jpg);
 }
-/* line 860, ../sass/style.scss */
+/* line 863, ../sass/style.scss */
 #dashboard .panels-flexible-region.calendar .inside .pane-calendar {
   position: absolute;
   left: 0px;
   top: 65px;
 }
-/* line 864, ../sass/style.scss */
+/* line 867, ../sass/style.scss */
 #dashboard .panels-flexible-region.calendar .inside .pane-calendar ul {
   margin: 0px;
 }
-/* line 870, ../sass/style.scss */
+/* line 873, ../sass/style.scss */
 #dashboard .panels-flexible-region.media {
   background-image: url(../images/hm_hdr_media.jpg);
 }
-/* line 872, ../sass/style.scss */
+/* line 875, ../sass/style.scss */
 #dashboard .panels-flexible-region.media .inside {
   background-image: url(../images/hm_hdr_media2.jpg);
 }
 
-/* line 880, ../sass/style.scss */
+/* line 883, ../sass/style.scss */
 .page-user .panel-2col-stacked .panel-col-last {
   width: 740px;
 }
 
-/* line 888, ../sass/style.scss */
+/* line 891, ../sass/style.scss */
 #block-menu-menu-user-media-menu {
   position: absolute;
   left: 0px;
@@ -1049,18 +1055,18 @@ form#views-form-user-messages-inbox td {
   width: 100%;
   height: 28px;
 }
-/* line 895, ../sass/style.scss */
+/* line 898, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu {
   padding: 0px;
   margin: 0px;
 }
-/* line 898, ../sass/style.scss */
+/* line 901, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li {
   list-style: none;
   float: left;
   width: 24%;
 }
-/* line 902, ../sass/style.scss */
+/* line 905, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a {
   text-decoration: none;
   color: white;
@@ -1071,28 +1077,28 @@ form#views-form-user-messages-inbox td {
   background-repeat: no-repeat;
   background-position: 25% center;
 }
-/* line 911, ../sass/style.scss */
+/* line 914, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-mail {
   background-image: url(../images/navicon1.gif);
 }
-/* line 914, ../sass/style.scss */
+/* line 917, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-articles {
   background-image: url(../images/navicon2.gif);
 }
-/* line 917, ../sass/style.scss */
+/* line 920, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-media {
   background-image: url(../images/navicon3.gif);
 }
-/* line 920, ../sass/style.scss */
+/* line 923, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-calendar {
   background-image: url(../images/navicon4.gif);
 }
-/* line 923, ../sass/style.scss */
+/* line 926, ../sass/style.scss */
 #block-menu-menu-user-media-menu ul.menu li a.user-whats-new {
   background-image: url(../images/navicon_whatsnew.gif);
 }
 
-/* line 931, ../sass/style.scss */
+/* line 934, ../sass/style.scss */
 #user-name {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4em;
@@ -1100,16 +1106,16 @@ form#views-form-user-messages-inbox td {
   font-weight: bold;
   line-height: 1;
 }
-/* line 937, ../sass/style.scss */
+/* line 940, ../sass/style.scss */
 #user-name p {
   margin: 0px;
 }
 
-/* line 944, ../sass/style.scss */
+/* line 947, ../sass/style.scss */
 .page-user #page #page-inner, .page-messages #page #page-inner {
   padding: 118px 20px 0px;
 }
-/* line 947, ../sass/style.scss */
+/* line 950, ../sass/style.scss */
 .page-user #page #page-inner header a#logo, .page-messages #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_landing.jpg);
   display: block;
@@ -1119,32 +1125,32 @@ form#views-form-user-messages-inbox td {
   left: 0px;
   top: 28px;
 }
-/* line 955, ../sass/style.scss */
+/* line 958, ../sass/style.scss */
 .page-user #page #page-inner header a#logo img, .page-messages #page #page-inner header a#logo img {
   display: none;
 }
-/* line 963, ../sass/style.scss */
+/* line 966, ../sass/style.scss */
 .page-user.page-user-mail #page #page-inner header a#logo, .page-user.page-messages-list #page #page-inner header a#logo, .page-user.page-messages-new #page #page-inner header a#logo, .page-user.page-messages-sent #page #page-inner header a#logo, .page-user.section-messages #page #page-inner header a#logo, .page-messages.page-user-mail #page #page-inner header a#logo, .page-messages.page-messages-list #page #page-inner header a#logo, .page-messages.page-messages-new #page #page-inner header a#logo, .page-messages.page-messages-sent #page #page-inner header a#logo, .page-messages.section-messages #page #page-inner header a#logo {
   background-image: url(../images/hm_hdr_mail3.jpg);
 }
-/* line 968, ../sass/style.scss */
+/* line 971, ../sass/style.scss */
 .page-user.page-user-articles #page #page-inner header a#logo, .page-messages.page-user-articles #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_articles3.jpg);
 }
-/* line 973, ../sass/style.scss */
+/* line 976, ../sass/style.scss */
 .page-user.page-user-calendar #page #page-inner header a#logo, .page-messages.page-user-calendar #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_calendar.jpg);
 }
-/* line 978, ../sass/style.scss */
+/* line 981, ../sass/style.scss */
 .page-user.page-user-media #page #page-inner header a#logo, .page-messages.page-user-media #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_media.jpg);
 }
-/* line 983, ../sass/style.scss */
+/* line 986, ../sass/style.scss */
 .page-user.page-user-whats-new #page #page-inner header a#logo, .page-messages.page-user-whats-new #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_whatsnew.jpg);
 }
 
-/* line 995, ../sass/style.scss */
+/* line 998, ../sass/style.scss */
 #recent-logbook h2.pane-title {
   background-image: url(../images/hdr_logbook.jpg);
   background-repeat: no-repeat;
@@ -1152,13 +1158,13 @@ form#views-form-user-messages-inbox td {
   text-indent: -9999px;
   margin: 0px 0px 5px;
 }
-/* line 1002, ../sass/style.scss */
+/* line 1005, ../sass/style.scss */
 #recent-logbook .pane-content {
   font-size: 14px;
   line-height: 18px;
 }
 
-/* line 1009, ../sass/style.scss */
+/* line 1012, ../sass/style.scss */
 #recent-field-notes h2.pane-title {
   background-image: url(../images/hdr_field-notes.jpg);
   background-repeat: no-repeat;
@@ -1166,13 +1172,13 @@ form#views-form-user-messages-inbox td {
   text-indent: -9999px;
   margin: 0px 0px 5px;
 }
-/* line 1016, ../sass/style.scss */
+/* line 1019, ../sass/style.scss */
 #recent-field-notes .pane-content {
   font-size: 14px;
   line-height: 18px;
 }
 
-/* line 1023, ../sass/style.scss */
+/* line 1026, ../sass/style.scss */
 #recent-journals h2.pane-title {
   background-image: url(../images/hdr_journals.jpg);
   background-repeat: no-repeat;
@@ -1180,34 +1186,34 @@ form#views-form-user-messages-inbox td {
   text-indent: -9999px;
   margin: 0px 0px 5px;
 }
-/* line 1030, ../sass/style.scss */
+/* line 1033, ../sass/style.scss */
 #recent-journals .pane-content {
   font-size: 14px;
   line-height: 18px;
 }
 
-/* line 1037, ../sass/style.scss */
+/* line 1040, ../sass/style.scss */
 .pane-node h2.pane-title {
   margin-top: 0px;
 }
 
-/* line 1042, ../sass/style.scss */
+/* line 1045, ../sass/style.scss */
 .panel-2col-stacked .panel-col-last .inside {
   margin: 0px;
   padding: 0px;
 }
 
-/* line 1047, ../sass/style.scss */
+/* line 1050, ../sass/style.scss */
 #content {
   padding: 0px;
 }
 
-/* line 1051, ../sass/style.scss */
+/* line 1054, ../sass/style.scss */
 .page-user #main > #content > .tabs {
   display: none;
 }
 
-/* line 1055, ../sass/style.scss */
+/* line 1058, ../sass/style.scss */
 .page-user #main > #content > #page-title {
   font-size: 14px;
   margin: 10px 0px;
@@ -1216,7 +1222,7 @@ form#views-form-user-messages-inbox td {
   width: 100%;
 }
 
-/* line 1063, ../sass/style.scss */
+/* line 1066, ../sass/style.scss */
 #page-title {
   font-size: 24px;
   float: right;
@@ -1225,177 +1231,177 @@ form#views-form-user-messages-inbox td {
   color: #0166FF;
 }
 
-/* line 1071, ../sass/style.scss */
+/* line 1074, ../sass/style.scss */
 .panel-2col-stacked .panel-separator {
   margin: 0px;
 }
 
-/* line 1075, ../sass/style.scss */
+/* line 1078, ../sass/style.scss */
 .node-type-journey .pane-views {
   margin-top: 10px;
   margin-bottom: 25px;
 }
 
-/* line 1080, ../sass/style.scss */
+/* line 1083, ../sass/style.scss */
 .view-display-id-attachment_2 table {
   margin: 0 0 0 0;
 }
 
-/* line 1084, ../sass/style.scss */
+/* line 1087, ../sass/style.scss */
 .pane-journey-content .views-field {
   margin-bottom: 10px;
 }
 
-/* line 1090, ../sass/style.scss */
+/* line 1093, ../sass/style.scss */
 #navigation ul.menu li {
   color: #1D4AFC;
   font-size: 14px;
 }
-/* line 1093, ../sass/style.scss */
+/* line 1096, ../sass/style.scss */
 #navigation ul.menu li a {
   text-decoration: none;
 }
 
-/* line 1100, ../sass/style.scss */
+/* line 1103, ../sass/style.scss */
 #admin-menu {
   margin-top: -30px;
 }
 
-/* line 1105, ../sass/style.scss */
+/* line 1108, ../sass/style.scss */
 .view-journey-content select#edit-jump {
   max-width: 180px;
 }
 
-/* line 1110, ../sass/style.scss */
+/* line 1113, ../sass/style.scss */
 h2 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-/* line 1115, ../sass/style.scss */
+/* line 1118, ../sass/style.scss */
 .view-field-title {
   font-weight: bold;
 }
 
-/* line 1119, ../sass/style.scss */
+/* line 1122, ../sass/style.scss */
 .region-bottom {
   font-size: 13px;
   text-align: center;
   color: #fff;
 }
-/* line 1124, ../sass/style.scss */
+/* line 1127, ../sass/style.scss */
 .region-bottom #block-menu-menu-footer-menu .menu {
   padding-left: 76px;
 }
-/* line 1126, ../sass/style.scss */
+/* line 1129, ../sass/style.scss */
 .region-bottom #block-menu-menu-footer-menu .menu li {
   width: auto;
   padding: 0px 8px;
 }
-/* line 1129, ../sass/style.scss */
+/* line 1132, ../sass/style.scss */
 .region-bottom #block-menu-menu-footer-menu .menu li a {
   font-size: 13px;
   line-height: 16px;
   text-decoration: none;
 }
-/* line 1134, ../sass/style.scss */
+/* line 1137, ../sass/style.scss */
 .region-bottom #block-menu-menu-footer-menu .menu li a:hover {
   text-decoration: underline;
 }
 
-/* line 1144, ../sass/style.scss */
+/* line 1147, ../sass/style.scss */
 #content .panel-2col-stacked .panel-col-first {
   width: 180px;
   margin-right: 20px;
 }
-/* line 1148, ../sass/style.scss */
+/* line 1151, ../sass/style.scss */
 #content .panel-2col-stacked .panel-col-last {
   width: 720px;
 }
 
-/* line 1154, ../sass/style.scss */
+/* line 1157, ../sass/style.scss */
 ul.primary li {
   position: relative;
   z-index: 100;
 }
 
-/* line 1162, ../sass/style.scss */
+/* line 1165, ../sass/style.scss */
 #mini-panel-top_menu_bar_links .panel-col-first {
   width: 495px !important;
   height: 33px;
 }
-/* line 1166, ../sass/style.scss */
+/* line 1169, ../sass/style.scss */
 #mini-panel-top_menu_bar_links .panel-col-last {
   width: 410px !important;
   height: 33px;
 }
 
-/* line 1172, ../sass/style.scss */
+/* line 1175, ../sass/style.scss */
 div.widgets-element-horizontal {
   margin-right: 10px;
 }
 
-/* line 1177, ../sass/style.scss */
+/* line 1180, ../sass/style.scss */
 #block-block-1 p {
   font-size: 13px;
 }
 
-/* line 1183, ../sass/style.scss */
+/* line 1186, ../sass/style.scss */
 .page-map #content {
   margin-top: 30px;
 }
-/* line 1187, ../sass/style.scss */
+/* line 1190, ../sass/style.scss */
 .page-map .panel-col-first .inside {
   background: #CDA2CD;
   border: 1px solid #CDA2CD;
   border-radius: 10px;
   padding: 10px;
 }
-/* line 1193, ../sass/style.scss */
+/* line 1196, ../sass/style.scss */
 .page-map .panel-col-first .inside ul li {
   list-style: none;
   padding: 4px 0px;
 }
-/* line 1198, ../sass/style.scss */
+/* line 1201, ../sass/style.scss */
 .page-map .panel-col-first .inside a {
   color: #000;
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
 }
-/* line 1205, ../sass/style.scss */
+/* line 1208, ../sass/style.scss */
 .page-map .panel-col-first .inside a:hover {
   color: #333;
 }
 
-/* line 1212, ../sass/style.scss */
+/* line 1215, ../sass/style.scss */
 #block-menu-menu-header-menu {
   background: #CDA2CD;
   border: 1px solid #CDA2CD;
   border-radius: 10px;
 }
-/* line 1218, ../sass/style.scss */
+/* line 1221, ../sass/style.scss */
 #block-menu-menu-header-menu ul li {
   list-style: none;
   padding: 4px 0px;
 }
-/* line 1223, ../sass/style.scss */
+/* line 1226, ../sass/style.scss */
 #block-menu-menu-header-menu a {
   color: #000;
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
 }
-/* line 1229, ../sass/style.scss */
+/* line 1232, ../sass/style.scss */
 #block-menu-menu-header-menu a:hover {
   color: #333;
 }
 
-/* line 1234, ../sass/style.scss */
+/* line 1237, ../sass/style.scss */
 #sidebar {
   float: left;
 }
-/* line 1236, ../sass/style.scss */
+/* line 1239, ../sass/style.scss */
 #sidebar .block {
   width: 150px;
   height: 100%;
@@ -1403,17 +1409,17 @@ div.widgets-element-horizontal {
   padding: 10px;
 }
 
-/* line 1245, ../sass/style.scss */
+/* line 1248, ../sass/style.scss */
 .section-donate #content, .section-get-involved #content, .section-mission-and-impact #content {
   width: 720px;
   float: right;
 }
 
-/* line 1252, ../sass/style.scss */
+/* line 1255, ../sass/style.scss */
 .pane-reachtheworld-rtw-node-block .item-list {
   text-align: center;
 }
-/* line 1254, ../sass/style.scss */
+/* line 1257, ../sass/style.scss */
 .pane-reachtheworld-rtw-node-block .item-list ul.pager {
   display: inline-block;
   text-align: center;
@@ -1424,22 +1430,22 @@ div.widgets-element-horizontal {
   padding: 4px;
   font-weight: bold;
 }
-/* line 1263, ../sass/style.scss */
+/* line 1266, ../sass/style.scss */
 .pane-reachtheworld-rtw-node-block .item-list ul.pager a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 1272, ../sass/style.scss */
+/* line 1275, ../sass/style.scss */
 .page-messages .tabs.primary {
   visibility: hidden;
 }
-/* line 1275, ../sass/style.scss */
+/* line 1278, ../sass/style.scss */
 .page-messages .action-links {
   display: none;
 }
 
-/* line 1280, ../sass/style.scss */
+/* line 1283, ../sass/style.scss */
 .field-item {
   padding-bottom: 15px;
   line-height: 175%;
