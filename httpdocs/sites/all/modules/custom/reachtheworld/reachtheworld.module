@@ -176,13 +176,13 @@ function reachtheworld_form_alter(&$form,&$form_state,$form_id){
           $page   = $pg->getPageVar();
           $form['host_node'] = array('#type' => 'value', '#value' => $node);
           $form['view_of_images'] = array('#markup' => views_embed_view('article_images','default',$node->nid,$page+1));
+          $form['#prefix'] = '<div id="imagewrapper">';
+          $form['#suffix'] = '</div>';
           $form['field_page'][LANGUAGE_NONE][0]['#prefix'] = '<div style="display:none;">';
           $form['field_page'][LANGUAGE_NONE][0]['#suffix'] = '</div>';
           $form['field_page'][LANGUAGE_NONE][0]['value']['#value'] = $page+1;
-          $form['#prefix'] = '<div id="imagewrapper">';
-          $form['#suffix'] = '</div>';
           $form['actions']['submit']['#value'] = t('Add Photo');
-          $form['actions']['submit']['#submit'] = array('rtw_image_upload');
+          //$form['actions']['submit']['#submit'] = array('rtw_image_upload');
           $form['actions']['submit']['#ajax'] = array(
             'callback' => 'rtw_image_upload',
             'wrapper' => 'imagewrapper',
@@ -221,7 +221,10 @@ function rtw_image_block($nid=''){
 }
 
 function rtw_image_upload($form,$form_state){
-  field_collection_item_form_submit(&$form,&$form_state);
+  //field_collection_item_form_submit($form,$form_state);
+  dsm($form);
+  $dform = field_collection_item_add('field_page_images','node',$form['host_node']['#value']->nid);
+  dsm($dform);
   return $form;
 }
 
