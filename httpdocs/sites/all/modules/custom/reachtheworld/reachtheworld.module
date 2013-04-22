@@ -260,9 +260,17 @@ function rtw_node_block(){
 }
 
 function rtw_content_block_form($form,&$form_state){
+  $types = _node_types_build()->names;
+  $articles = array('fn_daily_life','fn_food','fn_kids_lives','fn_nations','fn_nature','fn_traditions','fn_transportation','fn_world_connections','journal','log_book','photo_album','video_gallery');
+  $options = array();
+
+  foreach($articles AS $article){
+    $options[$article] = $types[$article];
+  }
+
   $form['content_type_selector'] = array(
     '#type' => 'select',
-    '#options' => array(''=>'Select','fn_daily_life'=>'Field Note - Daily Life'),
+    '#options' => array(''=>'Select')+$options,
     '#title' => t('Select Article Type'),
     '#ajax' => array(
       'callback' => 'article_type_selector',
