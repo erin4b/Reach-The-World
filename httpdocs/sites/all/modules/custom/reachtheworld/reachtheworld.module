@@ -294,9 +294,7 @@ function article_type_selector($form,$form_state){
       'method' => 'replace',
       'effect' => 'fade'
     );
-    print '<pre>';
-    print_r($drupal_form);
-    print '</pre>';
+    $drupal_form['#submit'] = array('node_add_callback');
     return $drupal_form;
   }
   return array();
