@@ -1,6 +1,7 @@
 <?php
 
 module_load_include('inc','pagination','includes/Pagination');
+module_load_include('inc','field_collection','field_collection.pages');
 
 /**
  * Implements hook_admin_paths_alter()
@@ -173,6 +174,7 @@ function reachtheworld_form_alter(&$form,&$form_state,$form_id){
           $node = node_load(arg(1));
           $pg     = Pagination::instance();
           $page   = $pg->getPageVar();
+          $form['view_of_images'] = array('#markup' => views_embed_view('article_images','default',$node->nid,$page+1));
           $form['field_page'][LANGUAGE_NONE][0]['#prefix'] = '<div style="display:none;">';
           $form['field_page'][LANGUAGE_NONE][0]['#suffix'] = '</div>';
           $form['field_page'][LANGUAGE_NONE][0]['value']['#value'] = $page+1;
@@ -182,7 +184,8 @@ function reachtheworld_form_alter(&$form,&$form_state,$form_id){
           $form['actions']['submit']['#submit'] = array('rtw_image_upload');
           $form['actions']['submit']['#ajax'] = array(
             'callback' => 'rtw_image_uplaod',
-            'wrapper' => 'image-wrapper'
+            'wrapper' => 'image-wrapper',
+            'method' => 'replace'
           );
           unset($form['#submit']);
         break;
@@ -209,7 +212,6 @@ function rtw_image_block(){
   if(arg(1) != ''){
     $node = node_load(arg(1));
     if($node){
-      module_load_include('inc','field_collection','field_collection.pages');
       $form = field_collection_item_add('field_page_images','node',$node->nid);
       return $form;
     }
@@ -218,6 +220,9 @@ function rtw_image_block(){
 }
 
 function rtw_image_upload($form,$form_state){
+  field_collection_item_form_submit(&$form,&$form_state);
+  unset($form_state['redirect']);
+  $form = rtw_image_block();
   return $form;
 }
 
@@ -237,7 +242,8 @@ function rtw_node_block(){
       $pg->paginate($node_body, $paging);
       $body = '<div class="body-content">'.cleaning($pg->getPage($page)).'</div>';
   
-      $body .= views_embed_view('article_images','default',$node->nid,$page+1);
+      //$body .= views_embed_view('article_images','default',$node->nid,$page+1);
+      $body .= drupal_render(rtw_image_block());
 
       if ($style < PAGINATION_TOC)  {
         $body .= $pg->getPager();
