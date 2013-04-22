@@ -1106,11 +1106,11 @@ form#views-form-user-messages-inbox td {
 }
 
 /* line 944, ../sass/style.scss */
-.page-user #page #page-inner {
+.page-user #page #page-inner, .page-messages #page #page-inner {
   padding: 118px 20px 0px;
 }
 /* line 947, ../sass/style.scss */
-.page-user #page #page-inner header a#logo {
+.page-user #page #page-inner header a#logo, .page-messages #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_landing.jpg);
   display: block;
   width: 980px;
@@ -1120,27 +1120,27 @@ form#views-form-user-messages-inbox td {
   top: 28px;
 }
 /* line 955, ../sass/style.scss */
-.page-user #page #page-inner header a#logo img {
+.page-user #page #page-inner header a#logo img, .page-messages #page #page-inner header a#logo img {
   display: none;
 }
 /* line 963, ../sass/style.scss */
-.page-user.page-user-mail #page #page-inner header a#logo {
+.page-user.page-user-mail #page #page-inner header a#logo, .page-user.page-messages-list #page #page-inner header a#logo, .page-user.page-messages-new #page #page-inner header a#logo, .page-user.page-messages-sent #page #page-inner header a#logo, .page-user.section-messages #page #page-inner header a#logo, .page-messages.page-user-mail #page #page-inner header a#logo, .page-messages.page-messages-list #page #page-inner header a#logo, .page-messages.page-messages-new #page #page-inner header a#logo, .page-messages.page-messages-sent #page #page-inner header a#logo, .page-messages.section-messages #page #page-inner header a#logo {
   background-image: url(../images/hm_hdr_mail3.jpg);
 }
 /* line 968, ../sass/style.scss */
-.page-user.page-user-articles #page #page-inner header a#logo {
+.page-user.page-user-articles #page #page-inner header a#logo, .page-messages.page-user-articles #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_articles3.jpg);
 }
 /* line 973, ../sass/style.scss */
-.page-user.page-user-calendar #page #page-inner header a#logo {
+.page-user.page-user-calendar #page #page-inner header a#logo, .page-messages.page-user-calendar #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_calendar.jpg);
 }
 /* line 978, ../sass/style.scss */
-.page-user.page-user-media #page #page-inner header a#logo {
+.page-user.page-user-media #page #page-inner header a#logo, .page-messages.page-user-media #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_media.jpg);
 }
 /* line 983, ../sass/style.scss */
-.page-user.page-user-whats-new #page #page-inner header a#logo {
+.page-user.page-user-whats-new #page #page-inner header a#logo, .page-messages.page-user-whats-new #page #page-inner header a#logo {
   background-image: url(../images/hd_theme_whatsnew.jpg);
 }
 
@@ -1428,4 +1428,13 @@ div.widgets-element-horizontal {
 .pane-reachtheworld-rtw-node-block .item-list ul.pager a {
   color: #fff;
   text-decoration: none;
+}
+
+/* line 1272, ../sass/style.scss */
+.page-messages .tabs.primary {
+  visibility: hidden;
+}
+/* line 1275, ../sass/style.scss */
+.page-messages .action-links {
+  display: none;
 }

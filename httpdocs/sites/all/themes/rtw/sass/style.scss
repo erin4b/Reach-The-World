@@ -939,7 +939,7 @@ form#views-form-user-messages-inbox {
   }
 }
 
-.page-user{
+.page-user,.page-messages{
   #page{
     #page-inner{
       padding: 118px 20px 0px;
@@ -959,7 +959,7 @@ form#views-form-user-messages-inbox {
       }
     }
   }
-  &.page-user-mail{
+  &.page-user-mail,&.page-messages-list,&.page-messages-new,&.page-messages-sent,&.section-messages{
     #page #page-inner header a#logo{
       background-image: url(../images/hm_hdr_mail3.jpg);
     }
@@ -1265,5 +1265,14 @@ div.widgets-element-horizontal{
         text-decoration: none;
       }
     }
+  }
+}
+
+.page-messages{
+  .tabs.primary{
+    visibility: hidden;
+  }
+  .action-links{
+    display: none;
   }
 }

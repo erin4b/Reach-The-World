@@ -2,6 +2,7 @@
 
 module_load_include('inc','pagination','includes/Pagination');
 module_load_include('inc','field_collection','field_collection.pages');
+module_load_include('inc','privatemsg','privatemsg.pages');
 
 /**
  * Implements hook_admin_paths_alter()
