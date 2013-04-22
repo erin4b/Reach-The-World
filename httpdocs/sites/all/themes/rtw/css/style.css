@@ -1438,3 +1438,9 @@ div.widgets-element-horizontal {
 .page-messages .action-links {
   display: none;
 }
+
+/* line 1280, ../sass/style.scss */
+.field-item {
+  padding-bottom: 15px;
+  line-height: 175%;
+}
