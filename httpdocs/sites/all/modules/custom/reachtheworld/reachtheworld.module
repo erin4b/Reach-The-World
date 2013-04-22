@@ -229,6 +229,7 @@ function rtw_image_upload($form,$form_state){
 }
 
 function rtw_node_block(){
+  GLOBAL $user;
   if(arg(1) != ''){
     $node = node_load(arg(1));
     if($node){
