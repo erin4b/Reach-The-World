@@ -1759,3 +1759,7 @@
 160.39.36.109 - - [22/Apr/2013:20:47:53 -0400] "GET /_media/_home/hm_logo_rtw.jpg HTTP/1.1" 200 9233 "http://ui.reachtheworld.makesimplesites.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31"
 160.39.36.109 - - [22/Apr/2013:20:47:53 -0400] "GET /favicon.ico HTTP/1.1" 404 193 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31"
 160.39.36.109 - - [22/Apr/2013:20:48:10 -0400] "GET /favicon.ico HTTP/1.1" 404 193 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31"
+68.34.239.84 - - [23/Apr/2013:12:14:59 -0400] "GET /favicon.ico HTTP/1.1" 404 136 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:20.0) Gecko/20100101 Firefox/20.0"
+68.34.239.84 - - [23/Apr/2013:12:15:00 -0400] "GET /favicon.ico HTTP/1.1" 404 136 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:20.0) Gecko/20100101 Firefox/20.0"
+68.34.239.84 - - [23/Apr/2013:12:15:14 -0400] "GET /_media/_public/nav_journals.jpg HTTP/1.1" 404 136 "http://ui.reachtheworld.makesimplesites.com/Public/journals.html" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:20.0) Gecko/20100101 Firefox/20.0"
+68.34.239.84 - - [23/Apr/2013:12:15:15 -0400] "GET /_media/_public/nav_journals.jpg HTTP/1.1" 404 136 "http://ui.reachtheworld.makesimplesites.com/Public/journals.html" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:20.0) Gecko/20100101 Firefox/20.0"
