@@ -1754,3 +1754,8 @@
 69.121.39.21 - - [22/Apr/2013:13:20:08 -0400] "GET /favicon.ico HTTP/1.1" 404 193 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.172 Safari/537.22"
 108.45.53.147 - - [22/Apr/2013:13:20:10 -0400] "GET /traveler/media.html HTTP/1.1" 200 1823 "http://ui.reachtheworld.makesimplesites.com/traveler/index.html" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:20.0) Gecko/20100101 Firefox/20.0"
 108.45.53.147 - - [22/Apr/2013:13:20:11 -0400] "GET /_media/_cms/hd_theme_media.jpg HTTP/1.1" 200 48228 "http://ui.reachtheworld.makesimplesites.com/traveler/media.html" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:20.0) Gecko/20100101 Firefox/20.0"
+160.39.36.109 - - [22/Apr/2013:20:47:53 -0400] "GET / HTTP/1.1" 200 1134 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31"
+160.39.36.109 - - [22/Apr/2013:20:47:53 -0400] "GET /_css/Stylesheet.css HTTP/1.1" 200 537 "http://ui.reachtheworld.makesimplesites.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31"
+160.39.36.109 - - [22/Apr/2013:20:47:53 -0400] "GET /_media/_home/hm_logo_rtw.jpg HTTP/1.1" 200 9233 "http://ui.reachtheworld.makesimplesites.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31"
+160.39.36.109 - - [22/Apr/2013:20:47:53 -0400] "GET /favicon.ico HTTP/1.1" 404 193 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31"
+160.39.36.109 - - [22/Apr/2013:20:48:10 -0400] "GET /favicon.ico HTTP/1.1" 404 193 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31"
